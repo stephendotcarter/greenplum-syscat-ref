@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Greenplum System Catalog Reference</title>
+    <link rel="stylesheet" href="https://bootswatch.com/flatly/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+      .table-nonfluid {
+        width: auto !important;
+      }
+      body{
+        padding-bottom: 40px;
+      }
+      a{
+        text-decoration: none !important;
+      }
+    </style>
+  </head>
+
+  <body>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-xs-12">
+        <a name="top"></a>
+
+        <h1>Greenplum System Catalog Reference</h1>
+
+        <hr>
+
+        <p>Built from the following configuration files:
+        <ul>
+          <li><a href="https://github.com/greenplum-db/gpdb/tree/master/gpMgmt/bin/gppylib/data/">https://github.com/greenplum-db/gpdb/tree/master/gpMgmt/bin/gppylib/data</a></li>
+        </ul>
+        </p>
+
+        <hr>
+        <!--<p>Choose the catalog version:</p>
+        <div class="btn-toolbar">
+          <div class="btn-group" repeat.for="catalogConfig of catalogConfigs">
+            <button click.trigger="setCatalog(catalogConfig)" type="button" class="btn btn-primary">${catalogConfig.version}</button>
+          </div>
+        </div>
+
+        <hr>-->
+
+        <h1>Summary</h1>
+
+        <table class="table table-nonfluid table-condensed table-bordered">
+          <tr><th>Greenplum Version:</th><td>{{catalog.version}}</td></tr>
+          <tr><th>Catalog Version:</th><td>{{catalog.info.CATALOG_VERSION_NO}}</td></tr>
+        </table>
+
+        <table class="table table-nonfluid table-condensed table-bordered">
+          <thead>
+            <tr>
+              <th>Has OIDs</th>
+              <th>Shared</th>
+              <th>Persistent</th>
+              <th>Master Only</th>
+              <th>Segment Local</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              {% for field in catalog_metadata.fields %}
+              <td>
+                {% for relation in catalog_metadata.data[field] %}<div><a href="#{{relation}}">{{relation}}</a></div>
+                {% endfor %}
+              </td>
+              {% endfor %}
+            </tr>
+          </tbody>
+        </table>
+
+        <hr>
+
+        <h1>Relations</h1>
+
+        {% for relation in catalog.relations %}
+        <div repeat.for="relation of " style="font-family: Monospace">
+
+          <a name="{{relation.name}}"></a>
+
+          <h2><strong>{{relation.name}}</strong> <a class="btn btn-default btn-xs" target="_blank" href="graph/{{relation.name}}.png">view diagram</a></h2>
+
+          <table class="table table-nonfluid table-condensed table-bordered">
+            <thead>
+            <tr>
+              <th>Column</th>
+              <th>Type</th>
+              <th title="Foreign key for this column">Foreign Key <i class="fa fa-arrow-right"></i></th>
+              <th title="Columns that reference this column as a foreign key">Reference Keys <i class="fa fa-arrow-left"></i></th>
+            </tr>
+            </thead>
+            <tbody>
+            {% for col in relation.cols %}
+            <tr>
+              <td><a name="{{relation.name}}_{{col.colname}}">{{col.colname}}</a></td>
+              <td>{{col.sqltype}}</td>
+              <td>{% if col.foreign_key %}
+                <a href="#{{col.foreign_key.remote_relname}}_{{col.foreign_key.remote_colname}}"><strong>{{col.foreign_key.remote_relname}}</strong>.{{col.foreign_key.remote_colname}}</a></td>
+                {% endif %}
+              <td>
+                {% for ref_key in col.reference_keys %}
+                <div><a href="#{{ref_key.local_relname}}"><strong>{{ref_key.local_relname}}</strong>.{{ref_key.local_colname}}</a></div>
+                <!--<a repeat.for="remote_key of col.remote_keys" show.bind="col.remote_keys.length > 0" href="#${col.foreign_key[1]}_${col.foreign_key[2][0]}">${col.foreign_key[1]}.${col.foreign_key[2][0]}</a>-->
+                {% endfor %}
+              </td>
+            </tr>
+            {% endfor %}
+            </tbody>
+          </table>
+
+          <table class="table table-nonfluid table-condensed table-bordered">
+            <tr><td><strong>Indexes</strong></td><td>
+              {% for index in relation.indexes %}
+              <div><a>{{index.CamelCaseIndexId|underscore}}</a> {{index.unique|unique}} ({{index.cols|index_cols}})</div>
+              {% endfor %}
+            </td></tr>
+
+            <tr><td><strong>Has OIDs</strong></td><td>{{relation.with.oid|yesno}}</td></tr>
+            <tr><td><strong>Content</strong></td><td>{{relation.with.content}}</td></tr>
+            <tr><td><strong>Shared</strong></td><td>{{relation.with.shared|yesno}}</td></tr>
+          </table>
+
+        </div>
+        {% endfor %}
+
+        <hr>
+        <a href="#top">Back to top</a>
+      </div>
+    </div>
+  </div>
+  </body>
+</html>
