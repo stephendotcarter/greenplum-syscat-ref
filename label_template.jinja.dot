@@ -1,9 +1,0 @@
-<<FONT FACE="monospace"><TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4">
-<TR><TD BGCOLOR="#2c3e50" ALIGN="CENTER" COLSPAN="2"><FONT COLOR="#FFFFFF" POINT-SIZE="18"><B>{{table.name}}</B></FONT></TD></TR>
-{% for col in table.cols %}
-<TR>
-<TD COLOR="#2c3e50" BGCOLOR="{{col.in_color}}" ALIGN="LEFT" PORT="{{ col.colname }}_in"><FONT COLOR="{{col.font_in_color}}">{{col.colname}}</FONT></TD>
-<TD COLOR="#2c3e50" BGCOLOR="{{col.out_color}}" ALIGN="LEFT" PORT="{{col.colname}}_out"><FONT COLOR="{{col.font_out_color}}"><I>{{col.sqltype}}</I></FONT></TD>
-</TR>
-{% endfor %}
-</TABLE></FONT>>
