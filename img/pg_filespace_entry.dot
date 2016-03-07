@@ -1,0 +1,82 @@
+digraph GPDB {
+
+    label="Greenplum System Catalog: pg_filespace_entry";
+    labelloc="t";
+    fontname="Helvetica"
+    fontsize=32
+    
+
+    pad=0.5;
+    nodesep=0.5;
+    ranksep=0.5;
+    rankdir=LR;
+    node [shape = "plaintext"];
+
+    
+    subgraph cluster_from {
+        rankdir=TB
+        style=invis;
+
+        
+    }
+    
+    subgraph cluster_selected {
+        rankdir=TB
+        style=invis;
+
+        
+            pg_filespace_entry [label = <<FONT FACE="monospace"><TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4">
+<TR><TD BGCOLOR="#2c3e50" ALIGN="CENTER" COLSPAN="2"><FONT COLOR="#FFFFFF" POINT-SIZE="18"><B>pg_filespace_entry</B></FONT></TD></TR>
+
+<TR>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="fsefsoid_in"><FONT COLOR="#000000">fsefsoid</FONT></TD>
+<TD COLOR="#2c3e50" BGCOLOR="#18bc9c" ALIGN="LEFT" PORT="fsefsoid_out"><FONT COLOR="#FFFFFF"><I>oid</I></FONT></TD>
+</TR>
+
+<TR>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="fsedbid_in"><FONT COLOR="#000000">fsedbid</FONT></TD>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="fsedbid_out"><FONT COLOR="#95a5a6"><I>smallint</I></FONT></TD>
+</TR>
+
+<TR>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="fselocation_in"><FONT COLOR="#000000">fselocation</FONT></TD>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="fselocation_out"><FONT COLOR="#95a5a6"><I>text</I></FONT></TD>
+</TR>
+
+</TABLE></FONT>> name = "pg_filespace_entry"];
+        
+    }
+    
+    subgraph cluster_to {
+        rankdir=TB
+        style=invis;
+
+        
+            pg_filespace [label = <<FONT FACE="monospace"><TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4">
+<TR><TD BGCOLOR="#2c3e50" ALIGN="CENTER" COLSPAN="2"><FONT COLOR="#FFFFFF" POINT-SIZE="18"><B>pg_filespace</B></FONT></TD></TR>
+
+<TR>
+<TD COLOR="#2c3e50" BGCOLOR="#18bc9c" ALIGN="LEFT" PORT="oid_in"><FONT COLOR="#FFFFFF">oid</FONT></TD>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="oid_out"><FONT COLOR="#95a5a6"><I>oid</I></FONT></TD>
+</TR>
+
+<TR>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="fsname_in"><FONT COLOR="#000000">fsname</FONT></TD>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="fsname_out"><FONT COLOR="#95a5a6"><I>name</I></FONT></TD>
+</TR>
+
+<TR>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="fsowner_in"><FONT COLOR="#000000">fsowner</FONT></TD>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="fsowner_out"><FONT COLOR="#95a5a6"><I>oid</I></FONT></TD>
+</TR>
+
+</TABLE></FONT>> name = "pg_filespace"];
+        
+    }
+    
+
+    
+        pg_filespace_entry:fsefsoid_out -> pg_filespace:oid_in [penwidth = 1 color = "#2c3e50"];
+    
+
+}

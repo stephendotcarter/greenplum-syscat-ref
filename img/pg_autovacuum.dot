@@ -1,0 +1,95 @@
+digraph GPDB {
+
+    label="Greenplum System Catalog: pg_autovacuum";
+    labelloc="t";
+    fontname="Helvetica"
+    fontsize=32
+    
+
+    pad=0.5;
+    nodesep=0.5;
+    ranksep=0.5;
+    rankdir=LR;
+    node [shape = "plaintext"];
+
+    
+    subgraph cluster_from {
+        rankdir=TB
+        style=invis;
+
+        
+    }
+    
+    subgraph cluster_selected {
+        rankdir=TB
+        style=invis;
+
+        
+            pg_autovacuum [label = <<FONT FACE="monospace"><TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4">
+<TR><TD BGCOLOR="#2c3e50" ALIGN="CENTER" COLSPAN="2"><FONT COLOR="#FFFFFF" POINT-SIZE="18"><B>pg_autovacuum</B></FONT></TD></TR>
+
+<TR>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="vacrelid_in"><FONT COLOR="#000000">vacrelid</FONT></TD>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="vacrelid_out"><FONT COLOR="#95a5a6"><I>oid</I></FONT></TD>
+</TR>
+
+<TR>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="enabled_in"><FONT COLOR="#000000">enabled</FONT></TD>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="enabled_out"><FONT COLOR="#95a5a6"><I>boolean</I></FONT></TD>
+</TR>
+
+<TR>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="vac_base_thresh_in"><FONT COLOR="#000000">vac_base_thresh</FONT></TD>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="vac_base_thresh_out"><FONT COLOR="#95a5a6"><I>integer</I></FONT></TD>
+</TR>
+
+<TR>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="vac_scale_factor_in"><FONT COLOR="#000000">vac_scale_factor</FONT></TD>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="vac_scale_factor_out"><FONT COLOR="#95a5a6"><I>real</I></FONT></TD>
+</TR>
+
+<TR>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="anl_base_thresh_in"><FONT COLOR="#000000">anl_base_thresh</FONT></TD>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="anl_base_thresh_out"><FONT COLOR="#95a5a6"><I>integer</I></FONT></TD>
+</TR>
+
+<TR>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="anl_scale_factor_in"><FONT COLOR="#000000">anl_scale_factor</FONT></TD>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="anl_scale_factor_out"><FONT COLOR="#95a5a6"><I>real</I></FONT></TD>
+</TR>
+
+<TR>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="vac_cost_delay_in"><FONT COLOR="#000000">vac_cost_delay</FONT></TD>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="vac_cost_delay_out"><FONT COLOR="#95a5a6"><I>integer</I></FONT></TD>
+</TR>
+
+<TR>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="vac_cost_limit_in"><FONT COLOR="#000000">vac_cost_limit</FONT></TD>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="vac_cost_limit_out"><FONT COLOR="#95a5a6"><I>integer</I></FONT></TD>
+</TR>
+
+<TR>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="freeze_min_age_in"><FONT COLOR="#000000">freeze_min_age</FONT></TD>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="freeze_min_age_out"><FONT COLOR="#95a5a6"><I>integer</I></FONT></TD>
+</TR>
+
+<TR>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="freeze_max_age_in"><FONT COLOR="#000000">freeze_max_age</FONT></TD>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="freeze_max_age_out"><FONT COLOR="#95a5a6"><I>integer</I></FONT></TD>
+</TR>
+
+</TABLE></FONT>> name = "pg_autovacuum"];
+        
+    }
+    
+    subgraph cluster_to {
+        rankdir=TB
+        style=invis;
+
+        
+    }
+    
+
+    
+
+}
