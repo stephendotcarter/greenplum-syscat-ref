@@ -1,6 +1,9 @@
 # greenplum-syscat-ref
 Greenplum System Catalog Reference
 
+View the generated content:
+- http://stephendotcarter.github.io/greenplum-syscat-ref
+
 ## Introduction
 This code can be used to generate HTML docs and diagrams of the Greenplum system catalog tables.
 The content is generated based on the catalog JSON files found here:
