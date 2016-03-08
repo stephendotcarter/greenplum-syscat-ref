@@ -11,31 +11,46 @@
         width: auto !important;
       }
       body{
-        padding-bottom: 40px;
+        padding-bottom: 20px;
       }
       a{
         text-decoration: none !important;
+      }
+      .dependencyWheel {
+        font: 10px arial;
       }
     </style>
   </head>
 
   <body>
+
+  <a name="top"></a>
+
+  <nav class="navbar navbar-default navbar-static-top">
+    <div class="container">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">Greenplum System Catalog Reference</a>
+      </div>
+      <div id="navbar" class="collapse navbar-collapse">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="/index.html">Relations</a></li>
+          <li><a href="/diagram.html">Diagrams</a></li>
+        </ul>
+      </div><!--/.nav-collapse -->
+    </div>
+  </nav>
+
   <div class="container-fluid">
     <div class="row">
       <div class="col-xs-12">
-        <a name="top"></a>
-
-        <h1>Greenplum System Catalog Reference</h1>
-
-        <hr>
-
+        
+        <h1>Introduction</h1>
         <p>Built from the following configuration files:
         <ul>
           <li><a href="https://github.com/greenplum-db/gpdb/tree/master/gpMgmt/bin/gppylib/data/">https://github.com/greenplum-db/gpdb/tree/master/gpMgmt/bin/gppylib/data</a></li>
         </ul>
         </p>
 
-        <hr>
         <!--<p>Choose the catalog version:</p>
         <div class="btn-toolbar">
           <div class="btn-group" repeat.for="catalogConfig of catalogConfigs">
@@ -173,11 +188,8 @@
           </tbody>
         </table>
 
-        <hr>
-
         <h1>Relations</h1>
 
-        
         <div repeat.for="relation of " style="font-family: Monospace">
 
           <a name="gp_configuration"></a>
@@ -9117,10 +9129,22 @@
         </div>
         
 
-        <hr>
+        
         <a href="#top">Back to top</a>
       </div>
     </div>
+    
+    <hr>
+    
+    <div class="row">
+        <div class="col-xs-6">
+            Created by Stephen Carter (<a href="mailto:scarter@pivotal.io">scarter@pivotal.io</a>)
+        </div>
+        <div class="col-xs-6 text-right">
+            Last updated: 2016-02-17
+        </div>
+    </div>
+
   </div>
   </body>
 </html>
