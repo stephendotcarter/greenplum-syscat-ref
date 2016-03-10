@@ -14,6 +14,7 @@
 </g>
 <!-- pg_largeobject -->
 <g id="node1" class="node"><title>pg_largeobject</title>
+<g id="a_node1"><a xlink:href="pg_largeobject.svg" xlink:title="&lt;TABLE&gt;">
 <polygon fill="#2c3e50" stroke="none" points="241,-95 241,-125 399,-125 399,-95 241,-95"/>
 <polygon fill="none" stroke="black" points="241,-95 241,-125 399,-125 399,-95 241,-95"/>
 <text text-anchor="start" x="246" y="-106.6" font-family="monospace" font-weight="bold" font-size="18.00" fill="#ffffff">pg_largeobject</text>
@@ -35,6 +36,8 @@
 <polygon fill="#ffffff" stroke="none" points="316,-20 316,-45 399,-45 399,-20 316,-20"/>
 <polygon fill="none" stroke="#2c3e50" points="316,-20 316,-45 399,-45 399,-20 316,-20"/>
 <text text-anchor="start" x="321" y="-29.8" font-family="monospace" font-style="italic" font-size="14.00" fill="#95a5a6">bytea</text>
+</a>
+</g>
 </g>
 </g>
 </svg>

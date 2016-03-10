@@ -14,6 +14,7 @@
 </g>
 <!-- gp_global_sequence -->
 <g id="node1" class="node"><title>gp_global_sequence</title>
+<g id="a_node1"><a xlink:href="gp_global_sequence.svg" xlink:title="&lt;TABLE&gt;">
 <polygon fill="#2c3e50" stroke="none" points="263,-45 263,-75 463,-75 463,-45 263,-45"/>
 <polygon fill="none" stroke="black" points="263,-45 263,-75 463,-75 463,-45 263,-45"/>
 <text text-anchor="start" x="268" y="-56.6" font-family="monospace" font-weight="bold" font-size="18.00" fill="#ffffff">gp_global_sequence</text>
@@ -23,6 +24,8 @@
 <polygon fill="#ffffff" stroke="none" points="388,-20 388,-45 463,-45 463,-20 388,-20"/>
 <polygon fill="none" stroke="#2c3e50" points="388,-20 388,-45 463,-45 463,-20 388,-20"/>
 <text text-anchor="start" x="393" y="-29.8" font-family="monospace" font-style="italic" font-size="14.00" fill="#95a5a6">bigint</text>
+</a>
+</g>
 </g>
 </g>
 </svg>

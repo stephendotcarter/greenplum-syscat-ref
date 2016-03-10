@@ -51,7 +51,7 @@ digraph GPDB {
 <TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="deptype_out"><FONT COLOR="#95a5a6"><I>quoted_char</I></FONT></TD>
 </TR>
 
-</TABLE></FONT>> name = "pg_shdepend"];
+</TABLE></FONT>> name = "pg_shdepend" URL = "pg_shdepend.svg"];
         
     }
     
@@ -123,7 +123,7 @@ digraph GPDB {
 <TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="datacl_out"><FONT COLOR="#95a5a6"><I>aclitem[]</I></FONT></TD>
 </TR>
 
-</TABLE></FONT>> name = "pg_database"];
+</TABLE></FONT>> name = "pg_database" URL = "pg_database.svg"];
         
     }
     
@@ -131,6 +131,51 @@ digraph GPDB {
         rankdir=TB
         style=invis;
 
+        
+            pg_tablespace [label = <<FONT FACE="monospace"><TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4">
+<TR><TD BGCOLOR="#2c3e50" ALIGN="CENTER" COLSPAN="2"><FONT COLOR="#FFFFFF" POINT-SIZE="18"><B>pg_tablespace</B></FONT></TD></TR>
+
+<TR>
+<TD COLOR="#2c3e50" BGCOLOR="#18bc9c" ALIGN="LEFT" PORT="oid_in"><FONT COLOR="#FFFFFF">oid</FONT></TD>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="oid_out"><FONT COLOR="#95a5a6"><I>oid</I></FONT></TD>
+</TR>
+
+<TR>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="spcname_in"><FONT COLOR="#000000">spcname</FONT></TD>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="spcname_out"><FONT COLOR="#95a5a6"><I>name</I></FONT></TD>
+</TR>
+
+<TR>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="spcowner_in"><FONT COLOR="#000000">spcowner</FONT></TD>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="spcowner_out"><FONT COLOR="#95a5a6"><I>oid</I></FONT></TD>
+</TR>
+
+<TR>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="spclocation_in"><FONT COLOR="#000000">spclocation</FONT></TD>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="spclocation_out"><FONT COLOR="#95a5a6"><I>text</I></FONT></TD>
+</TR>
+
+<TR>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="spcacl_in"><FONT COLOR="#000000">spcacl</FONT></TD>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="spcacl_out"><FONT COLOR="#95a5a6"><I>aclitem[]</I></FONT></TD>
+</TR>
+
+<TR>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="spcprilocations_in"><FONT COLOR="#000000">spcprilocations</FONT></TD>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="spcprilocations_out"><FONT COLOR="#95a5a6"><I>text[]</I></FONT></TD>
+</TR>
+
+<TR>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="spcmirlocations_in"><FONT COLOR="#000000">spcmirlocations</FONT></TD>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="spcmirlocations_out"><FONT COLOR="#95a5a6"><I>text[]</I></FONT></TD>
+</TR>
+
+<TR>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="spcfsoid_in"><FONT COLOR="#000000">spcfsoid</FONT></TD>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="spcfsoid_out"><FONT COLOR="#95a5a6"><I>oid</I></FONT></TD>
+</TR>
+
+</TABLE></FONT>> name = "pg_tablespace" URL = "pg_tablespace.svg"];
         
             pg_authid [label = <<FONT FACE="monospace"><TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4">
 <TR><TD BGCOLOR="#2c3e50" ALIGN="CENTER" COLSPAN="2"><FONT COLOR="#FFFFFF" POINT-SIZE="18"><B>pg_authid</B></FONT></TD></TR>
@@ -225,52 +270,7 @@ digraph GPDB {
 <TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="rolcreatewexthdfs_out"><FONT COLOR="#95a5a6"><I>boolean</I></FONT></TD>
 </TR>
 
-</TABLE></FONT>> name = "pg_authid"];
-        
-            pg_tablespace [label = <<FONT FACE="monospace"><TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4">
-<TR><TD BGCOLOR="#2c3e50" ALIGN="CENTER" COLSPAN="2"><FONT COLOR="#FFFFFF" POINT-SIZE="18"><B>pg_tablespace</B></FONT></TD></TR>
-
-<TR>
-<TD COLOR="#2c3e50" BGCOLOR="#18bc9c" ALIGN="LEFT" PORT="oid_in"><FONT COLOR="#FFFFFF">oid</FONT></TD>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="oid_out"><FONT COLOR="#95a5a6"><I>oid</I></FONT></TD>
-</TR>
-
-<TR>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="spcname_in"><FONT COLOR="#000000">spcname</FONT></TD>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="spcname_out"><FONT COLOR="#95a5a6"><I>name</I></FONT></TD>
-</TR>
-
-<TR>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="spcowner_in"><FONT COLOR="#000000">spcowner</FONT></TD>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="spcowner_out"><FONT COLOR="#95a5a6"><I>oid</I></FONT></TD>
-</TR>
-
-<TR>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="spclocation_in"><FONT COLOR="#000000">spclocation</FONT></TD>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="spclocation_out"><FONT COLOR="#95a5a6"><I>text</I></FONT></TD>
-</TR>
-
-<TR>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="spcacl_in"><FONT COLOR="#000000">spcacl</FONT></TD>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="spcacl_out"><FONT COLOR="#95a5a6"><I>aclitem[]</I></FONT></TD>
-</TR>
-
-<TR>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="spcprilocations_in"><FONT COLOR="#000000">spcprilocations</FONT></TD>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="spcprilocations_out"><FONT COLOR="#95a5a6"><I>text[]</I></FONT></TD>
-</TR>
-
-<TR>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="spcmirlocations_in"><FONT COLOR="#000000">spcmirlocations</FONT></TD>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="spcmirlocations_out"><FONT COLOR="#95a5a6"><I>text[]</I></FONT></TD>
-</TR>
-
-<TR>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="spcfsoid_in"><FONT COLOR="#000000">spcfsoid</FONT></TD>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="spcfsoid_out"><FONT COLOR="#95a5a6"><I>oid</I></FONT></TD>
-</TR>
-
-</TABLE></FONT>> name = "pg_tablespace"];
+</TABLE></FONT>> name = "pg_authid" URL = "pg_authid.svg"];
         
     }
     

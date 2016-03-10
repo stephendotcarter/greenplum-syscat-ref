@@ -16,6 +16,7 @@
 </g>
 <!-- pg_resqueuecapability -->
 <g id="node1" class="node"><title>pg_resqueuecapability</title>
+<g id="a_node1"><a xlink:href="pg_resqueuecapability.svg" xlink:title="&lt;TABLE&gt;">
 <polygon fill="#2c3e50" stroke="none" points="218.5,-221 218.5,-251 449.5,-251 449.5,-221 218.5,-221"/>
 <polygon fill="none" stroke="black" points="218.5,-221 218.5,-251 449.5,-251 449.5,-221 218.5,-221"/>
 <text text-anchor="start" x="223.5" y="-232.6" font-family="monospace" font-weight="bold" font-size="18.00" fill="#ffffff">pg_resqueuecapability</text>
@@ -43,9 +44,12 @@
 <polygon fill="#ffffff" stroke="none" points="341.5,-121 341.5,-146 449.5,-146 449.5,-121 341.5,-121"/>
 <polygon fill="none" stroke="#2c3e50" points="341.5,-121 341.5,-146 449.5,-146 449.5,-121 341.5,-121"/>
 <text text-anchor="start" x="346.5" y="-130.8" font-family="monospace" font-style="italic" font-size="14.00" fill="#95a5a6">text</text>
+</a>
+</g>
 </g>
 <!-- pg_resourcetype -->
 <g id="node2" class="node"><title>pg_resourcetype</title>
+<g id="a_node2"><a xlink:href="pg_resourcetype.svg" xlink:title="&lt;TABLE&gt;">
 <polygon fill="#2c3e50" stroke="none" points="904,-220 904,-250 1140,-250 1140,-220 904,-220"/>
 <polygon fill="none" stroke="black" points="904,-220 904,-250 1140,-250 1140,-220 904,-220"/>
 <text text-anchor="start" x="943" y="-231.6" font-family="monospace" font-weight="bold" font-size="18.00" fill="#ffffff">pg_resourcetype</text>
@@ -97,6 +101,8 @@
 <polygon fill="#ffffff" stroke="none" points="1063,-20 1063,-45 1140,-45 1140,-20 1063,-20"/>
 <polygon fill="none" stroke="#2c3e50" points="1063,-20 1063,-45 1140,-45 1140,-20 1063,-20"/>
 <text text-anchor="start" x="1068" y="-29.8" font-family="monospace" font-style="italic" font-size="14.00" fill="#95a5a6">text</text>
+</a>
+</g>
 </g>
 <!-- pg_resqueuecapability&#45;&gt;pg_resourcetype -->
 <g id="edge1" class="edge"><title>pg_resqueuecapability:restypid_out&#45;&gt;pg_resourcetype:restypid_in</title>

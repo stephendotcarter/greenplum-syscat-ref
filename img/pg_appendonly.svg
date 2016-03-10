@@ -16,6 +16,7 @@
 </g>
 <!-- pg_appendonly -->
 <g id="node1" class="node"><title>pg_appendonly</title>
+<g id="a_node1"><a xlink:href="pg_appendonly.svg" xlink:title="&lt;TABLE&gt;">
 <polygon fill="#2c3e50" stroke="none" points="219.5,-795 219.5,-825 430.5,-825 430.5,-795 219.5,-795"/>
 <polygon fill="none" stroke="black" points="219.5,-795 219.5,-825 430.5,-825 430.5,-795 219.5,-795"/>
 <text text-anchor="start" x="256.5" y="-806.6" font-family="monospace" font-weight="bold" font-size="18.00" fill="#ffffff">pg_appendonly</text>
@@ -115,9 +116,12 @@
 <polygon fill="#ffffff" stroke="none" points="353.5,-395 353.5,-420 430.5,-420 430.5,-395 353.5,-395"/>
 <polygon fill="none" stroke="#2c3e50" points="353.5,-395 353.5,-420 430.5,-420 430.5,-395 353.5,-395"/>
 <text text-anchor="start" x="358.5" y="-404.8" font-family="monospace" font-style="italic" font-size="14.00" fill="#95a5a6">oid</text>
+</a>
+</g>
 </g>
 <!-- pg_class -->
 <g id="node2" class="node"><title>pg_class</title>
+<g id="a_node2"><a xlink:href="pg_class.svg" xlink:title="&lt;TABLE&gt;">
 <polygon fill="#2c3e50" stroke="none" points="881.5,-795 881.5,-825 1108.5,-825 1108.5,-795 881.5,-795"/>
 <polygon fill="none" stroke="black" points="881.5,-795 881.5,-825 1108.5,-825 1108.5,-795 881.5,-795"/>
 <text text-anchor="start" x="952.5" y="-806.6" font-family="monospace" font-weight="bold" font-size="18.00" fill="#ffffff">pg_class</text>
@@ -307,6 +311,8 @@
 <polygon fill="#ffffff" stroke="none" points="1007.5,-20 1007.5,-45 1108.5,-45 1108.5,-20 1007.5,-20"/>
 <polygon fill="none" stroke="#2c3e50" points="1007.5,-20 1007.5,-45 1108.5,-45 1108.5,-20 1007.5,-20"/>
 <text text-anchor="start" x="1012.5" y="-29.8" font-family="monospace" font-style="italic" font-size="14.00" fill="#95a5a6">text[]</text>
+</a>
+</g>
 </g>
 <!-- pg_appendonly&#45;&gt;pg_class -->
 <g id="edge1" class="edge"><title>pg_appendonly:relid_out&#45;&gt;pg_class:oid_in</title>

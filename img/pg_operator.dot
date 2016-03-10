@@ -18,60 +18,35 @@ digraph GPDB {
         style=invis;
 
         
-            pg_aggregate [label = <<FONT FACE="monospace"><TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4">
-<TR><TD BGCOLOR="#2c3e50" ALIGN="CENTER" COLSPAN="2"><FONT COLOR="#FFFFFF" POINT-SIZE="18"><B>pg_aggregate</B></FONT></TD></TR>
+            pg_amop [label = <<FONT FACE="monospace"><TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4">
+<TR><TD BGCOLOR="#2c3e50" ALIGN="CENTER" COLSPAN="2"><FONT COLOR="#FFFFFF" POINT-SIZE="18"><B>pg_amop</B></FONT></TD></TR>
 
 <TR>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="aggfnoid_in"><FONT COLOR="#000000">aggfnoid</FONT></TD>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="aggfnoid_out"><FONT COLOR="#95a5a6"><I>regproc</I></FONT></TD>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="amopclaid_in"><FONT COLOR="#000000">amopclaid</FONT></TD>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="amopclaid_out"><FONT COLOR="#95a5a6"><I>oid</I></FONT></TD>
 </TR>
 
 <TR>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="aggtransfn_in"><FONT COLOR="#000000">aggtransfn</FONT></TD>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="aggtransfn_out"><FONT COLOR="#95a5a6"><I>regproc</I></FONT></TD>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="amopsubtype_in"><FONT COLOR="#000000">amopsubtype</FONT></TD>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="amopsubtype_out"><FONT COLOR="#95a5a6"><I>oid</I></FONT></TD>
 </TR>
 
 <TR>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="agginvtransfn_in"><FONT COLOR="#000000">agginvtransfn</FONT></TD>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="agginvtransfn_out"><FONT COLOR="#95a5a6"><I>regproc</I></FONT></TD>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="amopstrategy_in"><FONT COLOR="#000000">amopstrategy</FONT></TD>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="amopstrategy_out"><FONT COLOR="#95a5a6"><I>smallint</I></FONT></TD>
 </TR>
 
 <TR>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="aggprelimfn_in"><FONT COLOR="#000000">aggprelimfn</FONT></TD>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="aggprelimfn_out"><FONT COLOR="#95a5a6"><I>regproc</I></FONT></TD>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="amopreqcheck_in"><FONT COLOR="#000000">amopreqcheck</FONT></TD>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="amopreqcheck_out"><FONT COLOR="#95a5a6"><I>boolean</I></FONT></TD>
 </TR>
 
 <TR>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="agginvprelimfn_in"><FONT COLOR="#000000">agginvprelimfn</FONT></TD>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="agginvprelimfn_out"><FONT COLOR="#95a5a6"><I>regproc</I></FONT></TD>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="amopopr_in"><FONT COLOR="#000000">amopopr</FONT></TD>
+<TD COLOR="#2c3e50" BGCOLOR="#18bc9c" ALIGN="LEFT" PORT="amopopr_out"><FONT COLOR="#FFFFFF"><I>oid</I></FONT></TD>
 </TR>
 
-<TR>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="aggfinalfn_in"><FONT COLOR="#000000">aggfinalfn</FONT></TD>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="aggfinalfn_out"><FONT COLOR="#95a5a6"><I>regproc</I></FONT></TD>
-</TR>
-
-<TR>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="aggsortop_in"><FONT COLOR="#000000">aggsortop</FONT></TD>
-<TD COLOR="#2c3e50" BGCOLOR="#18bc9c" ALIGN="LEFT" PORT="aggsortop_out"><FONT COLOR="#FFFFFF"><I>oid</I></FONT></TD>
-</TR>
-
-<TR>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="aggtranstype_in"><FONT COLOR="#000000">aggtranstype</FONT></TD>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="aggtranstype_out"><FONT COLOR="#95a5a6"><I>oid</I></FONT></TD>
-</TR>
-
-<TR>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="agginitval_in"><FONT COLOR="#000000">agginitval</FONT></TD>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="agginitval_out"><FONT COLOR="#95a5a6"><I>text</I></FONT></TD>
-</TR>
-
-<TR>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="aggordered_in"><FONT COLOR="#000000">aggordered</FONT></TD>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="aggordered_out"><FONT COLOR="#95a5a6"><I>bool</I></FONT></TD>
-</TR>
-
-</TABLE></FONT>> name = "pg_aggregate"];
+</TABLE></FONT>> name = "pg_amop" URL = "pg_amop.svg"];
         
             pg_statistic [label = <<FONT FACE="monospace"><TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4">
 <TR><TD BGCOLOR="#2c3e50" ALIGN="CENTER" COLSPAN="2"><FONT COLOR="#FFFFFF" POINT-SIZE="18"><B>pg_statistic</B></FONT></TD></TR>
@@ -181,37 +156,62 @@ digraph GPDB {
 <TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="stavalues4_out"><FONT COLOR="#95a5a6"><I>text</I></FONT></TD>
 </TR>
 
-</TABLE></FONT>> name = "pg_statistic"];
+</TABLE></FONT>> name = "pg_statistic" URL = "pg_statistic.svg"];
         
-            pg_amop [label = <<FONT FACE="monospace"><TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4">
-<TR><TD BGCOLOR="#2c3e50" ALIGN="CENTER" COLSPAN="2"><FONT COLOR="#FFFFFF" POINT-SIZE="18"><B>pg_amop</B></FONT></TD></TR>
+            pg_aggregate [label = <<FONT FACE="monospace"><TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4">
+<TR><TD BGCOLOR="#2c3e50" ALIGN="CENTER" COLSPAN="2"><FONT COLOR="#FFFFFF" POINT-SIZE="18"><B>pg_aggregate</B></FONT></TD></TR>
 
 <TR>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="amopclaid_in"><FONT COLOR="#000000">amopclaid</FONT></TD>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="amopclaid_out"><FONT COLOR="#95a5a6"><I>oid</I></FONT></TD>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="aggfnoid_in"><FONT COLOR="#000000">aggfnoid</FONT></TD>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="aggfnoid_out"><FONT COLOR="#95a5a6"><I>regproc</I></FONT></TD>
 </TR>
 
 <TR>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="amopsubtype_in"><FONT COLOR="#000000">amopsubtype</FONT></TD>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="amopsubtype_out"><FONT COLOR="#95a5a6"><I>oid</I></FONT></TD>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="aggtransfn_in"><FONT COLOR="#000000">aggtransfn</FONT></TD>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="aggtransfn_out"><FONT COLOR="#95a5a6"><I>regproc</I></FONT></TD>
 </TR>
 
 <TR>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="amopstrategy_in"><FONT COLOR="#000000">amopstrategy</FONT></TD>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="amopstrategy_out"><FONT COLOR="#95a5a6"><I>smallint</I></FONT></TD>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="agginvtransfn_in"><FONT COLOR="#000000">agginvtransfn</FONT></TD>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="agginvtransfn_out"><FONT COLOR="#95a5a6"><I>regproc</I></FONT></TD>
 </TR>
 
 <TR>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="amopreqcheck_in"><FONT COLOR="#000000">amopreqcheck</FONT></TD>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="amopreqcheck_out"><FONT COLOR="#95a5a6"><I>boolean</I></FONT></TD>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="aggprelimfn_in"><FONT COLOR="#000000">aggprelimfn</FONT></TD>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="aggprelimfn_out"><FONT COLOR="#95a5a6"><I>regproc</I></FONT></TD>
 </TR>
 
 <TR>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="amopopr_in"><FONT COLOR="#000000">amopopr</FONT></TD>
-<TD COLOR="#2c3e50" BGCOLOR="#18bc9c" ALIGN="LEFT" PORT="amopopr_out"><FONT COLOR="#FFFFFF"><I>oid</I></FONT></TD>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="agginvprelimfn_in"><FONT COLOR="#000000">agginvprelimfn</FONT></TD>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="agginvprelimfn_out"><FONT COLOR="#95a5a6"><I>regproc</I></FONT></TD>
 </TR>
 
-</TABLE></FONT>> name = "pg_amop"];
+<TR>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="aggfinalfn_in"><FONT COLOR="#000000">aggfinalfn</FONT></TD>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="aggfinalfn_out"><FONT COLOR="#95a5a6"><I>regproc</I></FONT></TD>
+</TR>
+
+<TR>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="aggsortop_in"><FONT COLOR="#000000">aggsortop</FONT></TD>
+<TD COLOR="#2c3e50" BGCOLOR="#18bc9c" ALIGN="LEFT" PORT="aggsortop_out"><FONT COLOR="#FFFFFF"><I>oid</I></FONT></TD>
+</TR>
+
+<TR>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="aggtranstype_in"><FONT COLOR="#000000">aggtranstype</FONT></TD>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="aggtranstype_out"><FONT COLOR="#95a5a6"><I>oid</I></FONT></TD>
+</TR>
+
+<TR>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="agginitval_in"><FONT COLOR="#000000">agginitval</FONT></TD>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="agginitval_out"><FONT COLOR="#95a5a6"><I>text</I></FONT></TD>
+</TR>
+
+<TR>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="aggordered_in"><FONT COLOR="#000000">aggordered</FONT></TD>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="aggordered_out"><FONT COLOR="#95a5a6"><I>bool</I></FONT></TD>
+</TR>
+
+</TABLE></FONT>> name = "pg_aggregate" URL = "pg_aggregate.svg"];
         
     }
     
@@ -313,7 +313,7 @@ digraph GPDB {
 <TD COLOR="#2c3e50" BGCOLOR="#18bc9c" ALIGN="LEFT" PORT="oprjoin_out"><FONT COLOR="#FFFFFF"><I>regproc</I></FONT></TD>
 </TR>
 
-</TABLE></FONT>> name = "pg_operator"];
+</TABLE></FONT>> name = "pg_operator" URL = "pg_operator.svg"];
         
     }
     
@@ -321,6 +321,216 @@ digraph GPDB {
         rankdir=TB
         style=invis;
 
+        
+            pg_operator [label = <<FONT FACE="monospace"><TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4">
+<TR><TD BGCOLOR="#2c3e50" ALIGN="CENTER" COLSPAN="2"><FONT COLOR="#FFFFFF" POINT-SIZE="18"><B>pg_operator</B></FONT></TD></TR>
+
+<TR>
+<TD COLOR="#2c3e50" BGCOLOR="#18bc9c" ALIGN="LEFT" PORT="oid_in"><FONT COLOR="#FFFFFF">oid</FONT></TD>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="oid_out"><FONT COLOR="#95a5a6"><I>oid</I></FONT></TD>
+</TR>
+
+<TR>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="oprname_in"><FONT COLOR="#000000">oprname</FONT></TD>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="oprname_out"><FONT COLOR="#95a5a6"><I>name</I></FONT></TD>
+</TR>
+
+<TR>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="oprnamespace_in"><FONT COLOR="#000000">oprnamespace</FONT></TD>
+<TD COLOR="#2c3e50" BGCOLOR="#18bc9c" ALIGN="LEFT" PORT="oprnamespace_out"><FONT COLOR="#FFFFFF"><I>oid</I></FONT></TD>
+</TR>
+
+<TR>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="oprowner_in"><FONT COLOR="#000000">oprowner</FONT></TD>
+<TD COLOR="#2c3e50" BGCOLOR="#18bc9c" ALIGN="LEFT" PORT="oprowner_out"><FONT COLOR="#FFFFFF"><I>oid</I></FONT></TD>
+</TR>
+
+<TR>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="oprkind_in"><FONT COLOR="#000000">oprkind</FONT></TD>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="oprkind_out"><FONT COLOR="#95a5a6"><I>quoted_char</I></FONT></TD>
+</TR>
+
+<TR>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="oprcanhash_in"><FONT COLOR="#000000">oprcanhash</FONT></TD>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="oprcanhash_out"><FONT COLOR="#95a5a6"><I>boolean</I></FONT></TD>
+</TR>
+
+<TR>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="oprleft_in"><FONT COLOR="#000000">oprleft</FONT></TD>
+<TD COLOR="#2c3e50" BGCOLOR="#18bc9c" ALIGN="LEFT" PORT="oprleft_out"><FONT COLOR="#FFFFFF"><I>oid</I></FONT></TD>
+</TR>
+
+<TR>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="oprright_in"><FONT COLOR="#000000">oprright</FONT></TD>
+<TD COLOR="#2c3e50" BGCOLOR="#18bc9c" ALIGN="LEFT" PORT="oprright_out"><FONT COLOR="#FFFFFF"><I>oid</I></FONT></TD>
+</TR>
+
+<TR>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="oprresult_in"><FONT COLOR="#000000">oprresult</FONT></TD>
+<TD COLOR="#2c3e50" BGCOLOR="#18bc9c" ALIGN="LEFT" PORT="oprresult_out"><FONT COLOR="#FFFFFF"><I>oid</I></FONT></TD>
+</TR>
+
+<TR>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="oprcom_in"><FONT COLOR="#000000">oprcom</FONT></TD>
+<TD COLOR="#2c3e50" BGCOLOR="#18bc9c" ALIGN="LEFT" PORT="oprcom_out"><FONT COLOR="#FFFFFF"><I>oid</I></FONT></TD>
+</TR>
+
+<TR>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="oprnegate_in"><FONT COLOR="#000000">oprnegate</FONT></TD>
+<TD COLOR="#2c3e50" BGCOLOR="#18bc9c" ALIGN="LEFT" PORT="oprnegate_out"><FONT COLOR="#FFFFFF"><I>oid</I></FONT></TD>
+</TR>
+
+<TR>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="oprlsortop_in"><FONT COLOR="#000000">oprlsortop</FONT></TD>
+<TD COLOR="#2c3e50" BGCOLOR="#18bc9c" ALIGN="LEFT" PORT="oprlsortop_out"><FONT COLOR="#FFFFFF"><I>oid</I></FONT></TD>
+</TR>
+
+<TR>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="oprrsortop_in"><FONT COLOR="#000000">oprrsortop</FONT></TD>
+<TD COLOR="#2c3e50" BGCOLOR="#18bc9c" ALIGN="LEFT" PORT="oprrsortop_out"><FONT COLOR="#FFFFFF"><I>oid</I></FONT></TD>
+</TR>
+
+<TR>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="oprltcmpop_in"><FONT COLOR="#000000">oprltcmpop</FONT></TD>
+<TD COLOR="#2c3e50" BGCOLOR="#18bc9c" ALIGN="LEFT" PORT="oprltcmpop_out"><FONT COLOR="#FFFFFF"><I>oid</I></FONT></TD>
+</TR>
+
+<TR>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="oprgtcmpop_in"><FONT COLOR="#000000">oprgtcmpop</FONT></TD>
+<TD COLOR="#2c3e50" BGCOLOR="#18bc9c" ALIGN="LEFT" PORT="oprgtcmpop_out"><FONT COLOR="#FFFFFF"><I>oid</I></FONT></TD>
+</TR>
+
+<TR>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="oprcode_in"><FONT COLOR="#000000">oprcode</FONT></TD>
+<TD COLOR="#2c3e50" BGCOLOR="#18bc9c" ALIGN="LEFT" PORT="oprcode_out"><FONT COLOR="#FFFFFF"><I>regproc</I></FONT></TD>
+</TR>
+
+<TR>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="oprrest_in"><FONT COLOR="#000000">oprrest</FONT></TD>
+<TD COLOR="#2c3e50" BGCOLOR="#18bc9c" ALIGN="LEFT" PORT="oprrest_out"><FONT COLOR="#FFFFFF"><I>regproc</I></FONT></TD>
+</TR>
+
+<TR>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="oprjoin_in"><FONT COLOR="#000000">oprjoin</FONT></TD>
+<TD COLOR="#2c3e50" BGCOLOR="#18bc9c" ALIGN="LEFT" PORT="oprjoin_out"><FONT COLOR="#FFFFFF"><I>regproc</I></FONT></TD>
+</TR>
+
+</TABLE></FONT>> name = "pg_operator" URL = "pg_operator.svg"];
+        
+            pg_proc [label = <<FONT FACE="monospace"><TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4">
+<TR><TD BGCOLOR="#2c3e50" ALIGN="CENTER" COLSPAN="2"><FONT COLOR="#FFFFFF" POINT-SIZE="18"><B>pg_proc</B></FONT></TD></TR>
+
+<TR>
+<TD COLOR="#2c3e50" BGCOLOR="#18bc9c" ALIGN="LEFT" PORT="oid_in"><FONT COLOR="#FFFFFF">oid</FONT></TD>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="oid_out"><FONT COLOR="#95a5a6"><I>oid</I></FONT></TD>
+</TR>
+
+<TR>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="proname_in"><FONT COLOR="#000000">proname</FONT></TD>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="proname_out"><FONT COLOR="#95a5a6"><I>name</I></FONT></TD>
+</TR>
+
+<TR>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="pronamespace_in"><FONT COLOR="#000000">pronamespace</FONT></TD>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="pronamespace_out"><FONT COLOR="#95a5a6"><I>oid</I></FONT></TD>
+</TR>
+
+<TR>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="proowner_in"><FONT COLOR="#000000">proowner</FONT></TD>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="proowner_out"><FONT COLOR="#95a5a6"><I>oid</I></FONT></TD>
+</TR>
+
+<TR>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="prolang_in"><FONT COLOR="#000000">prolang</FONT></TD>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="prolang_out"><FONT COLOR="#95a5a6"><I>oid</I></FONT></TD>
+</TR>
+
+<TR>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="proisagg_in"><FONT COLOR="#000000">proisagg</FONT></TD>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="proisagg_out"><FONT COLOR="#95a5a6"><I>boolean</I></FONT></TD>
+</TR>
+
+<TR>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="prosecdef_in"><FONT COLOR="#000000">prosecdef</FONT></TD>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="prosecdef_out"><FONT COLOR="#95a5a6"><I>boolean</I></FONT></TD>
+</TR>
+
+<TR>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="proisstrict_in"><FONT COLOR="#000000">proisstrict</FONT></TD>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="proisstrict_out"><FONT COLOR="#95a5a6"><I>boolean</I></FONT></TD>
+</TR>
+
+<TR>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="proretset_in"><FONT COLOR="#000000">proretset</FONT></TD>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="proretset_out"><FONT COLOR="#95a5a6"><I>boolean</I></FONT></TD>
+</TR>
+
+<TR>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="provolatile_in"><FONT COLOR="#000000">provolatile</FONT></TD>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="provolatile_out"><FONT COLOR="#95a5a6"><I>quoted_char</I></FONT></TD>
+</TR>
+
+<TR>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="pronargs_in"><FONT COLOR="#000000">pronargs</FONT></TD>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="pronargs_out"><FONT COLOR="#95a5a6"><I>smallint</I></FONT></TD>
+</TR>
+
+<TR>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="prorettype_in"><FONT COLOR="#000000">prorettype</FONT></TD>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="prorettype_out"><FONT COLOR="#95a5a6"><I>oid</I></FONT></TD>
+</TR>
+
+<TR>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="proiswin_in"><FONT COLOR="#000000">proiswin</FONT></TD>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="proiswin_out"><FONT COLOR="#95a5a6"><I>boolean</I></FONT></TD>
+</TR>
+
+<TR>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="proargtypes_in"><FONT COLOR="#000000">proargtypes</FONT></TD>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="proargtypes_out"><FONT COLOR="#95a5a6"><I>oidvector</I></FONT></TD>
+</TR>
+
+<TR>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="proallargtypes_in"><FONT COLOR="#000000">proallargtypes</FONT></TD>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="proallargtypes_out"><FONT COLOR="#95a5a6"><I>oid[]</I></FONT></TD>
+</TR>
+
+<TR>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="proargmodes_in"><FONT COLOR="#000000">proargmodes</FONT></TD>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="proargmodes_out"><FONT COLOR="#95a5a6"><I>quoted_char[]</I></FONT></TD>
+</TR>
+
+<TR>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="proargnames_in"><FONT COLOR="#000000">proargnames</FONT></TD>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="proargnames_out"><FONT COLOR="#95a5a6"><I>text[]</I></FONT></TD>
+</TR>
+
+<TR>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="prosrc_in"><FONT COLOR="#000000">prosrc</FONT></TD>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="prosrc_out"><FONT COLOR="#95a5a6"><I>text</I></FONT></TD>
+</TR>
+
+<TR>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="probin_in"><FONT COLOR="#000000">probin</FONT></TD>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="probin_out"><FONT COLOR="#95a5a6"><I>bytea</I></FONT></TD>
+</TR>
+
+<TR>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="proacl_in"><FONT COLOR="#000000">proacl</FONT></TD>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="proacl_out"><FONT COLOR="#95a5a6"><I>aclitem[]</I></FONT></TD>
+</TR>
+
+<TR>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="prodataaccess_in"><FONT COLOR="#000000">prodataaccess</FONT></TD>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="prodataaccess_out"><FONT COLOR="#95a5a6"><I>quoted_char</I></FONT></TD>
+</TR>
+
+<TR>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="provariadic_in"><FONT COLOR="#000000">provariadic</FONT></TD>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="provariadic_out"><FONT COLOR="#95a5a6"><I>oid</I></FONT></TD>
+</TR>
+
+</TABLE></FONT>> name = "pg_proc" URL = "pg_proc.svg"];
         
             pg_namespace [label = <<FONT FACE="monospace"><TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4">
 <TR><TD BGCOLOR="#2c3e50" ALIGN="CENTER" COLSPAN="2"><FONT COLOR="#FFFFFF" POINT-SIZE="18"><B>pg_namespace</B></FONT></TD></TR>
@@ -345,102 +555,7 @@ digraph GPDB {
 <TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="nspacl_out"><FONT COLOR="#95a5a6"><I>aclitem[]</I></FONT></TD>
 </TR>
 
-</TABLE></FONT>> name = "pg_namespace"];
-        
-            pg_authid [label = <<FONT FACE="monospace"><TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4">
-<TR><TD BGCOLOR="#2c3e50" ALIGN="CENTER" COLSPAN="2"><FONT COLOR="#FFFFFF" POINT-SIZE="18"><B>pg_authid</B></FONT></TD></TR>
-
-<TR>
-<TD COLOR="#2c3e50" BGCOLOR="#18bc9c" ALIGN="LEFT" PORT="oid_in"><FONT COLOR="#FFFFFF">oid</FONT></TD>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="oid_out"><FONT COLOR="#95a5a6"><I>oid</I></FONT></TD>
-</TR>
-
-<TR>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="rolname_in"><FONT COLOR="#000000">rolname</FONT></TD>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="rolname_out"><FONT COLOR="#95a5a6"><I>name</I></FONT></TD>
-</TR>
-
-<TR>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="rolsuper_in"><FONT COLOR="#000000">rolsuper</FONT></TD>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="rolsuper_out"><FONT COLOR="#95a5a6"><I>boolean</I></FONT></TD>
-</TR>
-
-<TR>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="rolinherit_in"><FONT COLOR="#000000">rolinherit</FONT></TD>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="rolinherit_out"><FONT COLOR="#95a5a6"><I>boolean</I></FONT></TD>
-</TR>
-
-<TR>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="rolcreaterole_in"><FONT COLOR="#000000">rolcreaterole</FONT></TD>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="rolcreaterole_out"><FONT COLOR="#95a5a6"><I>boolean</I></FONT></TD>
-</TR>
-
-<TR>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="rolcreatedb_in"><FONT COLOR="#000000">rolcreatedb</FONT></TD>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="rolcreatedb_out"><FONT COLOR="#95a5a6"><I>boolean</I></FONT></TD>
-</TR>
-
-<TR>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="rolcatupdate_in"><FONT COLOR="#000000">rolcatupdate</FONT></TD>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="rolcatupdate_out"><FONT COLOR="#95a5a6"><I>boolean</I></FONT></TD>
-</TR>
-
-<TR>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="rolcanlogin_in"><FONT COLOR="#000000">rolcanlogin</FONT></TD>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="rolcanlogin_out"><FONT COLOR="#95a5a6"><I>boolean</I></FONT></TD>
-</TR>
-
-<TR>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="rolconnlimit_in"><FONT COLOR="#000000">rolconnlimit</FONT></TD>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="rolconnlimit_out"><FONT COLOR="#95a5a6"><I>integer</I></FONT></TD>
-</TR>
-
-<TR>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="rolpassword_in"><FONT COLOR="#000000">rolpassword</FONT></TD>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="rolpassword_out"><FONT COLOR="#95a5a6"><I>text</I></FONT></TD>
-</TR>
-
-<TR>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="rolvaliduntil_in"><FONT COLOR="#000000">rolvaliduntil</FONT></TD>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="rolvaliduntil_out"><FONT COLOR="#95a5a6"><I>timestamp_with_time_zone</I></FONT></TD>
-</TR>
-
-<TR>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="rolconfig_in"><FONT COLOR="#000000">rolconfig</FONT></TD>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="rolconfig_out"><FONT COLOR="#95a5a6"><I>text[]</I></FONT></TD>
-</TR>
-
-<TR>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="rolresqueue_in"><FONT COLOR="#000000">rolresqueue</FONT></TD>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="rolresqueue_out"><FONT COLOR="#95a5a6"><I>oid</I></FONT></TD>
-</TR>
-
-<TR>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="rolcreaterextgpfd_in"><FONT COLOR="#000000">rolcreaterextgpfd</FONT></TD>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="rolcreaterextgpfd_out"><FONT COLOR="#95a5a6"><I>boolean</I></FONT></TD>
-</TR>
-
-<TR>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="rolcreaterexthttp_in"><FONT COLOR="#000000">rolcreaterexthttp</FONT></TD>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="rolcreaterexthttp_out"><FONT COLOR="#95a5a6"><I>boolean</I></FONT></TD>
-</TR>
-
-<TR>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="rolcreatewextgpfd_in"><FONT COLOR="#000000">rolcreatewextgpfd</FONT></TD>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="rolcreatewextgpfd_out"><FONT COLOR="#95a5a6"><I>boolean</I></FONT></TD>
-</TR>
-
-<TR>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="rolcreaterexthdfs_in"><FONT COLOR="#000000">rolcreaterexthdfs</FONT></TD>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="rolcreaterexthdfs_out"><FONT COLOR="#95a5a6"><I>boolean</I></FONT></TD>
-</TR>
-
-<TR>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="rolcreatewexthdfs_in"><FONT COLOR="#000000">rolcreatewexthdfs</FONT></TD>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="rolcreatewexthdfs_out"><FONT COLOR="#95a5a6"><I>boolean</I></FONT></TD>
-</TR>
-
-</TABLE></FONT>> name = "pg_authid"];
+</TABLE></FONT>> name = "pg_namespace" URL = "pg_namespace.svg"];
         
             pg_type [label = <<FONT FACE="monospace"><TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4">
 <TR><TD BGCOLOR="#2c3e50" ALIGN="CENTER" COLSPAN="2"><FONT COLOR="#FFFFFF" POINT-SIZE="18"><B>pg_type</B></FONT></TD></TR>
@@ -565,10 +680,10 @@ digraph GPDB {
 <TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="typdefault_out"><FONT COLOR="#95a5a6"><I>text</I></FONT></TD>
 </TR>
 
-</TABLE></FONT>> name = "pg_type"];
+</TABLE></FONT>> name = "pg_type" URL = "pg_type.svg"];
         
-            pg_proc [label = <<FONT FACE="monospace"><TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4">
-<TR><TD BGCOLOR="#2c3e50" ALIGN="CENTER" COLSPAN="2"><FONT COLOR="#FFFFFF" POINT-SIZE="18"><B>pg_proc</B></FONT></TD></TR>
+            pg_authid [label = <<FONT FACE="monospace"><TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4">
+<TR><TD BGCOLOR="#2c3e50" ALIGN="CENTER" COLSPAN="2"><FONT COLOR="#FFFFFF" POINT-SIZE="18"><B>pg_authid</B></FONT></TD></TR>
 
 <TR>
 <TD COLOR="#2c3e50" BGCOLOR="#18bc9c" ALIGN="LEFT" PORT="oid_in"><FONT COLOR="#FFFFFF">oid</FONT></TD>
@@ -576,206 +691,91 @@ digraph GPDB {
 </TR>
 
 <TR>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="proname_in"><FONT COLOR="#000000">proname</FONT></TD>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="proname_out"><FONT COLOR="#95a5a6"><I>name</I></FONT></TD>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="rolname_in"><FONT COLOR="#000000">rolname</FONT></TD>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="rolname_out"><FONT COLOR="#95a5a6"><I>name</I></FONT></TD>
 </TR>
 
 <TR>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="pronamespace_in"><FONT COLOR="#000000">pronamespace</FONT></TD>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="pronamespace_out"><FONT COLOR="#95a5a6"><I>oid</I></FONT></TD>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="rolsuper_in"><FONT COLOR="#000000">rolsuper</FONT></TD>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="rolsuper_out"><FONT COLOR="#95a5a6"><I>boolean</I></FONT></TD>
 </TR>
 
 <TR>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="proowner_in"><FONT COLOR="#000000">proowner</FONT></TD>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="proowner_out"><FONT COLOR="#95a5a6"><I>oid</I></FONT></TD>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="rolinherit_in"><FONT COLOR="#000000">rolinherit</FONT></TD>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="rolinherit_out"><FONT COLOR="#95a5a6"><I>boolean</I></FONT></TD>
 </TR>
 
 <TR>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="prolang_in"><FONT COLOR="#000000">prolang</FONT></TD>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="prolang_out"><FONT COLOR="#95a5a6"><I>oid</I></FONT></TD>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="rolcreaterole_in"><FONT COLOR="#000000">rolcreaterole</FONT></TD>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="rolcreaterole_out"><FONT COLOR="#95a5a6"><I>boolean</I></FONT></TD>
 </TR>
 
 <TR>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="proisagg_in"><FONT COLOR="#000000">proisagg</FONT></TD>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="proisagg_out"><FONT COLOR="#95a5a6"><I>boolean</I></FONT></TD>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="rolcreatedb_in"><FONT COLOR="#000000">rolcreatedb</FONT></TD>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="rolcreatedb_out"><FONT COLOR="#95a5a6"><I>boolean</I></FONT></TD>
 </TR>
 
 <TR>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="prosecdef_in"><FONT COLOR="#000000">prosecdef</FONT></TD>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="prosecdef_out"><FONT COLOR="#95a5a6"><I>boolean</I></FONT></TD>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="rolcatupdate_in"><FONT COLOR="#000000">rolcatupdate</FONT></TD>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="rolcatupdate_out"><FONT COLOR="#95a5a6"><I>boolean</I></FONT></TD>
 </TR>
 
 <TR>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="proisstrict_in"><FONT COLOR="#000000">proisstrict</FONT></TD>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="proisstrict_out"><FONT COLOR="#95a5a6"><I>boolean</I></FONT></TD>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="rolcanlogin_in"><FONT COLOR="#000000">rolcanlogin</FONT></TD>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="rolcanlogin_out"><FONT COLOR="#95a5a6"><I>boolean</I></FONT></TD>
 </TR>
 
 <TR>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="proretset_in"><FONT COLOR="#000000">proretset</FONT></TD>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="proretset_out"><FONT COLOR="#95a5a6"><I>boolean</I></FONT></TD>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="rolconnlimit_in"><FONT COLOR="#000000">rolconnlimit</FONT></TD>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="rolconnlimit_out"><FONT COLOR="#95a5a6"><I>integer</I></FONT></TD>
 </TR>
 
 <TR>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="provolatile_in"><FONT COLOR="#000000">provolatile</FONT></TD>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="provolatile_out"><FONT COLOR="#95a5a6"><I>quoted_char</I></FONT></TD>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="rolpassword_in"><FONT COLOR="#000000">rolpassword</FONT></TD>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="rolpassword_out"><FONT COLOR="#95a5a6"><I>text</I></FONT></TD>
 </TR>
 
 <TR>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="pronargs_in"><FONT COLOR="#000000">pronargs</FONT></TD>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="pronargs_out"><FONT COLOR="#95a5a6"><I>smallint</I></FONT></TD>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="rolvaliduntil_in"><FONT COLOR="#000000">rolvaliduntil</FONT></TD>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="rolvaliduntil_out"><FONT COLOR="#95a5a6"><I>timestamp_with_time_zone</I></FONT></TD>
 </TR>
 
 <TR>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="prorettype_in"><FONT COLOR="#000000">prorettype</FONT></TD>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="prorettype_out"><FONT COLOR="#95a5a6"><I>oid</I></FONT></TD>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="rolconfig_in"><FONT COLOR="#000000">rolconfig</FONT></TD>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="rolconfig_out"><FONT COLOR="#95a5a6"><I>text[]</I></FONT></TD>
 </TR>
 
 <TR>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="proiswin_in"><FONT COLOR="#000000">proiswin</FONT></TD>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="proiswin_out"><FONT COLOR="#95a5a6"><I>boolean</I></FONT></TD>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="rolresqueue_in"><FONT COLOR="#000000">rolresqueue</FONT></TD>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="rolresqueue_out"><FONT COLOR="#95a5a6"><I>oid</I></FONT></TD>
 </TR>
 
 <TR>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="proargtypes_in"><FONT COLOR="#000000">proargtypes</FONT></TD>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="proargtypes_out"><FONT COLOR="#95a5a6"><I>oidvector</I></FONT></TD>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="rolcreaterextgpfd_in"><FONT COLOR="#000000">rolcreaterextgpfd</FONT></TD>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="rolcreaterextgpfd_out"><FONT COLOR="#95a5a6"><I>boolean</I></FONT></TD>
 </TR>
 
 <TR>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="proallargtypes_in"><FONT COLOR="#000000">proallargtypes</FONT></TD>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="proallargtypes_out"><FONT COLOR="#95a5a6"><I>oid[]</I></FONT></TD>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="rolcreaterexthttp_in"><FONT COLOR="#000000">rolcreaterexthttp</FONT></TD>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="rolcreaterexthttp_out"><FONT COLOR="#95a5a6"><I>boolean</I></FONT></TD>
 </TR>
 
 <TR>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="proargmodes_in"><FONT COLOR="#000000">proargmodes</FONT></TD>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="proargmodes_out"><FONT COLOR="#95a5a6"><I>quoted_char[]</I></FONT></TD>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="rolcreatewextgpfd_in"><FONT COLOR="#000000">rolcreatewextgpfd</FONT></TD>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="rolcreatewextgpfd_out"><FONT COLOR="#95a5a6"><I>boolean</I></FONT></TD>
 </TR>
 
 <TR>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="proargnames_in"><FONT COLOR="#000000">proargnames</FONT></TD>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="proargnames_out"><FONT COLOR="#95a5a6"><I>text[]</I></FONT></TD>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="rolcreaterexthdfs_in"><FONT COLOR="#000000">rolcreaterexthdfs</FONT></TD>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="rolcreaterexthdfs_out"><FONT COLOR="#95a5a6"><I>boolean</I></FONT></TD>
 </TR>
 
 <TR>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="prosrc_in"><FONT COLOR="#000000">prosrc</FONT></TD>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="prosrc_out"><FONT COLOR="#95a5a6"><I>text</I></FONT></TD>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="rolcreatewexthdfs_in"><FONT COLOR="#000000">rolcreatewexthdfs</FONT></TD>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="rolcreatewexthdfs_out"><FONT COLOR="#95a5a6"><I>boolean</I></FONT></TD>
 </TR>
 
-<TR>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="probin_in"><FONT COLOR="#000000">probin</FONT></TD>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="probin_out"><FONT COLOR="#95a5a6"><I>bytea</I></FONT></TD>
-</TR>
-
-<TR>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="proacl_in"><FONT COLOR="#000000">proacl</FONT></TD>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="proacl_out"><FONT COLOR="#95a5a6"><I>aclitem[]</I></FONT></TD>
-</TR>
-
-<TR>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="prodataaccess_in"><FONT COLOR="#000000">prodataaccess</FONT></TD>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="prodataaccess_out"><FONT COLOR="#95a5a6"><I>quoted_char</I></FONT></TD>
-</TR>
-
-<TR>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="provariadic_in"><FONT COLOR="#000000">provariadic</FONT></TD>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="provariadic_out"><FONT COLOR="#95a5a6"><I>oid</I></FONT></TD>
-</TR>
-
-</TABLE></FONT>> name = "pg_proc"];
-        
-            pg_operator [label = <<FONT FACE="monospace"><TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4">
-<TR><TD BGCOLOR="#2c3e50" ALIGN="CENTER" COLSPAN="2"><FONT COLOR="#FFFFFF" POINT-SIZE="18"><B>pg_operator</B></FONT></TD></TR>
-
-<TR>
-<TD COLOR="#2c3e50" BGCOLOR="#18bc9c" ALIGN="LEFT" PORT="oid_in"><FONT COLOR="#FFFFFF">oid</FONT></TD>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="oid_out"><FONT COLOR="#95a5a6"><I>oid</I></FONT></TD>
-</TR>
-
-<TR>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="oprname_in"><FONT COLOR="#000000">oprname</FONT></TD>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="oprname_out"><FONT COLOR="#95a5a6"><I>name</I></FONT></TD>
-</TR>
-
-<TR>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="oprnamespace_in"><FONT COLOR="#000000">oprnamespace</FONT></TD>
-<TD COLOR="#2c3e50" BGCOLOR="#18bc9c" ALIGN="LEFT" PORT="oprnamespace_out"><FONT COLOR="#FFFFFF"><I>oid</I></FONT></TD>
-</TR>
-
-<TR>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="oprowner_in"><FONT COLOR="#000000">oprowner</FONT></TD>
-<TD COLOR="#2c3e50" BGCOLOR="#18bc9c" ALIGN="LEFT" PORT="oprowner_out"><FONT COLOR="#FFFFFF"><I>oid</I></FONT></TD>
-</TR>
-
-<TR>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="oprkind_in"><FONT COLOR="#000000">oprkind</FONT></TD>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="oprkind_out"><FONT COLOR="#95a5a6"><I>quoted_char</I></FONT></TD>
-</TR>
-
-<TR>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="oprcanhash_in"><FONT COLOR="#000000">oprcanhash</FONT></TD>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="oprcanhash_out"><FONT COLOR="#95a5a6"><I>boolean</I></FONT></TD>
-</TR>
-
-<TR>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="oprleft_in"><FONT COLOR="#000000">oprleft</FONT></TD>
-<TD COLOR="#2c3e50" BGCOLOR="#18bc9c" ALIGN="LEFT" PORT="oprleft_out"><FONT COLOR="#FFFFFF"><I>oid</I></FONT></TD>
-</TR>
-
-<TR>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="oprright_in"><FONT COLOR="#000000">oprright</FONT></TD>
-<TD COLOR="#2c3e50" BGCOLOR="#18bc9c" ALIGN="LEFT" PORT="oprright_out"><FONT COLOR="#FFFFFF"><I>oid</I></FONT></TD>
-</TR>
-
-<TR>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="oprresult_in"><FONT COLOR="#000000">oprresult</FONT></TD>
-<TD COLOR="#2c3e50" BGCOLOR="#18bc9c" ALIGN="LEFT" PORT="oprresult_out"><FONT COLOR="#FFFFFF"><I>oid</I></FONT></TD>
-</TR>
-
-<TR>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="oprcom_in"><FONT COLOR="#000000">oprcom</FONT></TD>
-<TD COLOR="#2c3e50" BGCOLOR="#18bc9c" ALIGN="LEFT" PORT="oprcom_out"><FONT COLOR="#FFFFFF"><I>oid</I></FONT></TD>
-</TR>
-
-<TR>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="oprnegate_in"><FONT COLOR="#000000">oprnegate</FONT></TD>
-<TD COLOR="#2c3e50" BGCOLOR="#18bc9c" ALIGN="LEFT" PORT="oprnegate_out"><FONT COLOR="#FFFFFF"><I>oid</I></FONT></TD>
-</TR>
-
-<TR>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="oprlsortop_in"><FONT COLOR="#000000">oprlsortop</FONT></TD>
-<TD COLOR="#2c3e50" BGCOLOR="#18bc9c" ALIGN="LEFT" PORT="oprlsortop_out"><FONT COLOR="#FFFFFF"><I>oid</I></FONT></TD>
-</TR>
-
-<TR>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="oprrsortop_in"><FONT COLOR="#000000">oprrsortop</FONT></TD>
-<TD COLOR="#2c3e50" BGCOLOR="#18bc9c" ALIGN="LEFT" PORT="oprrsortop_out"><FONT COLOR="#FFFFFF"><I>oid</I></FONT></TD>
-</TR>
-
-<TR>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="oprltcmpop_in"><FONT COLOR="#000000">oprltcmpop</FONT></TD>
-<TD COLOR="#2c3e50" BGCOLOR="#18bc9c" ALIGN="LEFT" PORT="oprltcmpop_out"><FONT COLOR="#FFFFFF"><I>oid</I></FONT></TD>
-</TR>
-
-<TR>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="oprgtcmpop_in"><FONT COLOR="#000000">oprgtcmpop</FONT></TD>
-<TD COLOR="#2c3e50" BGCOLOR="#18bc9c" ALIGN="LEFT" PORT="oprgtcmpop_out"><FONT COLOR="#FFFFFF"><I>oid</I></FONT></TD>
-</TR>
-
-<TR>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="oprcode_in"><FONT COLOR="#000000">oprcode</FONT></TD>
-<TD COLOR="#2c3e50" BGCOLOR="#18bc9c" ALIGN="LEFT" PORT="oprcode_out"><FONT COLOR="#FFFFFF"><I>regproc</I></FONT></TD>
-</TR>
-
-<TR>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="oprrest_in"><FONT COLOR="#000000">oprrest</FONT></TD>
-<TD COLOR="#2c3e50" BGCOLOR="#18bc9c" ALIGN="LEFT" PORT="oprrest_out"><FONT COLOR="#FFFFFF"><I>regproc</I></FONT></TD>
-</TR>
-
-<TR>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="oprjoin_in"><FONT COLOR="#000000">oprjoin</FONT></TD>
-<TD COLOR="#2c3e50" BGCOLOR="#18bc9c" ALIGN="LEFT" PORT="oprjoin_out"><FONT COLOR="#FFFFFF"><I>regproc</I></FONT></TD>
-</TR>
-
-</TABLE></FONT>> name = "pg_operator"];
+</TABLE></FONT>> name = "pg_authid" URL = "pg_authid.svg"];
         
     }
     

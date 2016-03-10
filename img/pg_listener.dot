@@ -43,7 +43,7 @@ digraph GPDB {
 <TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="notification_out"><FONT COLOR="#95a5a6"><I>integer</I></FONT></TD>
 </TR>
 
-</TABLE></FONT>> name = "pg_listener"];
+</TABLE></FONT>> name = "pg_listener" URL = "pg_listener.svg"];
         
     }
     

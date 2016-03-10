@@ -83,7 +83,7 @@ digraph GPDB {
 <TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="winframemakerfunc_out"><FONT COLOR="#95a5a6"><I>regproc</I></FONT></TD>
 </TR>
 
-</TABLE></FONT>> name = "pg_window"];
+</TABLE></FONT>> name = "pg_window" URL = "pg_window.svg"];
         
     }
     
@@ -205,7 +205,7 @@ digraph GPDB {
 <TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="provariadic_out"><FONT COLOR="#95a5a6"><I>oid</I></FONT></TD>
 </TR>
 
-</TABLE></FONT>> name = "pg_proc"];
+</TABLE></FONT>> name = "pg_proc" URL = "pg_proc.svg"];
         
     }
     

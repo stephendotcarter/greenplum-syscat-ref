@@ -108,7 +108,7 @@ digraph GPDB {
 <TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="consrc_out"><FONT COLOR="#95a5a6"><I>text</I></FONT></TD>
 </TR>
 
-</TABLE></FONT>> name = "pg_constraint"];
+</TABLE></FONT>> name = "pg_constraint" URL = "pg_constraint.svg"];
         
     }
     
@@ -116,6 +116,31 @@ digraph GPDB {
         rankdir=TB
         style=invis;
 
+        
+            pg_namespace [label = <<FONT FACE="monospace"><TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4">
+<TR><TD BGCOLOR="#2c3e50" ALIGN="CENTER" COLSPAN="2"><FONT COLOR="#FFFFFF" POINT-SIZE="18"><B>pg_namespace</B></FONT></TD></TR>
+
+<TR>
+<TD COLOR="#2c3e50" BGCOLOR="#18bc9c" ALIGN="LEFT" PORT="oid_in"><FONT COLOR="#FFFFFF">oid</FONT></TD>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="oid_out"><FONT COLOR="#95a5a6"><I>oid</I></FONT></TD>
+</TR>
+
+<TR>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="nspname_in"><FONT COLOR="#000000">nspname</FONT></TD>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="nspname_out"><FONT COLOR="#95a5a6"><I>name</I></FONT></TD>
+</TR>
+
+<TR>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="nspowner_in"><FONT COLOR="#000000">nspowner</FONT></TD>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="nspowner_out"><FONT COLOR="#95a5a6"><I>oid</I></FONT></TD>
+</TR>
+
+<TR>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="nspacl_in"><FONT COLOR="#000000">nspacl</FONT></TD>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="nspacl_out"><FONT COLOR="#95a5a6"><I>aclitem[]</I></FONT></TD>
+</TR>
+
+</TABLE></FONT>> name = "pg_namespace" URL = "pg_namespace.svg"];
         
             pg_class [label = <<FONT FACE="monospace"><TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4">
 <TR><TD BGCOLOR="#2c3e50" ALIGN="CENTER" COLSPAN="2"><FONT COLOR="#FFFFFF" POINT-SIZE="18"><B>pg_class</B></FONT></TD></TR>
@@ -275,32 +300,7 @@ digraph GPDB {
 <TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="reloptions_out"><FONT COLOR="#95a5a6"><I>text[]</I></FONT></TD>
 </TR>
 
-</TABLE></FONT>> name = "pg_class"];
-        
-            pg_namespace [label = <<FONT FACE="monospace"><TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4">
-<TR><TD BGCOLOR="#2c3e50" ALIGN="CENTER" COLSPAN="2"><FONT COLOR="#FFFFFF" POINT-SIZE="18"><B>pg_namespace</B></FONT></TD></TR>
-
-<TR>
-<TD COLOR="#2c3e50" BGCOLOR="#18bc9c" ALIGN="LEFT" PORT="oid_in"><FONT COLOR="#FFFFFF">oid</FONT></TD>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="oid_out"><FONT COLOR="#95a5a6"><I>oid</I></FONT></TD>
-</TR>
-
-<TR>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="nspname_in"><FONT COLOR="#000000">nspname</FONT></TD>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="nspname_out"><FONT COLOR="#95a5a6"><I>name</I></FONT></TD>
-</TR>
-
-<TR>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="nspowner_in"><FONT COLOR="#000000">nspowner</FONT></TD>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="nspowner_out"><FONT COLOR="#95a5a6"><I>oid</I></FONT></TD>
-</TR>
-
-<TR>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="nspacl_in"><FONT COLOR="#000000">nspacl</FONT></TD>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="nspacl_out"><FONT COLOR="#95a5a6"><I>aclitem[]</I></FONT></TD>
-</TR>
-
-</TABLE></FONT>> name = "pg_namespace"];
+</TABLE></FONT>> name = "pg_class" URL = "pg_class.svg"];
         
             pg_type [label = <<FONT FACE="monospace"><TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4">
 <TR><TD BGCOLOR="#2c3e50" ALIGN="CENTER" COLSPAN="2"><FONT COLOR="#FFFFFF" POINT-SIZE="18"><B>pg_type</B></FONT></TD></TR>
@@ -425,7 +425,7 @@ digraph GPDB {
 <TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="typdefault_out"><FONT COLOR="#95a5a6"><I>text</I></FONT></TD>
 </TR>
 
-</TABLE></FONT>> name = "pg_type"];
+</TABLE></FONT>> name = "pg_type" URL = "pg_type.svg"];
         
     }
     

@@ -63,7 +63,7 @@ digraph GPDB {
 <TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="statime_out"><FONT COLOR="#95a5a6"><I>timestamp_with_time_zone</I></FONT></TD>
 </TR>
 
-</TABLE></FONT>> name = "pg_stat_last_operation"];
+</TABLE></FONT>> name = "pg_stat_last_operation" URL = "pg_stat_last_operation.svg"];
         
     }
     
@@ -230,7 +230,7 @@ digraph GPDB {
 <TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="reloptions_out"><FONT COLOR="#95a5a6"><I>text[]</I></FONT></TD>
 </TR>
 
-</TABLE></FONT>> name = "pg_class"];
+</TABLE></FONT>> name = "pg_class" URL = "pg_class.svg"];
         
             pg_authid [label = <<FONT FACE="monospace"><TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4">
 <TR><TD BGCOLOR="#2c3e50" ALIGN="CENTER" COLSPAN="2"><FONT COLOR="#FFFFFF" POINT-SIZE="18"><B>pg_authid</B></FONT></TD></TR>
@@ -325,7 +325,7 @@ digraph GPDB {
 <TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="rolcreatewexthdfs_out"><FONT COLOR="#95a5a6"><I>boolean</I></FONT></TD>
 </TR>
 
-</TABLE></FONT>> name = "pg_authid"];
+</TABLE></FONT>> name = "pg_authid" URL = "pg_authid.svg"];
         
     }
     

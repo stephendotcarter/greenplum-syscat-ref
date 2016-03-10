@@ -16,6 +16,7 @@
 </g>
 <!-- pg_amproc -->
 <g id="node1" class="node"><title>pg_amproc</title>
+<g id="a_node1"><a xlink:href="pg_amproc.svg" xlink:title="&lt;TABLE&gt;">
 <polygon fill="#2c3e50" stroke="none" points="197.5,-1270 197.5,-1300 392.5,-1300 392.5,-1270 197.5,-1270"/>
 <polygon fill="none" stroke="black" points="197.5,-1270 197.5,-1300 392.5,-1300 392.5,-1270 197.5,-1270"/>
 <text text-anchor="start" x="247.5" y="-1281.6" font-family="monospace" font-weight="bold" font-size="18.00" fill="#ffffff">pg_amproc</text>
@@ -43,9 +44,12 @@
 <polygon fill="#18bc9c" stroke="none" points="315.5,-1170 315.5,-1195 392.5,-1195 392.5,-1170 315.5,-1170"/>
 <polygon fill="none" stroke="#2c3e50" points="315.5,-1170 315.5,-1195 392.5,-1195 392.5,-1170 315.5,-1170"/>
 <text text-anchor="start" x="320.5" y="-1179.8" font-family="monospace" font-style="italic" font-size="14.00" fill="#ffffff">regproc</text>
+</a>
+</g>
 </g>
 <!-- pg_opclass -->
 <g id="node2" class="node"><title>pg_opclass</title>
+<g id="a_node2"><a xlink:href="pg_opclass.svg" xlink:title="&lt;TABLE&gt;">
 <polygon fill="#2c3e50" stroke="none" points="816,-1518 816,-1548 994,-1548 994,-1518 816,-1518"/>
 <polygon fill="none" stroke="black" points="816,-1518 816,-1548 994,-1548 994,-1518 816,-1518"/>
 <text text-anchor="start" x="852" y="-1529.6" font-family="monospace" font-weight="bold" font-size="18.00" fill="#ffffff">pg_opclass</text>
@@ -97,14 +101,163 @@
 <polygon fill="#ffffff" stroke="none" points="926,-1318 926,-1343 994,-1343 994,-1318 926,-1318"/>
 <polygon fill="none" stroke="#2c3e50" points="926,-1318 926,-1343 994,-1343 994,-1318 926,-1318"/>
 <text text-anchor="start" x="931" y="-1327.8" font-family="monospace" font-style="italic" font-size="14.00" fill="#95a5a6">oid</text>
+</a>
+</g>
 </g>
 <!-- pg_amproc&#45;&gt;pg_opclass -->
 <g id="edge1" class="edge"><title>pg_amproc:amopclaid_out&#45;&gt;pg_opclass:oid_in</title>
 <path fill="none" stroke="#2c3e50" d="M393.5,-1258C607.458,-1258 598.003,-1498.31 804.979,-1505.82"/>
 <polygon fill="#2c3e50" stroke="#2c3e50" points="804.939,-1509.32 815,-1506 805.064,-1502.32 804.939,-1509.32"/>
 </g>
+<!-- pg_proc -->
+<g id="node3" class="node"><title>pg_proc</title>
+<g id="a_node3"><a xlink:href="pg_proc.svg" xlink:title="&lt;TABLE&gt;">
+<polygon fill="#2c3e50" stroke="none" points="783,-570 783,-600 1027,-600 1027,-570 783,-570"/>
+<polygon fill="none" stroke="black" points="783,-570 783,-600 1027,-600 1027,-570 783,-570"/>
+<text text-anchor="start" x="868" y="-581.6" font-family="monospace" font-weight="bold" font-size="18.00" fill="#ffffff">pg_proc</text>
+<polygon fill="#18bc9c" stroke="none" points="783,-545 783,-570 909,-570 909,-545 783,-545"/>
+<polygon fill="none" stroke="#2c3e50" points="783,-545 783,-570 909,-570 909,-545 783,-545"/>
+<text text-anchor="start" x="788" y="-553.8" font-family="monospace" font-size="14.00" fill="#ffffff">oid</text>
+<polygon fill="#ffffff" stroke="none" points="909,-545 909,-570 1027,-570 1027,-545 909,-545"/>
+<polygon fill="none" stroke="#2c3e50" points="909,-545 909,-570 1027,-570 1027,-545 909,-545"/>
+<text text-anchor="start" x="914" y="-554.8" font-family="monospace" font-style="italic" font-size="14.00" fill="#95a5a6">oid</text>
+<polygon fill="#ffffff" stroke="none" points="783,-520 783,-545 909,-545 909,-520 783,-520"/>
+<polygon fill="none" stroke="#2c3e50" points="783,-520 783,-545 909,-545 909,-520 783,-520"/>
+<text text-anchor="start" x="788" y="-528.8" font-family="monospace" font-size="14.00" fill="#000000">proname</text>
+<polygon fill="#ffffff" stroke="none" points="909,-520 909,-545 1027,-545 1027,-520 909,-520"/>
+<polygon fill="none" stroke="#2c3e50" points="909,-520 909,-545 1027,-545 1027,-520 909,-520"/>
+<text text-anchor="start" x="914" y="-529.8" font-family="monospace" font-style="italic" font-size="14.00" fill="#95a5a6">name</text>
+<polygon fill="#ffffff" stroke="none" points="783,-495 783,-520 909,-520 909,-495 783,-495"/>
+<polygon fill="none" stroke="#2c3e50" points="783,-495 783,-520 909,-520 909,-495 783,-495"/>
+<text text-anchor="start" x="788" y="-503.8" font-family="monospace" font-size="14.00" fill="#000000">pronamespace</text>
+<polygon fill="#ffffff" stroke="none" points="909,-495 909,-520 1027,-520 1027,-495 909,-495"/>
+<polygon fill="none" stroke="#2c3e50" points="909,-495 909,-520 1027,-520 1027,-495 909,-495"/>
+<text text-anchor="start" x="914" y="-504.8" font-family="monospace" font-style="italic" font-size="14.00" fill="#95a5a6">oid</text>
+<polygon fill="#ffffff" stroke="none" points="783,-470 783,-495 909,-495 909,-470 783,-470"/>
+<polygon fill="none" stroke="#2c3e50" points="783,-470 783,-495 909,-495 909,-470 783,-470"/>
+<text text-anchor="start" x="788" y="-478.8" font-family="monospace" font-size="14.00" fill="#000000">proowner</text>
+<polygon fill="#ffffff" stroke="none" points="909,-470 909,-495 1027,-495 1027,-470 909,-470"/>
+<polygon fill="none" stroke="#2c3e50" points="909,-470 909,-495 1027,-495 1027,-470 909,-470"/>
+<text text-anchor="start" x="914" y="-479.8" font-family="monospace" font-style="italic" font-size="14.00" fill="#95a5a6">oid</text>
+<polygon fill="#ffffff" stroke="none" points="783,-445 783,-470 909,-470 909,-445 783,-445"/>
+<polygon fill="none" stroke="#2c3e50" points="783,-445 783,-470 909,-470 909,-445 783,-445"/>
+<text text-anchor="start" x="788" y="-453.8" font-family="monospace" font-size="14.00" fill="#000000">prolang</text>
+<polygon fill="#ffffff" stroke="none" points="909,-445 909,-470 1027,-470 1027,-445 909,-445"/>
+<polygon fill="none" stroke="#2c3e50" points="909,-445 909,-470 1027,-470 1027,-445 909,-445"/>
+<text text-anchor="start" x="914" y="-454.8" font-family="monospace" font-style="italic" font-size="14.00" fill="#95a5a6">oid</text>
+<polygon fill="#ffffff" stroke="none" points="783,-420 783,-445 909,-445 909,-420 783,-420"/>
+<polygon fill="none" stroke="#2c3e50" points="783,-420 783,-445 909,-445 909,-420 783,-420"/>
+<text text-anchor="start" x="788" y="-428.8" font-family="monospace" font-size="14.00" fill="#000000">proisagg</text>
+<polygon fill="#ffffff" stroke="none" points="909,-420 909,-445 1027,-445 1027,-420 909,-420"/>
+<polygon fill="none" stroke="#2c3e50" points="909,-420 909,-445 1027,-445 1027,-420 909,-420"/>
+<text text-anchor="start" x="914" y="-429.8" font-family="monospace" font-style="italic" font-size="14.00" fill="#95a5a6">boolean</text>
+<polygon fill="#ffffff" stroke="none" points="783,-395 783,-420 909,-420 909,-395 783,-395"/>
+<polygon fill="none" stroke="#2c3e50" points="783,-395 783,-420 909,-420 909,-395 783,-395"/>
+<text text-anchor="start" x="788" y="-403.8" font-family="monospace" font-size="14.00" fill="#000000">prosecdef</text>
+<polygon fill="#ffffff" stroke="none" points="909,-395 909,-420 1027,-420 1027,-395 909,-395"/>
+<polygon fill="none" stroke="#2c3e50" points="909,-395 909,-420 1027,-420 1027,-395 909,-395"/>
+<text text-anchor="start" x="914" y="-404.8" font-family="monospace" font-style="italic" font-size="14.00" fill="#95a5a6">boolean</text>
+<polygon fill="#ffffff" stroke="none" points="783,-370 783,-395 909,-395 909,-370 783,-370"/>
+<polygon fill="none" stroke="#2c3e50" points="783,-370 783,-395 909,-395 909,-370 783,-370"/>
+<text text-anchor="start" x="788" y="-378.8" font-family="monospace" font-size="14.00" fill="#000000">proisstrict</text>
+<polygon fill="#ffffff" stroke="none" points="909,-370 909,-395 1027,-395 1027,-370 909,-370"/>
+<polygon fill="none" stroke="#2c3e50" points="909,-370 909,-395 1027,-395 1027,-370 909,-370"/>
+<text text-anchor="start" x="914" y="-379.8" font-family="monospace" font-style="italic" font-size="14.00" fill="#95a5a6">boolean</text>
+<polygon fill="#ffffff" stroke="none" points="783,-345 783,-370 909,-370 909,-345 783,-345"/>
+<polygon fill="none" stroke="#2c3e50" points="783,-345 783,-370 909,-370 909,-345 783,-345"/>
+<text text-anchor="start" x="788" y="-353.8" font-family="monospace" font-size="14.00" fill="#000000">proretset</text>
+<polygon fill="#ffffff" stroke="none" points="909,-345 909,-370 1027,-370 1027,-345 909,-345"/>
+<polygon fill="none" stroke="#2c3e50" points="909,-345 909,-370 1027,-370 1027,-345 909,-345"/>
+<text text-anchor="start" x="914" y="-354.8" font-family="monospace" font-style="italic" font-size="14.00" fill="#95a5a6">boolean</text>
+<polygon fill="#ffffff" stroke="none" points="783,-320 783,-345 909,-345 909,-320 783,-320"/>
+<polygon fill="none" stroke="#2c3e50" points="783,-320 783,-345 909,-345 909,-320 783,-320"/>
+<text text-anchor="start" x="788" y="-328.8" font-family="monospace" font-size="14.00" fill="#000000">provolatile</text>
+<polygon fill="#ffffff" stroke="none" points="909,-320 909,-345 1027,-345 1027,-320 909,-320"/>
+<polygon fill="none" stroke="#2c3e50" points="909,-320 909,-345 1027,-345 1027,-320 909,-320"/>
+<text text-anchor="start" x="914" y="-329.8" font-family="monospace" font-style="italic" font-size="14.00" fill="#95a5a6">quoted_char</text>
+<polygon fill="#ffffff" stroke="none" points="783,-295 783,-320 909,-320 909,-295 783,-295"/>
+<polygon fill="none" stroke="#2c3e50" points="783,-295 783,-320 909,-320 909,-295 783,-295"/>
+<text text-anchor="start" x="788" y="-303.8" font-family="monospace" font-size="14.00" fill="#000000">pronargs</text>
+<polygon fill="#ffffff" stroke="none" points="909,-295 909,-320 1027,-320 1027,-295 909,-295"/>
+<polygon fill="none" stroke="#2c3e50" points="909,-295 909,-320 1027,-320 1027,-295 909,-295"/>
+<text text-anchor="start" x="914" y="-304.8" font-family="monospace" font-style="italic" font-size="14.00" fill="#95a5a6">smallint</text>
+<polygon fill="#ffffff" stroke="none" points="783,-270 783,-295 909,-295 909,-270 783,-270"/>
+<polygon fill="none" stroke="#2c3e50" points="783,-270 783,-295 909,-295 909,-270 783,-270"/>
+<text text-anchor="start" x="788" y="-278.8" font-family="monospace" font-size="14.00" fill="#000000">prorettype</text>
+<polygon fill="#ffffff" stroke="none" points="909,-270 909,-295 1027,-295 1027,-270 909,-270"/>
+<polygon fill="none" stroke="#2c3e50" points="909,-270 909,-295 1027,-295 1027,-270 909,-270"/>
+<text text-anchor="start" x="914" y="-279.8" font-family="monospace" font-style="italic" font-size="14.00" fill="#95a5a6">oid</text>
+<polygon fill="#ffffff" stroke="none" points="783,-245 783,-270 909,-270 909,-245 783,-245"/>
+<polygon fill="none" stroke="#2c3e50" points="783,-245 783,-270 909,-270 909,-245 783,-245"/>
+<text text-anchor="start" x="788" y="-253.8" font-family="monospace" font-size="14.00" fill="#000000">proiswin</text>
+<polygon fill="#ffffff" stroke="none" points="909,-245 909,-270 1027,-270 1027,-245 909,-245"/>
+<polygon fill="none" stroke="#2c3e50" points="909,-245 909,-270 1027,-270 1027,-245 909,-245"/>
+<text text-anchor="start" x="914" y="-254.8" font-family="monospace" font-style="italic" font-size="14.00" fill="#95a5a6">boolean</text>
+<polygon fill="#ffffff" stroke="none" points="783,-220 783,-245 909,-245 909,-220 783,-220"/>
+<polygon fill="none" stroke="#2c3e50" points="783,-220 783,-245 909,-245 909,-220 783,-220"/>
+<text text-anchor="start" x="788" y="-228.8" font-family="monospace" font-size="14.00" fill="#000000">proargtypes</text>
+<polygon fill="#ffffff" stroke="none" points="909,-220 909,-245 1027,-245 1027,-220 909,-220"/>
+<polygon fill="none" stroke="#2c3e50" points="909,-220 909,-245 1027,-245 1027,-220 909,-220"/>
+<text text-anchor="start" x="914" y="-229.8" font-family="monospace" font-style="italic" font-size="14.00" fill="#95a5a6">oidvector</text>
+<polygon fill="#ffffff" stroke="none" points="783,-195 783,-220 909,-220 909,-195 783,-195"/>
+<polygon fill="none" stroke="#2c3e50" points="783,-195 783,-220 909,-220 909,-195 783,-195"/>
+<text text-anchor="start" x="788" y="-203.8" font-family="monospace" font-size="14.00" fill="#000000">proallargtypes</text>
+<polygon fill="#ffffff" stroke="none" points="909,-195 909,-220 1027,-220 1027,-195 909,-195"/>
+<polygon fill="none" stroke="#2c3e50" points="909,-195 909,-220 1027,-220 1027,-195 909,-195"/>
+<text text-anchor="start" x="914" y="-204.8" font-family="monospace" font-style="italic" font-size="14.00" fill="#95a5a6">oid[]</text>
+<polygon fill="#ffffff" stroke="none" points="783,-170 783,-195 909,-195 909,-170 783,-170"/>
+<polygon fill="none" stroke="#2c3e50" points="783,-170 783,-195 909,-195 909,-170 783,-170"/>
+<text text-anchor="start" x="788" y="-178.8" font-family="monospace" font-size="14.00" fill="#000000">proargmodes</text>
+<polygon fill="#ffffff" stroke="none" points="909,-170 909,-195 1027,-195 1027,-170 909,-170"/>
+<polygon fill="none" stroke="#2c3e50" points="909,-170 909,-195 1027,-195 1027,-170 909,-170"/>
+<text text-anchor="start" x="914" y="-179.8" font-family="monospace" font-style="italic" font-size="14.00" fill="#95a5a6">quoted_char[]</text>
+<polygon fill="#ffffff" stroke="none" points="783,-145 783,-170 909,-170 909,-145 783,-145"/>
+<polygon fill="none" stroke="#2c3e50" points="783,-145 783,-170 909,-170 909,-145 783,-145"/>
+<text text-anchor="start" x="788" y="-153.8" font-family="monospace" font-size="14.00" fill="#000000">proargnames</text>
+<polygon fill="#ffffff" stroke="none" points="909,-145 909,-170 1027,-170 1027,-145 909,-145"/>
+<polygon fill="none" stroke="#2c3e50" points="909,-145 909,-170 1027,-170 1027,-145 909,-145"/>
+<text text-anchor="start" x="914" y="-154.8" font-family="monospace" font-style="italic" font-size="14.00" fill="#95a5a6">text[]</text>
+<polygon fill="#ffffff" stroke="none" points="783,-120 783,-145 909,-145 909,-120 783,-120"/>
+<polygon fill="none" stroke="#2c3e50" points="783,-120 783,-145 909,-145 909,-120 783,-120"/>
+<text text-anchor="start" x="788" y="-128.8" font-family="monospace" font-size="14.00" fill="#000000">prosrc</text>
+<polygon fill="#ffffff" stroke="none" points="909,-120 909,-145 1027,-145 1027,-120 909,-120"/>
+<polygon fill="none" stroke="#2c3e50" points="909,-120 909,-145 1027,-145 1027,-120 909,-120"/>
+<text text-anchor="start" x="914" y="-129.8" font-family="monospace" font-style="italic" font-size="14.00" fill="#95a5a6">text</text>
+<polygon fill="#ffffff" stroke="none" points="783,-95 783,-120 909,-120 909,-95 783,-95"/>
+<polygon fill="none" stroke="#2c3e50" points="783,-95 783,-120 909,-120 909,-95 783,-95"/>
+<text text-anchor="start" x="788" y="-103.8" font-family="monospace" font-size="14.00" fill="#000000">probin</text>
+<polygon fill="#ffffff" stroke="none" points="909,-95 909,-120 1027,-120 1027,-95 909,-95"/>
+<polygon fill="none" stroke="#2c3e50" points="909,-95 909,-120 1027,-120 1027,-95 909,-95"/>
+<text text-anchor="start" x="914" y="-104.8" font-family="monospace" font-style="italic" font-size="14.00" fill="#95a5a6">bytea</text>
+<polygon fill="#ffffff" stroke="none" points="783,-70 783,-95 909,-95 909,-70 783,-70"/>
+<polygon fill="none" stroke="#2c3e50" points="783,-70 783,-95 909,-95 909,-70 783,-70"/>
+<text text-anchor="start" x="788" y="-78.8" font-family="monospace" font-size="14.00" fill="#000000">proacl</text>
+<polygon fill="#ffffff" stroke="none" points="909,-70 909,-95 1027,-95 1027,-70 909,-70"/>
+<polygon fill="none" stroke="#2c3e50" points="909,-70 909,-95 1027,-95 1027,-70 909,-70"/>
+<text text-anchor="start" x="914" y="-79.8" font-family="monospace" font-style="italic" font-size="14.00" fill="#95a5a6">aclitem[]</text>
+<polygon fill="#ffffff" stroke="none" points="783,-45 783,-70 909,-70 909,-45 783,-45"/>
+<polygon fill="none" stroke="#2c3e50" points="783,-45 783,-70 909,-70 909,-45 783,-45"/>
+<text text-anchor="start" x="788" y="-53.8" font-family="monospace" font-size="14.00" fill="#000000">prodataaccess</text>
+<polygon fill="#ffffff" stroke="none" points="909,-45 909,-70 1027,-70 1027,-45 909,-45"/>
+<polygon fill="none" stroke="#2c3e50" points="909,-45 909,-70 1027,-70 1027,-45 909,-45"/>
+<text text-anchor="start" x="914" y="-54.8" font-family="monospace" font-style="italic" font-size="14.00" fill="#95a5a6">quoted_char</text>
+<polygon fill="#ffffff" stroke="none" points="783,-20 783,-45 909,-45 909,-20 783,-20"/>
+<polygon fill="none" stroke="#2c3e50" points="783,-20 783,-45 909,-45 909,-20 783,-20"/>
+<text text-anchor="start" x="788" y="-28.8" font-family="monospace" font-size="14.00" fill="#000000">provariadic</text>
+<polygon fill="#ffffff" stroke="none" points="909,-20 909,-45 1027,-45 1027,-20 909,-20"/>
+<polygon fill="none" stroke="#2c3e50" points="909,-20 909,-45 1027,-45 1027,-20 909,-20"/>
+<text text-anchor="start" x="914" y="-29.8" font-family="monospace" font-style="italic" font-size="14.00" fill="#95a5a6">oid</text>
+</a>
+</g>
+</g>
+<!-- pg_amproc&#45;&gt;pg_proc -->
+<g id="edge3" class="edge"><title>pg_amproc:amproc_out&#45;&gt;pg_proc:oid_in</title>
+<path fill="none" stroke="#2c3e50" d="M393.5,-1182C660.342,-1182 420.121,-809.485 610,-622 665.546,-567.154 697.604,-558.669 771.752,-558.041"/>
+<polygon fill="#2c3e50" stroke="#2c3e50" points="772.014,-561.54 782,-558 771.986,-554.54 772.014,-561.54"/>
+</g>
 <!-- pg_type -->
-<g id="node3" class="node"><title>pg_type</title>
+<g id="node4" class="node"><title>pg_type</title>
+<g id="a_node4"><a xlink:href="pg_type.svg" xlink:title="&lt;TABLE&gt;">
 <polygon fill="#2c3e50" stroke="none" points="796,-1244 796,-1274 1015,-1274 1015,-1244 796,-1244"/>
 <polygon fill="none" stroke="black" points="796,-1244 796,-1274 1015,-1274 1015,-1244 796,-1244"/>
 <text text-anchor="start" x="868.5" y="-1255.6" font-family="monospace" font-weight="bold" font-size="18.00" fill="#ffffff">pg_type</text>
@@ -252,154 +405,13 @@
 <polygon fill="#ffffff" stroke="none" points="914,-644 914,-669 1015,-669 1015,-644 914,-644"/>
 <polygon fill="none" stroke="#2c3e50" points="914,-644 914,-669 1015,-669 1015,-644 914,-644"/>
 <text text-anchor="start" x="919" y="-653.8" font-family="monospace" font-style="italic" font-size="14.00" fill="#95a5a6">text</text>
+</a>
+</g>
 </g>
 <!-- pg_amproc&#45;&gt;pg_type -->
 <g id="edge2" class="edge"><title>pg_amproc:amprocsubtype_out&#45;&gt;pg_type:oid_in</title>
 <path fill="none" stroke="#2c3e50" d="M393.5,-1232C568.546,-1232 614.808,-1232 784.949,-1232"/>
 <polygon fill="#2c3e50" stroke="#2c3e50" points="785,-1235.5 795,-1232 785,-1228.5 785,-1235.5"/>
-</g>
-<!-- pg_proc -->
-<g id="node4" class="node"><title>pg_proc</title>
-<polygon fill="#2c3e50" stroke="none" points="783,-570 783,-600 1027,-600 1027,-570 783,-570"/>
-<polygon fill="none" stroke="black" points="783,-570 783,-600 1027,-600 1027,-570 783,-570"/>
-<text text-anchor="start" x="868" y="-581.6" font-family="monospace" font-weight="bold" font-size="18.00" fill="#ffffff">pg_proc</text>
-<polygon fill="#18bc9c" stroke="none" points="783,-545 783,-570 909,-570 909,-545 783,-545"/>
-<polygon fill="none" stroke="#2c3e50" points="783,-545 783,-570 909,-570 909,-545 783,-545"/>
-<text text-anchor="start" x="788" y="-553.8" font-family="monospace" font-size="14.00" fill="#ffffff">oid</text>
-<polygon fill="#ffffff" stroke="none" points="909,-545 909,-570 1027,-570 1027,-545 909,-545"/>
-<polygon fill="none" stroke="#2c3e50" points="909,-545 909,-570 1027,-570 1027,-545 909,-545"/>
-<text text-anchor="start" x="914" y="-554.8" font-family="monospace" font-style="italic" font-size="14.00" fill="#95a5a6">oid</text>
-<polygon fill="#ffffff" stroke="none" points="783,-520 783,-545 909,-545 909,-520 783,-520"/>
-<polygon fill="none" stroke="#2c3e50" points="783,-520 783,-545 909,-545 909,-520 783,-520"/>
-<text text-anchor="start" x="788" y="-528.8" font-family="monospace" font-size="14.00" fill="#000000">proname</text>
-<polygon fill="#ffffff" stroke="none" points="909,-520 909,-545 1027,-545 1027,-520 909,-520"/>
-<polygon fill="none" stroke="#2c3e50" points="909,-520 909,-545 1027,-545 1027,-520 909,-520"/>
-<text text-anchor="start" x="914" y="-529.8" font-family="monospace" font-style="italic" font-size="14.00" fill="#95a5a6">name</text>
-<polygon fill="#ffffff" stroke="none" points="783,-495 783,-520 909,-520 909,-495 783,-495"/>
-<polygon fill="none" stroke="#2c3e50" points="783,-495 783,-520 909,-520 909,-495 783,-495"/>
-<text text-anchor="start" x="788" y="-503.8" font-family="monospace" font-size="14.00" fill="#000000">pronamespace</text>
-<polygon fill="#ffffff" stroke="none" points="909,-495 909,-520 1027,-520 1027,-495 909,-495"/>
-<polygon fill="none" stroke="#2c3e50" points="909,-495 909,-520 1027,-520 1027,-495 909,-495"/>
-<text text-anchor="start" x="914" y="-504.8" font-family="monospace" font-style="italic" font-size="14.00" fill="#95a5a6">oid</text>
-<polygon fill="#ffffff" stroke="none" points="783,-470 783,-495 909,-495 909,-470 783,-470"/>
-<polygon fill="none" stroke="#2c3e50" points="783,-470 783,-495 909,-495 909,-470 783,-470"/>
-<text text-anchor="start" x="788" y="-478.8" font-family="monospace" font-size="14.00" fill="#000000">proowner</text>
-<polygon fill="#ffffff" stroke="none" points="909,-470 909,-495 1027,-495 1027,-470 909,-470"/>
-<polygon fill="none" stroke="#2c3e50" points="909,-470 909,-495 1027,-495 1027,-470 909,-470"/>
-<text text-anchor="start" x="914" y="-479.8" font-family="monospace" font-style="italic" font-size="14.00" fill="#95a5a6">oid</text>
-<polygon fill="#ffffff" stroke="none" points="783,-445 783,-470 909,-470 909,-445 783,-445"/>
-<polygon fill="none" stroke="#2c3e50" points="783,-445 783,-470 909,-470 909,-445 783,-445"/>
-<text text-anchor="start" x="788" y="-453.8" font-family="monospace" font-size="14.00" fill="#000000">prolang</text>
-<polygon fill="#ffffff" stroke="none" points="909,-445 909,-470 1027,-470 1027,-445 909,-445"/>
-<polygon fill="none" stroke="#2c3e50" points="909,-445 909,-470 1027,-470 1027,-445 909,-445"/>
-<text text-anchor="start" x="914" y="-454.8" font-family="monospace" font-style="italic" font-size="14.00" fill="#95a5a6">oid</text>
-<polygon fill="#ffffff" stroke="none" points="783,-420 783,-445 909,-445 909,-420 783,-420"/>
-<polygon fill="none" stroke="#2c3e50" points="783,-420 783,-445 909,-445 909,-420 783,-420"/>
-<text text-anchor="start" x="788" y="-428.8" font-family="monospace" font-size="14.00" fill="#000000">proisagg</text>
-<polygon fill="#ffffff" stroke="none" points="909,-420 909,-445 1027,-445 1027,-420 909,-420"/>
-<polygon fill="none" stroke="#2c3e50" points="909,-420 909,-445 1027,-445 1027,-420 909,-420"/>
-<text text-anchor="start" x="914" y="-429.8" font-family="monospace" font-style="italic" font-size="14.00" fill="#95a5a6">boolean</text>
-<polygon fill="#ffffff" stroke="none" points="783,-395 783,-420 909,-420 909,-395 783,-395"/>
-<polygon fill="none" stroke="#2c3e50" points="783,-395 783,-420 909,-420 909,-395 783,-395"/>
-<text text-anchor="start" x="788" y="-403.8" font-family="monospace" font-size="14.00" fill="#000000">prosecdef</text>
-<polygon fill="#ffffff" stroke="none" points="909,-395 909,-420 1027,-420 1027,-395 909,-395"/>
-<polygon fill="none" stroke="#2c3e50" points="909,-395 909,-420 1027,-420 1027,-395 909,-395"/>
-<text text-anchor="start" x="914" y="-404.8" font-family="monospace" font-style="italic" font-size="14.00" fill="#95a5a6">boolean</text>
-<polygon fill="#ffffff" stroke="none" points="783,-370 783,-395 909,-395 909,-370 783,-370"/>
-<polygon fill="none" stroke="#2c3e50" points="783,-370 783,-395 909,-395 909,-370 783,-370"/>
-<text text-anchor="start" x="788" y="-378.8" font-family="monospace" font-size="14.00" fill="#000000">proisstrict</text>
-<polygon fill="#ffffff" stroke="none" points="909,-370 909,-395 1027,-395 1027,-370 909,-370"/>
-<polygon fill="none" stroke="#2c3e50" points="909,-370 909,-395 1027,-395 1027,-370 909,-370"/>
-<text text-anchor="start" x="914" y="-379.8" font-family="monospace" font-style="italic" font-size="14.00" fill="#95a5a6">boolean</text>
-<polygon fill="#ffffff" stroke="none" points="783,-345 783,-370 909,-370 909,-345 783,-345"/>
-<polygon fill="none" stroke="#2c3e50" points="783,-345 783,-370 909,-370 909,-345 783,-345"/>
-<text text-anchor="start" x="788" y="-353.8" font-family="monospace" font-size="14.00" fill="#000000">proretset</text>
-<polygon fill="#ffffff" stroke="none" points="909,-345 909,-370 1027,-370 1027,-345 909,-345"/>
-<polygon fill="none" stroke="#2c3e50" points="909,-345 909,-370 1027,-370 1027,-345 909,-345"/>
-<text text-anchor="start" x="914" y="-354.8" font-family="monospace" font-style="italic" font-size="14.00" fill="#95a5a6">boolean</text>
-<polygon fill="#ffffff" stroke="none" points="783,-320 783,-345 909,-345 909,-320 783,-320"/>
-<polygon fill="none" stroke="#2c3e50" points="783,-320 783,-345 909,-345 909,-320 783,-320"/>
-<text text-anchor="start" x="788" y="-328.8" font-family="monospace" font-size="14.00" fill="#000000">provolatile</text>
-<polygon fill="#ffffff" stroke="none" points="909,-320 909,-345 1027,-345 1027,-320 909,-320"/>
-<polygon fill="none" stroke="#2c3e50" points="909,-320 909,-345 1027,-345 1027,-320 909,-320"/>
-<text text-anchor="start" x="914" y="-329.8" font-family="monospace" font-style="italic" font-size="14.00" fill="#95a5a6">quoted_char</text>
-<polygon fill="#ffffff" stroke="none" points="783,-295 783,-320 909,-320 909,-295 783,-295"/>
-<polygon fill="none" stroke="#2c3e50" points="783,-295 783,-320 909,-320 909,-295 783,-295"/>
-<text text-anchor="start" x="788" y="-303.8" font-family="monospace" font-size="14.00" fill="#000000">pronargs</text>
-<polygon fill="#ffffff" stroke="none" points="909,-295 909,-320 1027,-320 1027,-295 909,-295"/>
-<polygon fill="none" stroke="#2c3e50" points="909,-295 909,-320 1027,-320 1027,-295 909,-295"/>
-<text text-anchor="start" x="914" y="-304.8" font-family="monospace" font-style="italic" font-size="14.00" fill="#95a5a6">smallint</text>
-<polygon fill="#ffffff" stroke="none" points="783,-270 783,-295 909,-295 909,-270 783,-270"/>
-<polygon fill="none" stroke="#2c3e50" points="783,-270 783,-295 909,-295 909,-270 783,-270"/>
-<text text-anchor="start" x="788" y="-278.8" font-family="monospace" font-size="14.00" fill="#000000">prorettype</text>
-<polygon fill="#ffffff" stroke="none" points="909,-270 909,-295 1027,-295 1027,-270 909,-270"/>
-<polygon fill="none" stroke="#2c3e50" points="909,-270 909,-295 1027,-295 1027,-270 909,-270"/>
-<text text-anchor="start" x="914" y="-279.8" font-family="monospace" font-style="italic" font-size="14.00" fill="#95a5a6">oid</text>
-<polygon fill="#ffffff" stroke="none" points="783,-245 783,-270 909,-270 909,-245 783,-245"/>
-<polygon fill="none" stroke="#2c3e50" points="783,-245 783,-270 909,-270 909,-245 783,-245"/>
-<text text-anchor="start" x="788" y="-253.8" font-family="monospace" font-size="14.00" fill="#000000">proiswin</text>
-<polygon fill="#ffffff" stroke="none" points="909,-245 909,-270 1027,-270 1027,-245 909,-245"/>
-<polygon fill="none" stroke="#2c3e50" points="909,-245 909,-270 1027,-270 1027,-245 909,-245"/>
-<text text-anchor="start" x="914" y="-254.8" font-family="monospace" font-style="italic" font-size="14.00" fill="#95a5a6">boolean</text>
-<polygon fill="#ffffff" stroke="none" points="783,-220 783,-245 909,-245 909,-220 783,-220"/>
-<polygon fill="none" stroke="#2c3e50" points="783,-220 783,-245 909,-245 909,-220 783,-220"/>
-<text text-anchor="start" x="788" y="-228.8" font-family="monospace" font-size="14.00" fill="#000000">proargtypes</text>
-<polygon fill="#ffffff" stroke="none" points="909,-220 909,-245 1027,-245 1027,-220 909,-220"/>
-<polygon fill="none" stroke="#2c3e50" points="909,-220 909,-245 1027,-245 1027,-220 909,-220"/>
-<text text-anchor="start" x="914" y="-229.8" font-family="monospace" font-style="italic" font-size="14.00" fill="#95a5a6">oidvector</text>
-<polygon fill="#ffffff" stroke="none" points="783,-195 783,-220 909,-220 909,-195 783,-195"/>
-<polygon fill="none" stroke="#2c3e50" points="783,-195 783,-220 909,-220 909,-195 783,-195"/>
-<text text-anchor="start" x="788" y="-203.8" font-family="monospace" font-size="14.00" fill="#000000">proallargtypes</text>
-<polygon fill="#ffffff" stroke="none" points="909,-195 909,-220 1027,-220 1027,-195 909,-195"/>
-<polygon fill="none" stroke="#2c3e50" points="909,-195 909,-220 1027,-220 1027,-195 909,-195"/>
-<text text-anchor="start" x="914" y="-204.8" font-family="monospace" font-style="italic" font-size="14.00" fill="#95a5a6">oid[]</text>
-<polygon fill="#ffffff" stroke="none" points="783,-170 783,-195 909,-195 909,-170 783,-170"/>
-<polygon fill="none" stroke="#2c3e50" points="783,-170 783,-195 909,-195 909,-170 783,-170"/>
-<text text-anchor="start" x="788" y="-178.8" font-family="monospace" font-size="14.00" fill="#000000">proargmodes</text>
-<polygon fill="#ffffff" stroke="none" points="909,-170 909,-195 1027,-195 1027,-170 909,-170"/>
-<polygon fill="none" stroke="#2c3e50" points="909,-170 909,-195 1027,-195 1027,-170 909,-170"/>
-<text text-anchor="start" x="914" y="-179.8" font-family="monospace" font-style="italic" font-size="14.00" fill="#95a5a6">quoted_char[]</text>
-<polygon fill="#ffffff" stroke="none" points="783,-145 783,-170 909,-170 909,-145 783,-145"/>
-<polygon fill="none" stroke="#2c3e50" points="783,-145 783,-170 909,-170 909,-145 783,-145"/>
-<text text-anchor="start" x="788" y="-153.8" font-family="monospace" font-size="14.00" fill="#000000">proargnames</text>
-<polygon fill="#ffffff" stroke="none" points="909,-145 909,-170 1027,-170 1027,-145 909,-145"/>
-<polygon fill="none" stroke="#2c3e50" points="909,-145 909,-170 1027,-170 1027,-145 909,-145"/>
-<text text-anchor="start" x="914" y="-154.8" font-family="monospace" font-style="italic" font-size="14.00" fill="#95a5a6">text[]</text>
-<polygon fill="#ffffff" stroke="none" points="783,-120 783,-145 909,-145 909,-120 783,-120"/>
-<polygon fill="none" stroke="#2c3e50" points="783,-120 783,-145 909,-145 909,-120 783,-120"/>
-<text text-anchor="start" x="788" y="-128.8" font-family="monospace" font-size="14.00" fill="#000000">prosrc</text>
-<polygon fill="#ffffff" stroke="none" points="909,-120 909,-145 1027,-145 1027,-120 909,-120"/>
-<polygon fill="none" stroke="#2c3e50" points="909,-120 909,-145 1027,-145 1027,-120 909,-120"/>
-<text text-anchor="start" x="914" y="-129.8" font-family="monospace" font-style="italic" font-size="14.00" fill="#95a5a6">text</text>
-<polygon fill="#ffffff" stroke="none" points="783,-95 783,-120 909,-120 909,-95 783,-95"/>
-<polygon fill="none" stroke="#2c3e50" points="783,-95 783,-120 909,-120 909,-95 783,-95"/>
-<text text-anchor="start" x="788" y="-103.8" font-family="monospace" font-size="14.00" fill="#000000">probin</text>
-<polygon fill="#ffffff" stroke="none" points="909,-95 909,-120 1027,-120 1027,-95 909,-95"/>
-<polygon fill="none" stroke="#2c3e50" points="909,-95 909,-120 1027,-120 1027,-95 909,-95"/>
-<text text-anchor="start" x="914" y="-104.8" font-family="monospace" font-style="italic" font-size="14.00" fill="#95a5a6">bytea</text>
-<polygon fill="#ffffff" stroke="none" points="783,-70 783,-95 909,-95 909,-70 783,-70"/>
-<polygon fill="none" stroke="#2c3e50" points="783,-70 783,-95 909,-95 909,-70 783,-70"/>
-<text text-anchor="start" x="788" y="-78.8" font-family="monospace" font-size="14.00" fill="#000000">proacl</text>
-<polygon fill="#ffffff" stroke="none" points="909,-70 909,-95 1027,-95 1027,-70 909,-70"/>
-<polygon fill="none" stroke="#2c3e50" points="909,-70 909,-95 1027,-95 1027,-70 909,-70"/>
-<text text-anchor="start" x="914" y="-79.8" font-family="monospace" font-style="italic" font-size="14.00" fill="#95a5a6">aclitem[]</text>
-<polygon fill="#ffffff" stroke="none" points="783,-45 783,-70 909,-70 909,-45 783,-45"/>
-<polygon fill="none" stroke="#2c3e50" points="783,-45 783,-70 909,-70 909,-45 783,-45"/>
-<text text-anchor="start" x="788" y="-53.8" font-family="monospace" font-size="14.00" fill="#000000">prodataaccess</text>
-<polygon fill="#ffffff" stroke="none" points="909,-45 909,-70 1027,-70 1027,-45 909,-45"/>
-<polygon fill="none" stroke="#2c3e50" points="909,-45 909,-70 1027,-70 1027,-45 909,-45"/>
-<text text-anchor="start" x="914" y="-54.8" font-family="monospace" font-style="italic" font-size="14.00" fill="#95a5a6">quoted_char</text>
-<polygon fill="#ffffff" stroke="none" points="783,-20 783,-45 909,-45 909,-20 783,-20"/>
-<polygon fill="none" stroke="#2c3e50" points="783,-20 783,-45 909,-45 909,-20 783,-20"/>
-<text text-anchor="start" x="788" y="-28.8" font-family="monospace" font-size="14.00" fill="#000000">provariadic</text>
-<polygon fill="#ffffff" stroke="none" points="909,-20 909,-45 1027,-45 1027,-20 909,-20"/>
-<polygon fill="none" stroke="#2c3e50" points="909,-20 909,-45 1027,-45 1027,-20 909,-20"/>
-<text text-anchor="start" x="914" y="-29.8" font-family="monospace" font-style="italic" font-size="14.00" fill="#95a5a6">oid</text>
-</g>
-<!-- pg_amproc&#45;&gt;pg_proc -->
-<g id="edge3" class="edge"><title>pg_amproc:amproc_out&#45;&gt;pg_proc:oid_in</title>
-<path fill="none" stroke="#2c3e50" d="M393.5,-1182C660.342,-1182 420.121,-809.485 610,-622 665.546,-567.154 697.604,-558.669 771.752,-558.041"/>
-<polygon fill="#2c3e50" stroke="#2c3e50" points="772.014,-561.54 782,-558 771.986,-554.54 772.014,-561.54"/>
 </g>
 </g>
 </svg>

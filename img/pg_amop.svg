@@ -16,6 +16,7 @@
 </g>
 <!-- pg_amop -->
 <g id="node1" class="node"><title>pg_amop</title>
+<g id="a_node1"><a xlink:href="pg_amop.svg" xlink:title="&lt;TABLE&gt;">
 <polygon fill="#2c3e50" stroke="none" points="188.5,-1169 188.5,-1199 375.5,-1199 375.5,-1169 188.5,-1169"/>
 <polygon fill="none" stroke="black" points="188.5,-1169 188.5,-1199 375.5,-1199 375.5,-1169 188.5,-1169"/>
 <text text-anchor="start" x="245" y="-1180.6" font-family="monospace" font-weight="bold" font-size="18.00" fill="#ffffff">pg_amop</text>
@@ -49,9 +50,12 @@
 <polygon fill="#18bc9c" stroke="none" points="298.5,-1044 298.5,-1069 375.5,-1069 375.5,-1044 298.5,-1044"/>
 <polygon fill="none" stroke="#2c3e50" points="298.5,-1044 298.5,-1069 375.5,-1069 375.5,-1044 298.5,-1044"/>
 <text text-anchor="start" x="303.5" y="-1053.8" font-family="monospace" font-style="italic" font-size="14.00" fill="#ffffff">oid</text>
+</a>
+</g>
 </g>
 <!-- pg_opclass -->
 <g id="node2" class="node"><title>pg_opclass</title>
+<g id="a_node2"><a xlink:href="pg_opclass.svg" xlink:title="&lt;TABLE&gt;">
 <polygon fill="#2c3e50" stroke="none" points="776.5,-1418 776.5,-1448 954.5,-1448 954.5,-1418 776.5,-1418"/>
 <polygon fill="none" stroke="black" points="776.5,-1418 776.5,-1448 954.5,-1448 954.5,-1418 776.5,-1418"/>
 <text text-anchor="start" x="812.5" y="-1429.6" font-family="monospace" font-weight="bold" font-size="18.00" fill="#ffffff">pg_opclass</text>
@@ -103,6 +107,8 @@
 <polygon fill="#ffffff" stroke="none" points="886.5,-1218 886.5,-1243 954.5,-1243 954.5,-1218 886.5,-1218"/>
 <polygon fill="none" stroke="#2c3e50" points="886.5,-1218 886.5,-1243 954.5,-1243 954.5,-1218 886.5,-1218"/>
 <text text-anchor="start" x="891.5" y="-1227.8" font-family="monospace" font-style="italic" font-size="14.00" fill="#95a5a6">oid</text>
+</a>
+</g>
 </g>
 <!-- pg_amop&#45;&gt;pg_opclass -->
 <g id="edge1" class="edge"><title>pg_amop:amopclaid_out&#45;&gt;pg_opclass:oid_in</title>
@@ -111,6 +117,7 @@
 </g>
 <!-- pg_type -->
 <g id="node3" class="node"><title>pg_type</title>
+<g id="a_node3"><a xlink:href="pg_type.svg" xlink:title="&lt;TABLE&gt;">
 <polygon fill="#2c3e50" stroke="none" points="756.5,-1144 756.5,-1174 975.5,-1174 975.5,-1144 756.5,-1144"/>
 <polygon fill="none" stroke="black" points="756.5,-1144 756.5,-1174 975.5,-1174 975.5,-1144 756.5,-1144"/>
 <text text-anchor="start" x="829" y="-1155.6" font-family="monospace" font-weight="bold" font-size="18.00" fill="#ffffff">pg_type</text>
@@ -258,6 +265,8 @@
 <polygon fill="#ffffff" stroke="none" points="874.5,-544 874.5,-569 975.5,-569 975.5,-544 874.5,-544"/>
 <polygon fill="none" stroke="#2c3e50" points="874.5,-544 874.5,-569 975.5,-569 975.5,-544 874.5,-544"/>
 <text text-anchor="start" x="879.5" y="-553.8" font-family="monospace" font-style="italic" font-size="14.00" fill="#95a5a6">text</text>
+</a>
+</g>
 </g>
 <!-- pg_amop&#45;&gt;pg_type -->
 <g id="edge2" class="edge"><title>pg_amop:amopsubtype_out&#45;&gt;pg_type:oid_in</title>
@@ -266,6 +275,7 @@
 </g>
 <!-- pg_operator -->
 <g id="node4" class="node"><title>pg_operator</title>
+<g id="a_node4"><a xlink:href="pg_operator.svg" xlink:title="&lt;TABLE&gt;">
 <polygon fill="#2c3e50" stroke="none" points="760.5,-470 760.5,-500 971.5,-500 971.5,-470 760.5,-470"/>
 <polygon fill="none" stroke="black" points="760.5,-470 760.5,-500 971.5,-500 971.5,-470 760.5,-470"/>
 <text text-anchor="start" x="808" y="-481.6" font-family="monospace" font-weight="bold" font-size="18.00" fill="#ffffff">pg_operator</text>
@@ -377,6 +387,8 @@
 <polygon fill="#ffffff" stroke="none" points="870.5,-20 870.5,-45 971.5,-45 971.5,-20 870.5,-20"/>
 <polygon fill="none" stroke="#2c3e50" points="870.5,-20 870.5,-45 971.5,-45 971.5,-20 870.5,-20"/>
 <text text-anchor="start" x="875.5" y="-29.8" font-family="monospace" font-style="italic" font-size="14.00" fill="#95a5a6">regproc</text>
+</a>
+</g>
 </g>
 <!-- pg_amop&#45;&gt;pg_operator -->
 <g id="edge3" class="edge"><title>pg_amop:amopopr_out&#45;&gt;pg_operator:oid_in</title>

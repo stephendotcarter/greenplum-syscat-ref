@@ -18,6 +18,26 @@ digraph GPDB {
         style=invis;
 
         
+            pg_foreign_table [label = <<FONT FACE="monospace"><TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4">
+<TR><TD BGCOLOR="#2c3e50" ALIGN="CENTER" COLSPAN="2"><FONT COLOR="#FFFFFF" POINT-SIZE="18"><B>pg_foreign_table</B></FONT></TD></TR>
+
+<TR>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="reloid_in"><FONT COLOR="#000000">reloid</FONT></TD>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="reloid_out"><FONT COLOR="#95a5a6"><I>oid</I></FONT></TD>
+</TR>
+
+<TR>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="server_in"><FONT COLOR="#000000">server</FONT></TD>
+<TD COLOR="#2c3e50" BGCOLOR="#18bc9c" ALIGN="LEFT" PORT="server_out"><FONT COLOR="#FFFFFF"><I>oid</I></FONT></TD>
+</TR>
+
+<TR>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="tbloptions_in"><FONT COLOR="#000000">tbloptions</FONT></TD>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="tbloptions_out"><FONT COLOR="#95a5a6"><I>text[]</I></FONT></TD>
+</TR>
+
+</TABLE></FONT>> name = "pg_foreign_table" URL = "pg_foreign_table.svg"];
+        
             pg_user_mapping [label = <<FONT FACE="monospace"><TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4">
 <TR><TD BGCOLOR="#2c3e50" ALIGN="CENTER" COLSPAN="2"><FONT COLOR="#FFFFFF" POINT-SIZE="18"><B>pg_user_mapping</B></FONT></TD></TR>
 
@@ -41,27 +61,7 @@ digraph GPDB {
 <TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="umoptions_out"><FONT COLOR="#95a5a6"><I>text[]</I></FONT></TD>
 </TR>
 
-</TABLE></FONT>> name = "pg_user_mapping"];
-        
-            pg_foreign_table [label = <<FONT FACE="monospace"><TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4">
-<TR><TD BGCOLOR="#2c3e50" ALIGN="CENTER" COLSPAN="2"><FONT COLOR="#FFFFFF" POINT-SIZE="18"><B>pg_foreign_table</B></FONT></TD></TR>
-
-<TR>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="reloid_in"><FONT COLOR="#000000">reloid</FONT></TD>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="reloid_out"><FONT COLOR="#95a5a6"><I>oid</I></FONT></TD>
-</TR>
-
-<TR>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="server_in"><FONT COLOR="#000000">server</FONT></TD>
-<TD COLOR="#2c3e50" BGCOLOR="#18bc9c" ALIGN="LEFT" PORT="server_out"><FONT COLOR="#FFFFFF"><I>oid</I></FONT></TD>
-</TR>
-
-<TR>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="tbloptions_in"><FONT COLOR="#000000">tbloptions</FONT></TD>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="tbloptions_out"><FONT COLOR="#95a5a6"><I>text[]</I></FONT></TD>
-</TR>
-
-</TABLE></FONT>> name = "pg_foreign_table"];
+</TABLE></FONT>> name = "pg_user_mapping" URL = "pg_user_mapping.svg"];
         
     }
     
@@ -113,7 +113,7 @@ digraph GPDB {
 <TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="srvoptions_out"><FONT COLOR="#95a5a6"><I>text[]</I></FONT></TD>
 </TR>
 
-</TABLE></FONT>> name = "pg_foreign_server"];
+</TABLE></FONT>> name = "pg_foreign_server" URL = "pg_foreign_server.svg"];
         
     }
     
@@ -121,6 +121,41 @@ digraph GPDB {
         rankdir=TB
         style=invis;
 
+        
+            pg_foreign_data_wrapper [label = <<FONT FACE="monospace"><TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4">
+<TR><TD BGCOLOR="#2c3e50" ALIGN="CENTER" COLSPAN="2"><FONT COLOR="#FFFFFF" POINT-SIZE="18"><B>pg_foreign_data_wrapper</B></FONT></TD></TR>
+
+<TR>
+<TD COLOR="#2c3e50" BGCOLOR="#18bc9c" ALIGN="LEFT" PORT="oid_in"><FONT COLOR="#FFFFFF">oid</FONT></TD>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="oid_out"><FONT COLOR="#95a5a6"><I>oid</I></FONT></TD>
+</TR>
+
+<TR>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="fdwname_in"><FONT COLOR="#000000">fdwname</FONT></TD>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="fdwname_out"><FONT COLOR="#95a5a6"><I>name</I></FONT></TD>
+</TR>
+
+<TR>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="fdwowner_in"><FONT COLOR="#000000">fdwowner</FONT></TD>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="fdwowner_out"><FONT COLOR="#95a5a6"><I>oid</I></FONT></TD>
+</TR>
+
+<TR>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="fdwvalidator_in"><FONT COLOR="#000000">fdwvalidator</FONT></TD>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="fdwvalidator_out"><FONT COLOR="#95a5a6"><I>oid</I></FONT></TD>
+</TR>
+
+<TR>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="fdwacl_in"><FONT COLOR="#000000">fdwacl</FONT></TD>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="fdwacl_out"><FONT COLOR="#95a5a6"><I>aclitem[]</I></FONT></TD>
+</TR>
+
+<TR>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="fdwoptions_in"><FONT COLOR="#000000">fdwoptions</FONT></TD>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="fdwoptions_out"><FONT COLOR="#95a5a6"><I>text[]</I></FONT></TD>
+</TR>
+
+</TABLE></FONT>> name = "pg_foreign_data_wrapper" URL = "pg_foreign_data_wrapper.svg"];
         
             pg_authid [label = <<FONT FACE="monospace"><TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4">
 <TR><TD BGCOLOR="#2c3e50" ALIGN="CENTER" COLSPAN="2"><FONT COLOR="#FFFFFF" POINT-SIZE="18"><B>pg_authid</B></FONT></TD></TR>
@@ -215,42 +250,7 @@ digraph GPDB {
 <TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="rolcreatewexthdfs_out"><FONT COLOR="#95a5a6"><I>boolean</I></FONT></TD>
 </TR>
 
-</TABLE></FONT>> name = "pg_authid"];
-        
-            pg_foreign_data_wrapper [label = <<FONT FACE="monospace"><TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4">
-<TR><TD BGCOLOR="#2c3e50" ALIGN="CENTER" COLSPAN="2"><FONT COLOR="#FFFFFF" POINT-SIZE="18"><B>pg_foreign_data_wrapper</B></FONT></TD></TR>
-
-<TR>
-<TD COLOR="#2c3e50" BGCOLOR="#18bc9c" ALIGN="LEFT" PORT="oid_in"><FONT COLOR="#FFFFFF">oid</FONT></TD>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="oid_out"><FONT COLOR="#95a5a6"><I>oid</I></FONT></TD>
-</TR>
-
-<TR>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="fdwname_in"><FONT COLOR="#000000">fdwname</FONT></TD>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="fdwname_out"><FONT COLOR="#95a5a6"><I>name</I></FONT></TD>
-</TR>
-
-<TR>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="fdwowner_in"><FONT COLOR="#000000">fdwowner</FONT></TD>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="fdwowner_out"><FONT COLOR="#95a5a6"><I>oid</I></FONT></TD>
-</TR>
-
-<TR>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="fdwvalidator_in"><FONT COLOR="#000000">fdwvalidator</FONT></TD>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="fdwvalidator_out"><FONT COLOR="#95a5a6"><I>oid</I></FONT></TD>
-</TR>
-
-<TR>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="fdwacl_in"><FONT COLOR="#000000">fdwacl</FONT></TD>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="fdwacl_out"><FONT COLOR="#95a5a6"><I>aclitem[]</I></FONT></TD>
-</TR>
-
-<TR>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="fdwoptions_in"><FONT COLOR="#000000">fdwoptions</FONT></TD>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="fdwoptions_out"><FONT COLOR="#95a5a6"><I>text[]</I></FONT></TD>
-</TR>
-
-</TABLE></FONT>> name = "pg_foreign_data_wrapper"];
+</TABLE></FONT>> name = "pg_authid" URL = "pg_authid.svg"];
         
     }
     

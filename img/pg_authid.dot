@@ -18,8 +18,8 @@ digraph GPDB {
         style=invis;
 
         
-            pg_namespace [label = <<FONT FACE="monospace"><TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4">
-<TR><TD BGCOLOR="#2c3e50" ALIGN="CENTER" COLSPAN="2"><FONT COLOR="#FFFFFF" POINT-SIZE="18"><B>pg_namespace</B></FONT></TD></TR>
+            pg_opclass [label = <<FONT FACE="monospace"><TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4">
+<TR><TD BGCOLOR="#2c3e50" ALIGN="CENTER" COLSPAN="2"><FONT COLOR="#FFFFFF" POINT-SIZE="18"><B>pg_opclass</B></FONT></TD></TR>
 
 <TR>
 <TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="oid_in"><FONT COLOR="#000000">oid</FONT></TD>
@@ -27,86 +27,41 @@ digraph GPDB {
 </TR>
 
 <TR>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="nspname_in"><FONT COLOR="#000000">nspname</FONT></TD>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="nspname_out"><FONT COLOR="#95a5a6"><I>name</I></FONT></TD>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="opcamid_in"><FONT COLOR="#000000">opcamid</FONT></TD>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="opcamid_out"><FONT COLOR="#95a5a6"><I>oid</I></FONT></TD>
 </TR>
 
 <TR>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="nspowner_in"><FONT COLOR="#000000">nspowner</FONT></TD>
-<TD COLOR="#2c3e50" BGCOLOR="#18bc9c" ALIGN="LEFT" PORT="nspowner_out"><FONT COLOR="#FFFFFF"><I>oid</I></FONT></TD>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="opcname_in"><FONT COLOR="#000000">opcname</FONT></TD>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="opcname_out"><FONT COLOR="#95a5a6"><I>name</I></FONT></TD>
 </TR>
 
 <TR>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="nspacl_in"><FONT COLOR="#000000">nspacl</FONT></TD>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="nspacl_out"><FONT COLOR="#95a5a6"><I>aclitem[]</I></FONT></TD>
-</TR>
-
-</TABLE></FONT>> name = "pg_namespace"];
-        
-            pg_auth_time_constraint [label = <<FONT FACE="monospace"><TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4">
-<TR><TD BGCOLOR="#2c3e50" ALIGN="CENTER" COLSPAN="2"><FONT COLOR="#FFFFFF" POINT-SIZE="18"><B>pg_auth_time_constraint</B></FONT></TD></TR>
-
-<TR>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="authid_in"><FONT COLOR="#000000">authid</FONT></TD>
-<TD COLOR="#2c3e50" BGCOLOR="#18bc9c" ALIGN="LEFT" PORT="authid_out"><FONT COLOR="#FFFFFF"><I>oid</I></FONT></TD>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="opcnamespace_in"><FONT COLOR="#000000">opcnamespace</FONT></TD>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="opcnamespace_out"><FONT COLOR="#95a5a6"><I>oid</I></FONT></TD>
 </TR>
 
 <TR>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="start_day_in"><FONT COLOR="#000000">start_day</FONT></TD>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="start_day_out"><FONT COLOR="#95a5a6"><I>smallint</I></FONT></TD>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="opcowner_in"><FONT COLOR="#000000">opcowner</FONT></TD>
+<TD COLOR="#2c3e50" BGCOLOR="#18bc9c" ALIGN="LEFT" PORT="opcowner_out"><FONT COLOR="#FFFFFF"><I>oid</I></FONT></TD>
 </TR>
 
 <TR>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="start_time_in"><FONT COLOR="#000000">start_time</FONT></TD>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="start_time_out"><FONT COLOR="#95a5a6"><I>time</I></FONT></TD>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="opcintype_in"><FONT COLOR="#000000">opcintype</FONT></TD>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="opcintype_out"><FONT COLOR="#95a5a6"><I>oid</I></FONT></TD>
 </TR>
 
 <TR>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="end_day_in"><FONT COLOR="#000000">end_day</FONT></TD>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="end_day_out"><FONT COLOR="#95a5a6"><I>smallint</I></FONT></TD>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="opcdefault_in"><FONT COLOR="#000000">opcdefault</FONT></TD>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="opcdefault_out"><FONT COLOR="#95a5a6"><I>boolean</I></FONT></TD>
 </TR>
 
 <TR>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="end_time_in"><FONT COLOR="#000000">end_time</FONT></TD>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="end_time_out"><FONT COLOR="#95a5a6"><I>time</I></FONT></TD>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="opckeytype_in"><FONT COLOR="#000000">opckeytype</FONT></TD>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="opckeytype_out"><FONT COLOR="#95a5a6"><I>oid</I></FONT></TD>
 </TR>
 
-</TABLE></FONT>> name = "pg_auth_time_constraint"];
-        
-            pg_foreign_data_wrapper [label = <<FONT FACE="monospace"><TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4">
-<TR><TD BGCOLOR="#2c3e50" ALIGN="CENTER" COLSPAN="2"><FONT COLOR="#FFFFFF" POINT-SIZE="18"><B>pg_foreign_data_wrapper</B></FONT></TD></TR>
-
-<TR>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="oid_in"><FONT COLOR="#000000">oid</FONT></TD>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="oid_out"><FONT COLOR="#95a5a6"><I>oid</I></FONT></TD>
-</TR>
-
-<TR>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="fdwname_in"><FONT COLOR="#000000">fdwname</FONT></TD>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="fdwname_out"><FONT COLOR="#95a5a6"><I>name</I></FONT></TD>
-</TR>
-
-<TR>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="fdwowner_in"><FONT COLOR="#000000">fdwowner</FONT></TD>
-<TD COLOR="#2c3e50" BGCOLOR="#18bc9c" ALIGN="LEFT" PORT="fdwowner_out"><FONT COLOR="#FFFFFF"><I>oid</I></FONT></TD>
-</TR>
-
-<TR>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="fdwvalidator_in"><FONT COLOR="#000000">fdwvalidator</FONT></TD>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="fdwvalidator_out"><FONT COLOR="#95a5a6"><I>oid</I></FONT></TD>
-</TR>
-
-<TR>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="fdwacl_in"><FONT COLOR="#000000">fdwacl</FONT></TD>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="fdwacl_out"><FONT COLOR="#95a5a6"><I>aclitem[]</I></FONT></TD>
-</TR>
-
-<TR>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="fdwoptions_in"><FONT COLOR="#000000">fdwoptions</FONT></TD>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="fdwoptions_out"><FONT COLOR="#95a5a6"><I>text[]</I></FONT></TD>
-</TR>
-
-</TABLE></FONT>> name = "pg_foreign_data_wrapper"];
+</TABLE></FONT>> name = "pg_opclass" URL = "pg_opclass.svg"];
         
             pg_proc [label = <<FONT FACE="monospace"><TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4">
 <TR><TD BGCOLOR="#2c3e50" ALIGN="CENTER" COLSPAN="2"><FONT COLOR="#FFFFFF" POINT-SIZE="18"><B>pg_proc</B></FONT></TD></TR>
@@ -221,7 +176,97 @@ digraph GPDB {
 <TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="provariadic_out"><FONT COLOR="#95a5a6"><I>oid</I></FONT></TD>
 </TR>
 
-</TABLE></FONT>> name = "pg_proc"];
+</TABLE></FONT>> name = "pg_proc" URL = "pg_proc.svg"];
+        
+            pg_conversion [label = <<FONT FACE="monospace"><TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4">
+<TR><TD BGCOLOR="#2c3e50" ALIGN="CENTER" COLSPAN="2"><FONT COLOR="#FFFFFF" POINT-SIZE="18"><B>pg_conversion</B></FONT></TD></TR>
+
+<TR>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="oid_in"><FONT COLOR="#000000">oid</FONT></TD>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="oid_out"><FONT COLOR="#95a5a6"><I>oid</I></FONT></TD>
+</TR>
+
+<TR>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="conname_in"><FONT COLOR="#000000">conname</FONT></TD>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="conname_out"><FONT COLOR="#95a5a6"><I>name</I></FONT></TD>
+</TR>
+
+<TR>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="connamespace_in"><FONT COLOR="#000000">connamespace</FONT></TD>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="connamespace_out"><FONT COLOR="#95a5a6"><I>oid</I></FONT></TD>
+</TR>
+
+<TR>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="conowner_in"><FONT COLOR="#000000">conowner</FONT></TD>
+<TD COLOR="#2c3e50" BGCOLOR="#18bc9c" ALIGN="LEFT" PORT="conowner_out"><FONT COLOR="#FFFFFF"><I>oid</I></FONT></TD>
+</TR>
+
+<TR>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="conforencoding_in"><FONT COLOR="#000000">conforencoding</FONT></TD>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="conforencoding_out"><FONT COLOR="#95a5a6"><I>integer</I></FONT></TD>
+</TR>
+
+<TR>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="contoencoding_in"><FONT COLOR="#000000">contoencoding</FONT></TD>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="contoencoding_out"><FONT COLOR="#95a5a6"><I>integer</I></FONT></TD>
+</TR>
+
+<TR>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="conproc_in"><FONT COLOR="#000000">conproc</FONT></TD>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="conproc_out"><FONT COLOR="#95a5a6"><I>regproc</I></FONT></TD>
+</TR>
+
+<TR>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="condefault_in"><FONT COLOR="#000000">condefault</FONT></TD>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="condefault_out"><FONT COLOR="#95a5a6"><I>boolean</I></FONT></TD>
+</TR>
+
+</TABLE></FONT>> name = "pg_conversion" URL = "pg_conversion.svg"];
+        
+            pg_foreign_server [label = <<FONT FACE="monospace"><TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4">
+<TR><TD BGCOLOR="#2c3e50" ALIGN="CENTER" COLSPAN="2"><FONT COLOR="#FFFFFF" POINT-SIZE="18"><B>pg_foreign_server</B></FONT></TD></TR>
+
+<TR>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="oid_in"><FONT COLOR="#000000">oid</FONT></TD>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="oid_out"><FONT COLOR="#95a5a6"><I>oid</I></FONT></TD>
+</TR>
+
+<TR>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="srvname_in"><FONT COLOR="#000000">srvname</FONT></TD>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="srvname_out"><FONT COLOR="#95a5a6"><I>name</I></FONT></TD>
+</TR>
+
+<TR>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="srvowner_in"><FONT COLOR="#000000">srvowner</FONT></TD>
+<TD COLOR="#2c3e50" BGCOLOR="#18bc9c" ALIGN="LEFT" PORT="srvowner_out"><FONT COLOR="#FFFFFF"><I>oid</I></FONT></TD>
+</TR>
+
+<TR>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="srvfdw_in"><FONT COLOR="#000000">srvfdw</FONT></TD>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="srvfdw_out"><FONT COLOR="#95a5a6"><I>oid</I></FONT></TD>
+</TR>
+
+<TR>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="srvtype_in"><FONT COLOR="#000000">srvtype</FONT></TD>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="srvtype_out"><FONT COLOR="#95a5a6"><I>text</I></FONT></TD>
+</TR>
+
+<TR>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="srvversion_in"><FONT COLOR="#000000">srvversion</FONT></TD>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="srvversion_out"><FONT COLOR="#95a5a6"><I>text</I></FONT></TD>
+</TR>
+
+<TR>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="srvacl_in"><FONT COLOR="#000000">srvacl</FONT></TD>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="srvacl_out"><FONT COLOR="#95a5a6"><I>aclitem[]</I></FONT></TD>
+</TR>
+
+<TR>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="srvoptions_in"><FONT COLOR="#000000">srvoptions</FONT></TD>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="srvoptions_out"><FONT COLOR="#95a5a6"><I>text[]</I></FONT></TD>
+</TR>
+
+</TABLE></FONT>> name = "pg_foreign_server" URL = "pg_foreign_server.svg"];
         
             pg_stat_last_shoperation [label = <<FONT FACE="monospace"><TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4">
 <TR><TD BGCOLOR="#2c3e50" ALIGN="CENTER" COLSPAN="2"><FONT COLOR="#FFFFFF" POINT-SIZE="18"><B>pg_stat_last_shoperation</B></FONT></TD></TR>
@@ -261,137 +306,7 @@ digraph GPDB {
 <TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="statime_out"><FONT COLOR="#95a5a6"><I>timestamp_with_time_zone</I></FONT></TD>
 </TR>
 
-</TABLE></FONT>> name = "pg_stat_last_shoperation"];
-        
-            pg_tablespace [label = <<FONT FACE="monospace"><TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4">
-<TR><TD BGCOLOR="#2c3e50" ALIGN="CENTER" COLSPAN="2"><FONT COLOR="#FFFFFF" POINT-SIZE="18"><B>pg_tablespace</B></FONT></TD></TR>
-
-<TR>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="oid_in"><FONT COLOR="#000000">oid</FONT></TD>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="oid_out"><FONT COLOR="#95a5a6"><I>oid</I></FONT></TD>
-</TR>
-
-<TR>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="spcname_in"><FONT COLOR="#000000">spcname</FONT></TD>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="spcname_out"><FONT COLOR="#95a5a6"><I>name</I></FONT></TD>
-</TR>
-
-<TR>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="spcowner_in"><FONT COLOR="#000000">spcowner</FONT></TD>
-<TD COLOR="#2c3e50" BGCOLOR="#18bc9c" ALIGN="LEFT" PORT="spcowner_out"><FONT COLOR="#FFFFFF"><I>oid</I></FONT></TD>
-</TR>
-
-<TR>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="spclocation_in"><FONT COLOR="#000000">spclocation</FONT></TD>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="spclocation_out"><FONT COLOR="#95a5a6"><I>text</I></FONT></TD>
-</TR>
-
-<TR>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="spcacl_in"><FONT COLOR="#000000">spcacl</FONT></TD>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="spcacl_out"><FONT COLOR="#95a5a6"><I>aclitem[]</I></FONT></TD>
-</TR>
-
-<TR>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="spcprilocations_in"><FONT COLOR="#000000">spcprilocations</FONT></TD>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="spcprilocations_out"><FONT COLOR="#95a5a6"><I>text[]</I></FONT></TD>
-</TR>
-
-<TR>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="spcmirlocations_in"><FONT COLOR="#000000">spcmirlocations</FONT></TD>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="spcmirlocations_out"><FONT COLOR="#95a5a6"><I>text[]</I></FONT></TD>
-</TR>
-
-<TR>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="spcfsoid_in"><FONT COLOR="#000000">spcfsoid</FONT></TD>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="spcfsoid_out"><FONT COLOR="#95a5a6"><I>oid</I></FONT></TD>
-</TR>
-
-</TABLE></FONT>> name = "pg_tablespace"];
-        
-            pg_stat_last_operation [label = <<FONT FACE="monospace"><TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4">
-<TR><TD BGCOLOR="#2c3e50" ALIGN="CENTER" COLSPAN="2"><FONT COLOR="#FFFFFF" POINT-SIZE="18"><B>pg_stat_last_operation</B></FONT></TD></TR>
-
-<TR>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="classid_in"><FONT COLOR="#000000">classid</FONT></TD>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="classid_out"><FONT COLOR="#95a5a6"><I>oid</I></FONT></TD>
-</TR>
-
-<TR>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="objid_in"><FONT COLOR="#000000">objid</FONT></TD>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="objid_out"><FONT COLOR="#95a5a6"><I>oid</I></FONT></TD>
-</TR>
-
-<TR>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="staactionname_in"><FONT COLOR="#000000">staactionname</FONT></TD>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="staactionname_out"><FONT COLOR="#95a5a6"><I>name</I></FONT></TD>
-</TR>
-
-<TR>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="stasysid_in"><FONT COLOR="#000000">stasysid</FONT></TD>
-<TD COLOR="#2c3e50" BGCOLOR="#18bc9c" ALIGN="LEFT" PORT="stasysid_out"><FONT COLOR="#FFFFFF"><I>oid</I></FONT></TD>
-</TR>
-
-<TR>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="stausename_in"><FONT COLOR="#000000">stausename</FONT></TD>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="stausename_out"><FONT COLOR="#95a5a6"><I>name</I></FONT></TD>
-</TR>
-
-<TR>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="stasubtype_in"><FONT COLOR="#000000">stasubtype</FONT></TD>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="stasubtype_out"><FONT COLOR="#95a5a6"><I>text</I></FONT></TD>
-</TR>
-
-<TR>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="statime_in"><FONT COLOR="#000000">statime</FONT></TD>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="statime_out"><FONT COLOR="#95a5a6"><I>timestamp_with_time_zone</I></FONT></TD>
-</TR>
-
-</TABLE></FONT>> name = "pg_stat_last_operation"];
-        
-            pg_compression [label = <<FONT FACE="monospace"><TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4">
-<TR><TD BGCOLOR="#2c3e50" ALIGN="CENTER" COLSPAN="2"><FONT COLOR="#FFFFFF" POINT-SIZE="18"><B>pg_compression</B></FONT></TD></TR>
-
-<TR>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="oid_in"><FONT COLOR="#000000">oid</FONT></TD>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="oid_out"><FONT COLOR="#95a5a6"><I>oid</I></FONT></TD>
-</TR>
-
-<TR>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="compname_in"><FONT COLOR="#000000">compname</FONT></TD>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="compname_out"><FONT COLOR="#95a5a6"><I>name</I></FONT></TD>
-</TR>
-
-<TR>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="compconstructor_in"><FONT COLOR="#000000">compconstructor</FONT></TD>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="compconstructor_out"><FONT COLOR="#95a5a6"><I>regproc</I></FONT></TD>
-</TR>
-
-<TR>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="compdestructor_in"><FONT COLOR="#000000">compdestructor</FONT></TD>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="compdestructor_out"><FONT COLOR="#95a5a6"><I>regproc</I></FONT></TD>
-</TR>
-
-<TR>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="compcompressor_in"><FONT COLOR="#000000">compcompressor</FONT></TD>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="compcompressor_out"><FONT COLOR="#95a5a6"><I>regproc</I></FONT></TD>
-</TR>
-
-<TR>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="compdecompressor_in"><FONT COLOR="#000000">compdecompressor</FONT></TD>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="compdecompressor_out"><FONT COLOR="#95a5a6"><I>regproc</I></FONT></TD>
-</TR>
-
-<TR>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="compvalidator_in"><FONT COLOR="#000000">compvalidator</FONT></TD>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="compvalidator_out"><FONT COLOR="#95a5a6"><I>regproc</I></FONT></TD>
-</TR>
-
-<TR>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="compowner_in"><FONT COLOR="#000000">compowner</FONT></TD>
-<TD COLOR="#2c3e50" BGCOLOR="#18bc9c" ALIGN="LEFT" PORT="compowner_out"><FONT COLOR="#FFFFFF"><I>oid</I></FONT></TD>
-</TR>
-
-</TABLE></FONT>> name = "pg_compression"];
+</TABLE></FONT>> name = "pg_stat_last_shoperation" URL = "pg_stat_last_shoperation.svg"];
         
             pg_type [label = <<FONT FACE="monospace"><TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4">
 <TR><TD BGCOLOR="#2c3e50" ALIGN="CENTER" COLSPAN="2"><FONT COLOR="#FFFFFF" POINT-SIZE="18"><B>pg_type</B></FONT></TD></TR>
@@ -516,7 +431,7 @@ digraph GPDB {
 <TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="typdefault_out"><FONT COLOR="#95a5a6"><I>text</I></FONT></TD>
 </TR>
 
-</TABLE></FONT>> name = "pg_type"];
+</TABLE></FONT>> name = "pg_type" URL = "pg_type.svg"];
         
             pg_user_mapping [label = <<FONT FACE="monospace"><TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4">
 <TR><TD BGCOLOR="#2c3e50" ALIGN="CENTER" COLSPAN="2"><FONT COLOR="#FFFFFF" POINT-SIZE="18"><B>pg_user_mapping</B></FONT></TD></TR>
@@ -541,102 +456,32 @@ digraph GPDB {
 <TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="umoptions_out"><FONT COLOR="#95a5a6"><I>text[]</I></FONT></TD>
 </TR>
 
-</TABLE></FONT>> name = "pg_user_mapping"];
+</TABLE></FONT>> name = "pg_user_mapping" URL = "pg_user_mapping.svg"];
         
-            pg_operator [label = <<FONT FACE="monospace"><TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4">
-<TR><TD BGCOLOR="#2c3e50" ALIGN="CENTER" COLSPAN="2"><FONT COLOR="#FFFFFF" POINT-SIZE="18"><B>pg_operator</B></FONT></TD></TR>
+            pg_auth_members [label = <<FONT FACE="monospace"><TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4">
+<TR><TD BGCOLOR="#2c3e50" ALIGN="CENTER" COLSPAN="2"><FONT COLOR="#FFFFFF" POINT-SIZE="18"><B>pg_auth_members</B></FONT></TD></TR>
 
 <TR>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="oid_in"><FONT COLOR="#000000">oid</FONT></TD>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="oid_out"><FONT COLOR="#95a5a6"><I>oid</I></FONT></TD>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="roleid_in"><FONT COLOR="#000000">roleid</FONT></TD>
+<TD COLOR="#2c3e50" BGCOLOR="#18bc9c" ALIGN="LEFT" PORT="roleid_out"><FONT COLOR="#FFFFFF"><I>oid</I></FONT></TD>
 </TR>
 
 <TR>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="oprname_in"><FONT COLOR="#000000">oprname</FONT></TD>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="oprname_out"><FONT COLOR="#95a5a6"><I>name</I></FONT></TD>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="member_in"><FONT COLOR="#000000">member</FONT></TD>
+<TD COLOR="#2c3e50" BGCOLOR="#18bc9c" ALIGN="LEFT" PORT="member_out"><FONT COLOR="#FFFFFF"><I>oid</I></FONT></TD>
 </TR>
 
 <TR>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="oprnamespace_in"><FONT COLOR="#000000">oprnamespace</FONT></TD>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="oprnamespace_out"><FONT COLOR="#95a5a6"><I>oid</I></FONT></TD>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="grantor_in"><FONT COLOR="#000000">grantor</FONT></TD>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="grantor_out"><FONT COLOR="#95a5a6"><I>oid</I></FONT></TD>
 </TR>
 
 <TR>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="oprowner_in"><FONT COLOR="#000000">oprowner</FONT></TD>
-<TD COLOR="#2c3e50" BGCOLOR="#18bc9c" ALIGN="LEFT" PORT="oprowner_out"><FONT COLOR="#FFFFFF"><I>oid</I></FONT></TD>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="admin_option_in"><FONT COLOR="#000000">admin_option</FONT></TD>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="admin_option_out"><FONT COLOR="#95a5a6"><I>boolean</I></FONT></TD>
 </TR>
 
-<TR>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="oprkind_in"><FONT COLOR="#000000">oprkind</FONT></TD>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="oprkind_out"><FONT COLOR="#95a5a6"><I>quoted_char</I></FONT></TD>
-</TR>
-
-<TR>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="oprcanhash_in"><FONT COLOR="#000000">oprcanhash</FONT></TD>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="oprcanhash_out"><FONT COLOR="#95a5a6"><I>boolean</I></FONT></TD>
-</TR>
-
-<TR>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="oprleft_in"><FONT COLOR="#000000">oprleft</FONT></TD>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="oprleft_out"><FONT COLOR="#95a5a6"><I>oid</I></FONT></TD>
-</TR>
-
-<TR>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="oprright_in"><FONT COLOR="#000000">oprright</FONT></TD>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="oprright_out"><FONT COLOR="#95a5a6"><I>oid</I></FONT></TD>
-</TR>
-
-<TR>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="oprresult_in"><FONT COLOR="#000000">oprresult</FONT></TD>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="oprresult_out"><FONT COLOR="#95a5a6"><I>oid</I></FONT></TD>
-</TR>
-
-<TR>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="oprcom_in"><FONT COLOR="#000000">oprcom</FONT></TD>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="oprcom_out"><FONT COLOR="#95a5a6"><I>oid</I></FONT></TD>
-</TR>
-
-<TR>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="oprnegate_in"><FONT COLOR="#000000">oprnegate</FONT></TD>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="oprnegate_out"><FONT COLOR="#95a5a6"><I>oid</I></FONT></TD>
-</TR>
-
-<TR>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="oprlsortop_in"><FONT COLOR="#000000">oprlsortop</FONT></TD>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="oprlsortop_out"><FONT COLOR="#95a5a6"><I>oid</I></FONT></TD>
-</TR>
-
-<TR>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="oprrsortop_in"><FONT COLOR="#000000">oprrsortop</FONT></TD>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="oprrsortop_out"><FONT COLOR="#95a5a6"><I>oid</I></FONT></TD>
-</TR>
-
-<TR>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="oprltcmpop_in"><FONT COLOR="#000000">oprltcmpop</FONT></TD>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="oprltcmpop_out"><FONT COLOR="#95a5a6"><I>oid</I></FONT></TD>
-</TR>
-
-<TR>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="oprgtcmpop_in"><FONT COLOR="#000000">oprgtcmpop</FONT></TD>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="oprgtcmpop_out"><FONT COLOR="#95a5a6"><I>oid</I></FONT></TD>
-</TR>
-
-<TR>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="oprcode_in"><FONT COLOR="#000000">oprcode</FONT></TD>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="oprcode_out"><FONT COLOR="#95a5a6"><I>regproc</I></FONT></TD>
-</TR>
-
-<TR>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="oprrest_in"><FONT COLOR="#000000">oprrest</FONT></TD>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="oprrest_out"><FONT COLOR="#95a5a6"><I>regproc</I></FONT></TD>
-</TR>
-
-<TR>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="oprjoin_in"><FONT COLOR="#000000">oprjoin</FONT></TD>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="oprjoin_out"><FONT COLOR="#95a5a6"><I>regproc</I></FONT></TD>
-</TR>
-
-</TABLE></FONT>> name = "pg_operator"];
+</TABLE></FONT>> name = "pg_auth_members" URL = "pg_auth_members.svg"];
         
             pg_database [label = <<FONT FACE="monospace"><TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4">
 <TR><TD BGCOLOR="#2c3e50" ALIGN="CENTER" COLSPAN="2"><FONT COLOR="#FFFFFF" POINT-SIZE="18"><B>pg_database</B></FONT></TD></TR>
@@ -701,10 +546,10 @@ digraph GPDB {
 <TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="datacl_out"><FONT COLOR="#95a5a6"><I>aclitem[]</I></FONT></TD>
 </TR>
 
-</TABLE></FONT>> name = "pg_database"];
+</TABLE></FONT>> name = "pg_database" URL = "pg_database.svg"];
         
-            pg_opclass [label = <<FONT FACE="monospace"><TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4">
-<TR><TD BGCOLOR="#2c3e50" ALIGN="CENTER" COLSPAN="2"><FONT COLOR="#FFFFFF" POINT-SIZE="18"><B>pg_opclass</B></FONT></TD></TR>
+            pg_foreign_data_wrapper [label = <<FONT FACE="monospace"><TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4">
+<TR><TD BGCOLOR="#2c3e50" ALIGN="CENTER" COLSPAN="2"><FONT COLOR="#FFFFFF" POINT-SIZE="18"><B>pg_foreign_data_wrapper</B></FONT></TD></TR>
 
 <TR>
 <TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="oid_in"><FONT COLOR="#000000">oid</FONT></TD>
@@ -712,44 +557,64 @@ digraph GPDB {
 </TR>
 
 <TR>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="opcamid_in"><FONT COLOR="#000000">opcamid</FONT></TD>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="opcamid_out"><FONT COLOR="#95a5a6"><I>oid</I></FONT></TD>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="fdwname_in"><FONT COLOR="#000000">fdwname</FONT></TD>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="fdwname_out"><FONT COLOR="#95a5a6"><I>name</I></FONT></TD>
 </TR>
 
 <TR>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="opcname_in"><FONT COLOR="#000000">opcname</FONT></TD>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="opcname_out"><FONT COLOR="#95a5a6"><I>name</I></FONT></TD>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="fdwowner_in"><FONT COLOR="#000000">fdwowner</FONT></TD>
+<TD COLOR="#2c3e50" BGCOLOR="#18bc9c" ALIGN="LEFT" PORT="fdwowner_out"><FONT COLOR="#FFFFFF"><I>oid</I></FONT></TD>
 </TR>
 
 <TR>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="opcnamespace_in"><FONT COLOR="#000000">opcnamespace</FONT></TD>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="opcnamespace_out"><FONT COLOR="#95a5a6"><I>oid</I></FONT></TD>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="fdwvalidator_in"><FONT COLOR="#000000">fdwvalidator</FONT></TD>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="fdwvalidator_out"><FONT COLOR="#95a5a6"><I>oid</I></FONT></TD>
 </TR>
 
 <TR>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="opcowner_in"><FONT COLOR="#000000">opcowner</FONT></TD>
-<TD COLOR="#2c3e50" BGCOLOR="#18bc9c" ALIGN="LEFT" PORT="opcowner_out"><FONT COLOR="#FFFFFF"><I>oid</I></FONT></TD>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="fdwacl_in"><FONT COLOR="#000000">fdwacl</FONT></TD>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="fdwacl_out"><FONT COLOR="#95a5a6"><I>aclitem[]</I></FONT></TD>
 </TR>
 
 <TR>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="opcintype_in"><FONT COLOR="#000000">opcintype</FONT></TD>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="opcintype_out"><FONT COLOR="#95a5a6"><I>oid</I></FONT></TD>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="fdwoptions_in"><FONT COLOR="#000000">fdwoptions</FONT></TD>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="fdwoptions_out"><FONT COLOR="#95a5a6"><I>text[]</I></FONT></TD>
 </TR>
 
-<TR>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="opcdefault_in"><FONT COLOR="#000000">opcdefault</FONT></TD>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="opcdefault_out"><FONT COLOR="#95a5a6"><I>boolean</I></FONT></TD>
-</TR>
-
-<TR>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="opckeytype_in"><FONT COLOR="#000000">opckeytype</FONT></TD>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="opckeytype_out"><FONT COLOR="#95a5a6"><I>oid</I></FONT></TD>
-</TR>
-
-</TABLE></FONT>> name = "pg_opclass"];
+</TABLE></FONT>> name = "pg_foreign_data_wrapper" URL = "pg_foreign_data_wrapper.svg"];
         
-            pg_foreign_server [label = <<FONT FACE="monospace"><TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4">
-<TR><TD BGCOLOR="#2c3e50" ALIGN="CENTER" COLSPAN="2"><FONT COLOR="#FFFFFF" POINT-SIZE="18"><B>pg_foreign_server</B></FONT></TD></TR>
+            pg_auth_time_constraint [label = <<FONT FACE="monospace"><TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4">
+<TR><TD BGCOLOR="#2c3e50" ALIGN="CENTER" COLSPAN="2"><FONT COLOR="#FFFFFF" POINT-SIZE="18"><B>pg_auth_time_constraint</B></FONT></TD></TR>
+
+<TR>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="authid_in"><FONT COLOR="#000000">authid</FONT></TD>
+<TD COLOR="#2c3e50" BGCOLOR="#18bc9c" ALIGN="LEFT" PORT="authid_out"><FONT COLOR="#FFFFFF"><I>oid</I></FONT></TD>
+</TR>
+
+<TR>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="start_day_in"><FONT COLOR="#000000">start_day</FONT></TD>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="start_day_out"><FONT COLOR="#95a5a6"><I>smallint</I></FONT></TD>
+</TR>
+
+<TR>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="start_time_in"><FONT COLOR="#000000">start_time</FONT></TD>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="start_time_out"><FONT COLOR="#95a5a6"><I>time</I></FONT></TD>
+</TR>
+
+<TR>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="end_day_in"><FONT COLOR="#000000">end_day</FONT></TD>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="end_day_out"><FONT COLOR="#95a5a6"><I>smallint</I></FONT></TD>
+</TR>
+
+<TR>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="end_time_in"><FONT COLOR="#000000">end_time</FONT></TD>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="end_time_out"><FONT COLOR="#95a5a6"><I>time</I></FONT></TD>
+</TR>
+
+</TABLE></FONT>> name = "pg_auth_time_constraint" URL = "pg_auth_time_constraint.svg"];
+        
+            pg_namespace [label = <<FONT FACE="monospace"><TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4">
+<TR><TD BGCOLOR="#2c3e50" ALIGN="CENTER" COLSPAN="2"><FONT COLOR="#FFFFFF" POINT-SIZE="18"><B>pg_namespace</B></FONT></TD></TR>
 
 <TR>
 <TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="oid_in"><FONT COLOR="#000000">oid</FONT></TD>
@@ -757,41 +622,151 @@ digraph GPDB {
 </TR>
 
 <TR>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="srvname_in"><FONT COLOR="#000000">srvname</FONT></TD>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="srvname_out"><FONT COLOR="#95a5a6"><I>name</I></FONT></TD>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="nspname_in"><FONT COLOR="#000000">nspname</FONT></TD>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="nspname_out"><FONT COLOR="#95a5a6"><I>name</I></FONT></TD>
 </TR>
 
 <TR>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="srvowner_in"><FONT COLOR="#000000">srvowner</FONT></TD>
-<TD COLOR="#2c3e50" BGCOLOR="#18bc9c" ALIGN="LEFT" PORT="srvowner_out"><FONT COLOR="#FFFFFF"><I>oid</I></FONT></TD>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="nspowner_in"><FONT COLOR="#000000">nspowner</FONT></TD>
+<TD COLOR="#2c3e50" BGCOLOR="#18bc9c" ALIGN="LEFT" PORT="nspowner_out"><FONT COLOR="#FFFFFF"><I>oid</I></FONT></TD>
 </TR>
 
 <TR>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="srvfdw_in"><FONT COLOR="#000000">srvfdw</FONT></TD>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="srvfdw_out"><FONT COLOR="#95a5a6"><I>oid</I></FONT></TD>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="nspacl_in"><FONT COLOR="#000000">nspacl</FONT></TD>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="nspacl_out"><FONT COLOR="#95a5a6"><I>aclitem[]</I></FONT></TD>
+</TR>
+
+</TABLE></FONT>> name = "pg_namespace" URL = "pg_namespace.svg"];
+        
+            pg_stat_last_operation [label = <<FONT FACE="monospace"><TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4">
+<TR><TD BGCOLOR="#2c3e50" ALIGN="CENTER" COLSPAN="2"><FONT COLOR="#FFFFFF" POINT-SIZE="18"><B>pg_stat_last_operation</B></FONT></TD></TR>
+
+<TR>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="classid_in"><FONT COLOR="#000000">classid</FONT></TD>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="classid_out"><FONT COLOR="#95a5a6"><I>oid</I></FONT></TD>
 </TR>
 
 <TR>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="srvtype_in"><FONT COLOR="#000000">srvtype</FONT></TD>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="srvtype_out"><FONT COLOR="#95a5a6"><I>text</I></FONT></TD>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="objid_in"><FONT COLOR="#000000">objid</FONT></TD>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="objid_out"><FONT COLOR="#95a5a6"><I>oid</I></FONT></TD>
 </TR>
 
 <TR>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="srvversion_in"><FONT COLOR="#000000">srvversion</FONT></TD>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="srvversion_out"><FONT COLOR="#95a5a6"><I>text</I></FONT></TD>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="staactionname_in"><FONT COLOR="#000000">staactionname</FONT></TD>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="staactionname_out"><FONT COLOR="#95a5a6"><I>name</I></FONT></TD>
 </TR>
 
 <TR>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="srvacl_in"><FONT COLOR="#000000">srvacl</FONT></TD>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="srvacl_out"><FONT COLOR="#95a5a6"><I>aclitem[]</I></FONT></TD>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="stasysid_in"><FONT COLOR="#000000">stasysid</FONT></TD>
+<TD COLOR="#2c3e50" BGCOLOR="#18bc9c" ALIGN="LEFT" PORT="stasysid_out"><FONT COLOR="#FFFFFF"><I>oid</I></FONT></TD>
 </TR>
 
 <TR>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="srvoptions_in"><FONT COLOR="#000000">srvoptions</FONT></TD>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="srvoptions_out"><FONT COLOR="#95a5a6"><I>text[]</I></FONT></TD>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="stausename_in"><FONT COLOR="#000000">stausename</FONT></TD>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="stausename_out"><FONT COLOR="#95a5a6"><I>name</I></FONT></TD>
 </TR>
 
-</TABLE></FONT>> name = "pg_foreign_server"];
+<TR>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="stasubtype_in"><FONT COLOR="#000000">stasubtype</FONT></TD>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="stasubtype_out"><FONT COLOR="#95a5a6"><I>text</I></FONT></TD>
+</TR>
+
+<TR>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="statime_in"><FONT COLOR="#000000">statime</FONT></TD>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="statime_out"><FONT COLOR="#95a5a6"><I>timestamp_with_time_zone</I></FONT></TD>
+</TR>
+
+</TABLE></FONT>> name = "pg_stat_last_operation" URL = "pg_stat_last_operation.svg"];
+        
+            pg_tablespace [label = <<FONT FACE="monospace"><TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4">
+<TR><TD BGCOLOR="#2c3e50" ALIGN="CENTER" COLSPAN="2"><FONT COLOR="#FFFFFF" POINT-SIZE="18"><B>pg_tablespace</B></FONT></TD></TR>
+
+<TR>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="oid_in"><FONT COLOR="#000000">oid</FONT></TD>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="oid_out"><FONT COLOR="#95a5a6"><I>oid</I></FONT></TD>
+</TR>
+
+<TR>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="spcname_in"><FONT COLOR="#000000">spcname</FONT></TD>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="spcname_out"><FONT COLOR="#95a5a6"><I>name</I></FONT></TD>
+</TR>
+
+<TR>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="spcowner_in"><FONT COLOR="#000000">spcowner</FONT></TD>
+<TD COLOR="#2c3e50" BGCOLOR="#18bc9c" ALIGN="LEFT" PORT="spcowner_out"><FONT COLOR="#FFFFFF"><I>oid</I></FONT></TD>
+</TR>
+
+<TR>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="spclocation_in"><FONT COLOR="#000000">spclocation</FONT></TD>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="spclocation_out"><FONT COLOR="#95a5a6"><I>text</I></FONT></TD>
+</TR>
+
+<TR>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="spcacl_in"><FONT COLOR="#000000">spcacl</FONT></TD>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="spcacl_out"><FONT COLOR="#95a5a6"><I>aclitem[]</I></FONT></TD>
+</TR>
+
+<TR>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="spcprilocations_in"><FONT COLOR="#000000">spcprilocations</FONT></TD>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="spcprilocations_out"><FONT COLOR="#95a5a6"><I>text[]</I></FONT></TD>
+</TR>
+
+<TR>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="spcmirlocations_in"><FONT COLOR="#000000">spcmirlocations</FONT></TD>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="spcmirlocations_out"><FONT COLOR="#95a5a6"><I>text[]</I></FONT></TD>
+</TR>
+
+<TR>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="spcfsoid_in"><FONT COLOR="#000000">spcfsoid</FONT></TD>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="spcfsoid_out"><FONT COLOR="#95a5a6"><I>oid</I></FONT></TD>
+</TR>
+
+</TABLE></FONT>> name = "pg_tablespace" URL = "pg_tablespace.svg"];
+        
+            pg_compression [label = <<FONT FACE="monospace"><TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4">
+<TR><TD BGCOLOR="#2c3e50" ALIGN="CENTER" COLSPAN="2"><FONT COLOR="#FFFFFF" POINT-SIZE="18"><B>pg_compression</B></FONT></TD></TR>
+
+<TR>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="oid_in"><FONT COLOR="#000000">oid</FONT></TD>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="oid_out"><FONT COLOR="#95a5a6"><I>oid</I></FONT></TD>
+</TR>
+
+<TR>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="compname_in"><FONT COLOR="#000000">compname</FONT></TD>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="compname_out"><FONT COLOR="#95a5a6"><I>name</I></FONT></TD>
+</TR>
+
+<TR>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="compconstructor_in"><FONT COLOR="#000000">compconstructor</FONT></TD>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="compconstructor_out"><FONT COLOR="#95a5a6"><I>regproc</I></FONT></TD>
+</TR>
+
+<TR>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="compdestructor_in"><FONT COLOR="#000000">compdestructor</FONT></TD>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="compdestructor_out"><FONT COLOR="#95a5a6"><I>regproc</I></FONT></TD>
+</TR>
+
+<TR>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="compcompressor_in"><FONT COLOR="#000000">compcompressor</FONT></TD>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="compcompressor_out"><FONT COLOR="#95a5a6"><I>regproc</I></FONT></TD>
+</TR>
+
+<TR>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="compdecompressor_in"><FONT COLOR="#000000">compdecompressor</FONT></TD>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="compdecompressor_out"><FONT COLOR="#95a5a6"><I>regproc</I></FONT></TD>
+</TR>
+
+<TR>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="compvalidator_in"><FONT COLOR="#000000">compvalidator</FONT></TD>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="compvalidator_out"><FONT COLOR="#95a5a6"><I>regproc</I></FONT></TD>
+</TR>
+
+<TR>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="compowner_in"><FONT COLOR="#000000">compowner</FONT></TD>
+<TD COLOR="#2c3e50" BGCOLOR="#18bc9c" ALIGN="LEFT" PORT="compowner_out"><FONT COLOR="#FFFFFF"><I>oid</I></FONT></TD>
+</TR>
+
+</TABLE></FONT>> name = "pg_compression" URL = "pg_compression.svg"];
         
             pg_class [label = <<FONT FACE="monospace"><TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4">
 <TR><TD BGCOLOR="#2c3e50" ALIGN="CENTER" COLSPAN="2"><FONT COLOR="#FFFFFF" POINT-SIZE="18"><B>pg_class</B></FONT></TD></TR>
@@ -951,35 +926,10 @@ digraph GPDB {
 <TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="reloptions_out"><FONT COLOR="#95a5a6"><I>text[]</I></FONT></TD>
 </TR>
 
-</TABLE></FONT>> name = "pg_class"];
+</TABLE></FONT>> name = "pg_class" URL = "pg_class.svg"];
         
-            pg_auth_members [label = <<FONT FACE="monospace"><TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4">
-<TR><TD BGCOLOR="#2c3e50" ALIGN="CENTER" COLSPAN="2"><FONT COLOR="#FFFFFF" POINT-SIZE="18"><B>pg_auth_members</B></FONT></TD></TR>
-
-<TR>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="roleid_in"><FONT COLOR="#000000">roleid</FONT></TD>
-<TD COLOR="#2c3e50" BGCOLOR="#18bc9c" ALIGN="LEFT" PORT="roleid_out"><FONT COLOR="#FFFFFF"><I>oid</I></FONT></TD>
-</TR>
-
-<TR>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="member_in"><FONT COLOR="#000000">member</FONT></TD>
-<TD COLOR="#2c3e50" BGCOLOR="#18bc9c" ALIGN="LEFT" PORT="member_out"><FONT COLOR="#FFFFFF"><I>oid</I></FONT></TD>
-</TR>
-
-<TR>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="grantor_in"><FONT COLOR="#000000">grantor</FONT></TD>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="grantor_out"><FONT COLOR="#95a5a6"><I>oid</I></FONT></TD>
-</TR>
-
-<TR>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="admin_option_in"><FONT COLOR="#000000">admin_option</FONT></TD>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="admin_option_out"><FONT COLOR="#95a5a6"><I>boolean</I></FONT></TD>
-</TR>
-
-</TABLE></FONT>> name = "pg_auth_members"];
-        
-            pg_conversion [label = <<FONT FACE="monospace"><TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4">
-<TR><TD BGCOLOR="#2c3e50" ALIGN="CENTER" COLSPAN="2"><FONT COLOR="#FFFFFF" POINT-SIZE="18"><B>pg_conversion</B></FONT></TD></TR>
+            pg_operator [label = <<FONT FACE="monospace"><TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4">
+<TR><TD BGCOLOR="#2c3e50" ALIGN="CENTER" COLSPAN="2"><FONT COLOR="#FFFFFF" POINT-SIZE="18"><B>pg_operator</B></FONT></TD></TR>
 
 <TR>
 <TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="oid_in"><FONT COLOR="#000000">oid</FONT></TD>
@@ -987,41 +937,91 @@ digraph GPDB {
 </TR>
 
 <TR>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="conname_in"><FONT COLOR="#000000">conname</FONT></TD>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="conname_out"><FONT COLOR="#95a5a6"><I>name</I></FONT></TD>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="oprname_in"><FONT COLOR="#000000">oprname</FONT></TD>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="oprname_out"><FONT COLOR="#95a5a6"><I>name</I></FONT></TD>
 </TR>
 
 <TR>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="connamespace_in"><FONT COLOR="#000000">connamespace</FONT></TD>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="connamespace_out"><FONT COLOR="#95a5a6"><I>oid</I></FONT></TD>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="oprnamespace_in"><FONT COLOR="#000000">oprnamespace</FONT></TD>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="oprnamespace_out"><FONT COLOR="#95a5a6"><I>oid</I></FONT></TD>
 </TR>
 
 <TR>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="conowner_in"><FONT COLOR="#000000">conowner</FONT></TD>
-<TD COLOR="#2c3e50" BGCOLOR="#18bc9c" ALIGN="LEFT" PORT="conowner_out"><FONT COLOR="#FFFFFF"><I>oid</I></FONT></TD>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="oprowner_in"><FONT COLOR="#000000">oprowner</FONT></TD>
+<TD COLOR="#2c3e50" BGCOLOR="#18bc9c" ALIGN="LEFT" PORT="oprowner_out"><FONT COLOR="#FFFFFF"><I>oid</I></FONT></TD>
 </TR>
 
 <TR>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="conforencoding_in"><FONT COLOR="#000000">conforencoding</FONT></TD>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="conforencoding_out"><FONT COLOR="#95a5a6"><I>integer</I></FONT></TD>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="oprkind_in"><FONT COLOR="#000000">oprkind</FONT></TD>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="oprkind_out"><FONT COLOR="#95a5a6"><I>quoted_char</I></FONT></TD>
 </TR>
 
 <TR>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="contoencoding_in"><FONT COLOR="#000000">contoencoding</FONT></TD>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="contoencoding_out"><FONT COLOR="#95a5a6"><I>integer</I></FONT></TD>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="oprcanhash_in"><FONT COLOR="#000000">oprcanhash</FONT></TD>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="oprcanhash_out"><FONT COLOR="#95a5a6"><I>boolean</I></FONT></TD>
 </TR>
 
 <TR>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="conproc_in"><FONT COLOR="#000000">conproc</FONT></TD>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="conproc_out"><FONT COLOR="#95a5a6"><I>regproc</I></FONT></TD>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="oprleft_in"><FONT COLOR="#000000">oprleft</FONT></TD>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="oprleft_out"><FONT COLOR="#95a5a6"><I>oid</I></FONT></TD>
 </TR>
 
 <TR>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="condefault_in"><FONT COLOR="#000000">condefault</FONT></TD>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="condefault_out"><FONT COLOR="#95a5a6"><I>boolean</I></FONT></TD>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="oprright_in"><FONT COLOR="#000000">oprright</FONT></TD>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="oprright_out"><FONT COLOR="#95a5a6"><I>oid</I></FONT></TD>
 </TR>
 
-</TABLE></FONT>> name = "pg_conversion"];
+<TR>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="oprresult_in"><FONT COLOR="#000000">oprresult</FONT></TD>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="oprresult_out"><FONT COLOR="#95a5a6"><I>oid</I></FONT></TD>
+</TR>
+
+<TR>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="oprcom_in"><FONT COLOR="#000000">oprcom</FONT></TD>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="oprcom_out"><FONT COLOR="#95a5a6"><I>oid</I></FONT></TD>
+</TR>
+
+<TR>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="oprnegate_in"><FONT COLOR="#000000">oprnegate</FONT></TD>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="oprnegate_out"><FONT COLOR="#95a5a6"><I>oid</I></FONT></TD>
+</TR>
+
+<TR>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="oprlsortop_in"><FONT COLOR="#000000">oprlsortop</FONT></TD>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="oprlsortop_out"><FONT COLOR="#95a5a6"><I>oid</I></FONT></TD>
+</TR>
+
+<TR>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="oprrsortop_in"><FONT COLOR="#000000">oprrsortop</FONT></TD>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="oprrsortop_out"><FONT COLOR="#95a5a6"><I>oid</I></FONT></TD>
+</TR>
+
+<TR>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="oprltcmpop_in"><FONT COLOR="#000000">oprltcmpop</FONT></TD>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="oprltcmpop_out"><FONT COLOR="#95a5a6"><I>oid</I></FONT></TD>
+</TR>
+
+<TR>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="oprgtcmpop_in"><FONT COLOR="#000000">oprgtcmpop</FONT></TD>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="oprgtcmpop_out"><FONT COLOR="#95a5a6"><I>oid</I></FONT></TD>
+</TR>
+
+<TR>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="oprcode_in"><FONT COLOR="#000000">oprcode</FONT></TD>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="oprcode_out"><FONT COLOR="#95a5a6"><I>regproc</I></FONT></TD>
+</TR>
+
+<TR>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="oprrest_in"><FONT COLOR="#000000">oprrest</FONT></TD>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="oprrest_out"><FONT COLOR="#95a5a6"><I>regproc</I></FONT></TD>
+</TR>
+
+<TR>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="oprjoin_in"><FONT COLOR="#000000">oprjoin</FONT></TD>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="oprjoin_out"><FONT COLOR="#95a5a6"><I>regproc</I></FONT></TD>
+</TR>
+
+</TABLE></FONT>> name = "pg_operator" URL = "pg_operator.svg"];
         
     }
     
@@ -1123,7 +1123,7 @@ digraph GPDB {
 <TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="rolcreatewexthdfs_out"><FONT COLOR="#95a5a6"><I>boolean</I></FONT></TD>
 </TR>
 
-</TABLE></FONT>> name = "pg_authid"];
+</TABLE></FONT>> name = "pg_authid" URL = "pg_authid.svg"];
         
     }
     
@@ -1165,7 +1165,7 @@ digraph GPDB {
 <TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="rsqignorecostlimit_out"><FONT COLOR="#95a5a6"><I>real</I></FONT></TD>
 </TR>
 
-</TABLE></FONT>> name = "pg_resqueue"];
+</TABLE></FONT>> name = "pg_resqueue" URL = "pg_resqueue.svg"];
         
     }
     

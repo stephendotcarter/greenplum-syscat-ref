@@ -16,6 +16,7 @@
 </g>
 <!-- pg_proc_callback -->
 <g id="node1" class="node"><title>pg_proc_callback</title>
+<g id="a_node1"><a xlink:href="pg_proc_callback.svg" xlink:title="&lt;TABLE&gt;">
 <polygon fill="#2c3e50" stroke="none" points="238,-583 238,-613 440,-613 440,-583 238,-583"/>
 <polygon fill="none" stroke="black" points="238,-583 238,-613 440,-613 440,-583 238,-583"/>
 <text text-anchor="start" x="254.5" y="-594.6" font-family="monospace" font-weight="bold" font-size="18.00" fill="#ffffff">pg_proc_callback</text>
@@ -37,9 +38,12 @@
 <polygon fill="#ffffff" stroke="none" points="339,-508 339,-533 440,-533 440,-508 339,-508"/>
 <polygon fill="none" stroke="#2c3e50" points="339,-508 339,-533 440,-533 440,-508 339,-508"/>
 <text text-anchor="start" x="344" y="-517.8" font-family="monospace" font-style="italic" font-size="14.00" fill="#95a5a6">quoted_char</text>
+</a>
+</g>
 </g>
 <!-- pg_proc -->
 <g id="node2" class="node"><title>pg_proc</title>
+<g id="a_node2"><a xlink:href="pg_proc.svg" xlink:title="&lt;TABLE&gt;">
 <polygon fill="#2c3e50" stroke="none" points="915,-570 915,-600 1159,-600 1159,-570 915,-570"/>
 <polygon fill="none" stroke="black" points="915,-570 915,-600 1159,-600 1159,-570 915,-570"/>
 <text text-anchor="start" x="1000" y="-581.6" font-family="monospace" font-weight="bold" font-size="18.00" fill="#ffffff">pg_proc</text>
@@ -175,6 +179,8 @@
 <polygon fill="#ffffff" stroke="none" points="1041,-20 1041,-45 1159,-45 1159,-20 1041,-20"/>
 <polygon fill="none" stroke="#2c3e50" points="1041,-20 1041,-45 1159,-45 1159,-20 1041,-20"/>
 <text text-anchor="start" x="1046" y="-29.8" font-family="monospace" font-style="italic" font-size="14.00" fill="#95a5a6">oid</text>
+</a>
+</g>
 </g>
 <!-- pg_proc_callback&#45;&gt;pg_proc -->
 <g id="edge1" class="edge"><title>pg_proc_callback:profnoid_out&#45;&gt;pg_proc:oid_in</title>

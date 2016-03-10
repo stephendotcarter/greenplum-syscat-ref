@@ -48,7 +48,7 @@ digraph GPDB {
 <TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="ressetting_out"><FONT COLOR="#95a5a6"><I>text</I></FONT></TD>
 </TR>
 
-</TABLE></FONT>> name = "pg_resqueuecapability"];
+</TABLE></FONT>> name = "pg_resqueuecapability" URL = "pg_resqueuecapability.svg"];
         
     }
     
@@ -56,41 +56,6 @@ digraph GPDB {
         rankdir=TB
         style=invis;
 
-        
-            pg_resqueue [label = <<FONT FACE="monospace"><TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4">
-<TR><TD BGCOLOR="#2c3e50" ALIGN="CENTER" COLSPAN="2"><FONT COLOR="#FFFFFF" POINT-SIZE="18"><B>pg_resqueue</B></FONT></TD></TR>
-
-<TR>
-<TD COLOR="#2c3e50" BGCOLOR="#18bc9c" ALIGN="LEFT" PORT="oid_in"><FONT COLOR="#FFFFFF">oid</FONT></TD>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="oid_out"><FONT COLOR="#95a5a6"><I>oid</I></FONT></TD>
-</TR>
-
-<TR>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="rsqname_in"><FONT COLOR="#000000">rsqname</FONT></TD>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="rsqname_out"><FONT COLOR="#95a5a6"><I>name</I></FONT></TD>
-</TR>
-
-<TR>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="rsqcountlimit_in"><FONT COLOR="#000000">rsqcountlimit</FONT></TD>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="rsqcountlimit_out"><FONT COLOR="#95a5a6"><I>real</I></FONT></TD>
-</TR>
-
-<TR>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="rsqcostlimit_in"><FONT COLOR="#000000">rsqcostlimit</FONT></TD>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="rsqcostlimit_out"><FONT COLOR="#95a5a6"><I>real</I></FONT></TD>
-</TR>
-
-<TR>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="rsqovercommit_in"><FONT COLOR="#000000">rsqovercommit</FONT></TD>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="rsqovercommit_out"><FONT COLOR="#95a5a6"><I>boolean</I></FONT></TD>
-</TR>
-
-<TR>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="rsqignorecostlimit_in"><FONT COLOR="#000000">rsqignorecostlimit</FONT></TD>
-<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="rsqignorecostlimit_out"><FONT COLOR="#95a5a6"><I>real</I></FONT></TD>
-</TR>
-
-</TABLE></FONT>> name = "pg_resqueue"];
         
             pg_resourcetype [label = <<FONT FACE="monospace"><TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4">
 <TR><TD BGCOLOR="#2c3e50" ALIGN="CENTER" COLSPAN="2"><FONT COLOR="#FFFFFF" POINT-SIZE="18"><B>pg_resourcetype</B></FONT></TD></TR>
@@ -135,7 +100,42 @@ digraph GPDB {
 <TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="resdisabledsetting_out"><FONT COLOR="#95a5a6"><I>text</I></FONT></TD>
 </TR>
 
-</TABLE></FONT>> name = "pg_resourcetype"];
+</TABLE></FONT>> name = "pg_resourcetype" URL = "pg_resourcetype.svg"];
+        
+            pg_resqueue [label = <<FONT FACE="monospace"><TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4">
+<TR><TD BGCOLOR="#2c3e50" ALIGN="CENTER" COLSPAN="2"><FONT COLOR="#FFFFFF" POINT-SIZE="18"><B>pg_resqueue</B></FONT></TD></TR>
+
+<TR>
+<TD COLOR="#2c3e50" BGCOLOR="#18bc9c" ALIGN="LEFT" PORT="oid_in"><FONT COLOR="#FFFFFF">oid</FONT></TD>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="oid_out"><FONT COLOR="#95a5a6"><I>oid</I></FONT></TD>
+</TR>
+
+<TR>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="rsqname_in"><FONT COLOR="#000000">rsqname</FONT></TD>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="rsqname_out"><FONT COLOR="#95a5a6"><I>name</I></FONT></TD>
+</TR>
+
+<TR>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="rsqcountlimit_in"><FONT COLOR="#000000">rsqcountlimit</FONT></TD>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="rsqcountlimit_out"><FONT COLOR="#95a5a6"><I>real</I></FONT></TD>
+</TR>
+
+<TR>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="rsqcostlimit_in"><FONT COLOR="#000000">rsqcostlimit</FONT></TD>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="rsqcostlimit_out"><FONT COLOR="#95a5a6"><I>real</I></FONT></TD>
+</TR>
+
+<TR>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="rsqovercommit_in"><FONT COLOR="#000000">rsqovercommit</FONT></TD>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="rsqovercommit_out"><FONT COLOR="#95a5a6"><I>boolean</I></FONT></TD>
+</TR>
+
+<TR>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="rsqignorecostlimit_in"><FONT COLOR="#000000">rsqignorecostlimit</FONT></TD>
+<TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="rsqignorecostlimit_out"><FONT COLOR="#95a5a6"><I>real</I></FONT></TD>
+</TR>
+
+</TABLE></FONT>> name = "pg_resqueue" URL = "pg_resqueue.svg"];
         
     }
     

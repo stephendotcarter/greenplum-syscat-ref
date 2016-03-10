@@ -16,6 +16,7 @@
 </g>
 <!-- pg_shdepend -->
 <g id="node1" class="node"><title>pg_shdepend</title>
+<g id="a_node1"><a xlink:href="pg_shdepend.svg" xlink:title="&lt;TABLE&gt;">
 <polygon fill="#2c3e50" stroke="none" points="215,-871 215,-901 409,-901 409,-871 215,-871"/>
 <polygon fill="none" stroke="black" points="215,-871 215,-901 409,-901 409,-871 215,-871"/>
 <text text-anchor="start" x="254" y="-882.6" font-family="monospace" font-weight="bold" font-size="18.00" fill="#ffffff">pg_shdepend</text>
@@ -55,9 +56,12 @@
 <polygon fill="#ffffff" stroke="none" points="308,-721 308,-746 409,-746 409,-721 308,-721"/>
 <polygon fill="none" stroke="#2c3e50" points="308,-721 308,-746 409,-746 409,-721 308,-721"/>
 <text text-anchor="start" x="313" y="-730.8" font-family="monospace" font-style="italic" font-size="14.00" fill="#95a5a6">quoted_char</text>
+</a>
+</g>
 </g>
 <!-- pg_database -->
 <g id="node2" class="node"><title>pg_database</title>
+<g id="a_node2"><a xlink:href="pg_database.svg" xlink:title="&lt;TABLE&gt;">
 <polygon fill="#2c3e50" stroke="none" points="856.5,-1170 856.5,-1200 1059.5,-1200 1059.5,-1170 856.5,-1170"/>
 <polygon fill="none" stroke="black" points="856.5,-1170 856.5,-1200 1059.5,-1200 1059.5,-1170 856.5,-1170"/>
 <text text-anchor="start" x="900" y="-1181.6" font-family="monospace" font-weight="bold" font-size="18.00" fill="#ffffff">pg_database</text>
@@ -133,6 +137,8 @@
 <polygon fill="#ffffff" stroke="none" points="974.5,-870 974.5,-895 1059.5,-895 1059.5,-870 974.5,-870"/>
 <polygon fill="none" stroke="#2c3e50" points="974.5,-870 974.5,-895 1059.5,-895 1059.5,-870 974.5,-870"/>
 <text text-anchor="start" x="979.5" y="-879.8" font-family="monospace" font-style="italic" font-size="14.00" fill="#95a5a6">aclitem[]</text>
+</a>
+</g>
 </g>
 <!-- pg_shdepend&#45;&gt;pg_database -->
 <g id="edge1" class="edge"><title>pg_shdepend:dbid_out&#45;&gt;pg_database:oid_in</title>
@@ -141,6 +147,7 @@
 </g>
 <!-- pg_class -->
 <g id="node3" class="node"><title>pg_class</title>
+<g id="a_node3"><a xlink:href="pg_class.svg" xlink:title="&lt;TABLE&gt;">
 <polygon fill="#2c3e50" stroke="none" points="844.5,-795 844.5,-825 1071.5,-825 1071.5,-795 844.5,-795"/>
 <polygon fill="none" stroke="black" points="844.5,-795 844.5,-825 1071.5,-825 1071.5,-795 844.5,-795"/>
 <text text-anchor="start" x="915.5" y="-806.6" font-family="monospace" font-weight="bold" font-size="18.00" fill="#ffffff">pg_class</text>
@@ -330,6 +337,8 @@
 <polygon fill="#ffffff" stroke="none" points="970.5,-20 970.5,-45 1071.5,-45 1071.5,-20 970.5,-20"/>
 <polygon fill="none" stroke="#2c3e50" points="970.5,-20 970.5,-45 1071.5,-45 1071.5,-20 970.5,-20"/>
 <text text-anchor="start" x="975.5" y="-29.8" font-family="monospace" font-style="italic" font-size="14.00" fill="#95a5a6">text[]</text>
+</a>
+</g>
 </g>
 <!-- pg_shdepend&#45;&gt;pg_class -->
 <g id="edge2" class="edge"><title>pg_shdepend:classid_out&#45;&gt;pg_class:oid_in</title>

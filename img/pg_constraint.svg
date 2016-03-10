@@ -16,6 +16,7 @@
 </g>
 <!-- pg_constraint -->
 <g id="node1" class="node"><title>pg_constraint</title>
+<g id="a_node1"><a xlink:href="pg_constraint.svg" xlink:title="&lt;TABLE&gt;">
 <polygon fill="#2c3e50" stroke="none" points="201.5,-1631 201.5,-1661 420.5,-1661 420.5,-1631 201.5,-1631"/>
 <polygon fill="none" stroke="black" points="201.5,-1631 201.5,-1661 420.5,-1661 420.5,-1631 201.5,-1631"/>
 <text text-anchor="start" x="242.5" y="-1642.6" font-family="monospace" font-weight="bold" font-size="18.00" fill="#ffffff">pg_constraint</text>
@@ -115,9 +116,50 @@
 <polygon fill="#ffffff" stroke="none" points="319.5,-1231 319.5,-1256 420.5,-1256 420.5,-1231 319.5,-1231"/>
 <polygon fill="none" stroke="#2c3e50" points="319.5,-1231 319.5,-1256 420.5,-1256 420.5,-1231 319.5,-1231"/>
 <text text-anchor="start" x="324.5" y="-1240.8" font-family="monospace" font-style="italic" font-size="14.00" fill="#95a5a6">text</text>
+</a>
+</g>
+</g>
+<!-- pg_namespace -->
+<g id="node2" class="node"><title>pg_namespace</title>
+<g id="a_node2"><a xlink:href="pg_namespace.svg" xlink:title="&lt;TABLE&gt;">
+<polygon fill="#2c3e50" stroke="none" points="871.5,-1644 871.5,-1674 1033.5,-1674 1033.5,-1644 871.5,-1644"/>
+<polygon fill="none" stroke="black" points="871.5,-1644 871.5,-1674 1033.5,-1674 1033.5,-1644 871.5,-1644"/>
+<text text-anchor="start" x="889" y="-1655.6" font-family="monospace" font-weight="bold" font-size="18.00" fill="#ffffff">pg_namespace</text>
+<polygon fill="#18bc9c" stroke="none" points="871.5,-1619 871.5,-1644 948.5,-1644 948.5,-1619 871.5,-1619"/>
+<polygon fill="none" stroke="#2c3e50" points="871.5,-1619 871.5,-1644 948.5,-1644 948.5,-1619 871.5,-1619"/>
+<text text-anchor="start" x="876.5" y="-1627.8" font-family="monospace" font-size="14.00" fill="#ffffff">oid</text>
+<polygon fill="#ffffff" stroke="none" points="948.5,-1619 948.5,-1644 1033.5,-1644 1033.5,-1619 948.5,-1619"/>
+<polygon fill="none" stroke="#2c3e50" points="948.5,-1619 948.5,-1644 1033.5,-1644 1033.5,-1619 948.5,-1619"/>
+<text text-anchor="start" x="953.5" y="-1628.8" font-family="monospace" font-style="italic" font-size="14.00" fill="#95a5a6">oid</text>
+<polygon fill="#ffffff" stroke="none" points="871.5,-1594 871.5,-1619 948.5,-1619 948.5,-1594 871.5,-1594"/>
+<polygon fill="none" stroke="#2c3e50" points="871.5,-1594 871.5,-1619 948.5,-1619 948.5,-1594 871.5,-1594"/>
+<text text-anchor="start" x="876.5" y="-1602.8" font-family="monospace" font-size="14.00" fill="#000000">nspname</text>
+<polygon fill="#ffffff" stroke="none" points="948.5,-1594 948.5,-1619 1033.5,-1619 1033.5,-1594 948.5,-1594"/>
+<polygon fill="none" stroke="#2c3e50" points="948.5,-1594 948.5,-1619 1033.5,-1619 1033.5,-1594 948.5,-1594"/>
+<text text-anchor="start" x="953.5" y="-1603.8" font-family="monospace" font-style="italic" font-size="14.00" fill="#95a5a6">name</text>
+<polygon fill="#ffffff" stroke="none" points="871.5,-1569 871.5,-1594 948.5,-1594 948.5,-1569 871.5,-1569"/>
+<polygon fill="none" stroke="#2c3e50" points="871.5,-1569 871.5,-1594 948.5,-1594 948.5,-1569 871.5,-1569"/>
+<text text-anchor="start" x="876.5" y="-1577.8" font-family="monospace" font-size="14.00" fill="#000000">nspowner</text>
+<polygon fill="#ffffff" stroke="none" points="948.5,-1569 948.5,-1594 1033.5,-1594 1033.5,-1569 948.5,-1569"/>
+<polygon fill="none" stroke="#2c3e50" points="948.5,-1569 948.5,-1594 1033.5,-1594 1033.5,-1569 948.5,-1569"/>
+<text text-anchor="start" x="953.5" y="-1578.8" font-family="monospace" font-style="italic" font-size="14.00" fill="#95a5a6">oid</text>
+<polygon fill="#ffffff" stroke="none" points="871.5,-1544 871.5,-1569 948.5,-1569 948.5,-1544 871.5,-1544"/>
+<polygon fill="none" stroke="#2c3e50" points="871.5,-1544 871.5,-1569 948.5,-1569 948.5,-1544 871.5,-1544"/>
+<text text-anchor="start" x="876.5" y="-1552.8" font-family="monospace" font-size="14.00" fill="#000000">nspacl</text>
+<polygon fill="#ffffff" stroke="none" points="948.5,-1544 948.5,-1569 1033.5,-1569 1033.5,-1544 948.5,-1544"/>
+<polygon fill="none" stroke="#2c3e50" points="948.5,-1544 948.5,-1569 1033.5,-1569 1033.5,-1544 948.5,-1544"/>
+<text text-anchor="start" x="953.5" y="-1553.8" font-family="monospace" font-style="italic" font-size="14.00" fill="#95a5a6">aclitem[]</text>
+</a>
+</g>
+</g>
+<!-- pg_constraint&#45;&gt;pg_namespace -->
+<g id="edge1" class="edge"><title>pg_constraint:connamespace_out&#45;&gt;pg_namespace:oid_in</title>
+<path fill="none" stroke="#2c3e50" d="M421.5,-1569C619.567,-1569 667.373,-1629.87 860.303,-1631.95"/>
+<polygon fill="#2c3e50" stroke="#2c3e50" points="860.481,-1635.45 870.5,-1632 860.519,-1628.45 860.481,-1635.45"/>
 </g>
 <!-- pg_class -->
-<g id="node2" class="node"><title>pg_class</title>
+<g id="node3" class="node"><title>pg_class</title>
+<g id="a_node3"><a xlink:href="pg_class.svg" xlink:title="&lt;TABLE&gt;">
 <polygon fill="#2c3e50" stroke="none" points="839.5,-1469 839.5,-1499 1066.5,-1499 1066.5,-1469 839.5,-1469"/>
 <polygon fill="none" stroke="black" points="839.5,-1469 839.5,-1499 1066.5,-1499 1066.5,-1469 839.5,-1469"/>
 <text text-anchor="start" x="910.5" y="-1480.6" font-family="monospace" font-weight="bold" font-size="18.00" fill="#ffffff">pg_class</text>
@@ -307,6 +349,8 @@
 <polygon fill="#ffffff" stroke="none" points="965.5,-694 965.5,-719 1066.5,-719 1066.5,-694 965.5,-694"/>
 <polygon fill="none" stroke="#2c3e50" points="965.5,-694 965.5,-719 1066.5,-719 1066.5,-694 965.5,-694"/>
 <text text-anchor="start" x="970.5" y="-703.8" font-family="monospace" font-style="italic" font-size="14.00" fill="#95a5a6">text[]</text>
+</a>
+</g>
 </g>
 <!-- pg_constraint&#45;&gt;pg_class -->
 <g id="edge2" class="edge"><title>pg_constraint:conrelid_out&#45;&gt;pg_class:oid_in</title>
@@ -318,43 +362,9 @@
 <path fill="none" stroke="#2c3e50" d="M421.5,-1418C604.188,-1418 650.65,-1455.57 828.283,-1456.96"/>
 <polygon fill="#2c3e50" stroke="#2c3e50" points="828.486,-1460.46 838.5,-1457 828.514,-1453.46 828.486,-1460.46"/>
 </g>
-<!-- pg_namespace -->
-<g id="node3" class="node"><title>pg_namespace</title>
-<polygon fill="#2c3e50" stroke="none" points="871.5,-1644 871.5,-1674 1033.5,-1674 1033.5,-1644 871.5,-1644"/>
-<polygon fill="none" stroke="black" points="871.5,-1644 871.5,-1674 1033.5,-1674 1033.5,-1644 871.5,-1644"/>
-<text text-anchor="start" x="889" y="-1655.6" font-family="monospace" font-weight="bold" font-size="18.00" fill="#ffffff">pg_namespace</text>
-<polygon fill="#18bc9c" stroke="none" points="871.5,-1619 871.5,-1644 948.5,-1644 948.5,-1619 871.5,-1619"/>
-<polygon fill="none" stroke="#2c3e50" points="871.5,-1619 871.5,-1644 948.5,-1644 948.5,-1619 871.5,-1619"/>
-<text text-anchor="start" x="876.5" y="-1627.8" font-family="monospace" font-size="14.00" fill="#ffffff">oid</text>
-<polygon fill="#ffffff" stroke="none" points="948.5,-1619 948.5,-1644 1033.5,-1644 1033.5,-1619 948.5,-1619"/>
-<polygon fill="none" stroke="#2c3e50" points="948.5,-1619 948.5,-1644 1033.5,-1644 1033.5,-1619 948.5,-1619"/>
-<text text-anchor="start" x="953.5" y="-1628.8" font-family="monospace" font-style="italic" font-size="14.00" fill="#95a5a6">oid</text>
-<polygon fill="#ffffff" stroke="none" points="871.5,-1594 871.5,-1619 948.5,-1619 948.5,-1594 871.5,-1594"/>
-<polygon fill="none" stroke="#2c3e50" points="871.5,-1594 871.5,-1619 948.5,-1619 948.5,-1594 871.5,-1594"/>
-<text text-anchor="start" x="876.5" y="-1602.8" font-family="monospace" font-size="14.00" fill="#000000">nspname</text>
-<polygon fill="#ffffff" stroke="none" points="948.5,-1594 948.5,-1619 1033.5,-1619 1033.5,-1594 948.5,-1594"/>
-<polygon fill="none" stroke="#2c3e50" points="948.5,-1594 948.5,-1619 1033.5,-1619 1033.5,-1594 948.5,-1594"/>
-<text text-anchor="start" x="953.5" y="-1603.8" font-family="monospace" font-style="italic" font-size="14.00" fill="#95a5a6">name</text>
-<polygon fill="#ffffff" stroke="none" points="871.5,-1569 871.5,-1594 948.5,-1594 948.5,-1569 871.5,-1569"/>
-<polygon fill="none" stroke="#2c3e50" points="871.5,-1569 871.5,-1594 948.5,-1594 948.5,-1569 871.5,-1569"/>
-<text text-anchor="start" x="876.5" y="-1577.8" font-family="monospace" font-size="14.00" fill="#000000">nspowner</text>
-<polygon fill="#ffffff" stroke="none" points="948.5,-1569 948.5,-1594 1033.5,-1594 1033.5,-1569 948.5,-1569"/>
-<polygon fill="none" stroke="#2c3e50" points="948.5,-1569 948.5,-1594 1033.5,-1594 1033.5,-1569 948.5,-1569"/>
-<text text-anchor="start" x="953.5" y="-1578.8" font-family="monospace" font-style="italic" font-size="14.00" fill="#95a5a6">oid</text>
-<polygon fill="#ffffff" stroke="none" points="871.5,-1544 871.5,-1569 948.5,-1569 948.5,-1544 871.5,-1544"/>
-<polygon fill="none" stroke="#2c3e50" points="871.5,-1544 871.5,-1569 948.5,-1569 948.5,-1544 871.5,-1544"/>
-<text text-anchor="start" x="876.5" y="-1552.8" font-family="monospace" font-size="14.00" fill="#000000">nspacl</text>
-<polygon fill="#ffffff" stroke="none" points="948.5,-1544 948.5,-1569 1033.5,-1569 1033.5,-1544 948.5,-1544"/>
-<polygon fill="none" stroke="#2c3e50" points="948.5,-1544 948.5,-1569 1033.5,-1569 1033.5,-1544 948.5,-1544"/>
-<text text-anchor="start" x="953.5" y="-1553.8" font-family="monospace" font-style="italic" font-size="14.00" fill="#95a5a6">aclitem[]</text>
-</g>
-<!-- pg_constraint&#45;&gt;pg_namespace -->
-<g id="edge1" class="edge"><title>pg_constraint:connamespace_out&#45;&gt;pg_namespace:oid_in</title>
-<path fill="none" stroke="#2c3e50" d="M421.5,-1569C619.567,-1569 667.373,-1629.87 860.303,-1631.95"/>
-<polygon fill="#2c3e50" stroke="#2c3e50" points="860.481,-1635.45 870.5,-1632 860.519,-1628.45 860.481,-1635.45"/>
-</g>
 <!-- pg_type -->
 <g id="node4" class="node"><title>pg_type</title>
+<g id="a_node4"><a xlink:href="pg_type.svg" xlink:title="&lt;TABLE&gt;">
 <polygon fill="#2c3e50" stroke="none" points="843.5,-620 843.5,-650 1062.5,-650 1062.5,-620 843.5,-620"/>
 <polygon fill="none" stroke="black" points="843.5,-620 843.5,-650 1062.5,-650 1062.5,-620 843.5,-620"/>
 <text text-anchor="start" x="916" y="-631.6" font-family="monospace" font-weight="bold" font-size="18.00" fill="#ffffff">pg_type</text>
@@ -502,6 +512,8 @@
 <polygon fill="#ffffff" stroke="none" points="961.5,-20 961.5,-45 1062.5,-45 1062.5,-20 961.5,-20"/>
 <polygon fill="none" stroke="#2c3e50" points="961.5,-20 961.5,-45 1062.5,-45 1062.5,-20 961.5,-20"/>
 <text text-anchor="start" x="966.5" y="-29.8" font-family="monospace" font-style="italic" font-size="14.00" fill="#95a5a6">text</text>
+</a>
+</g>
 </g>
 <!-- pg_constraint&#45;&gt;pg_type -->
 <g id="edge3" class="edge"><title>pg_constraint:contypid_out&#45;&gt;pg_type:oid_in</title>

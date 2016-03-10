@@ -16,6 +16,7 @@
 </g>
 <!-- pg_conversion -->
 <g id="node1" class="node"><title>pg_conversion</title>
+<g id="a_node1"><a xlink:href="pg_conversion.svg" xlink:title="&lt;TABLE&gt;">
 <polygon fill="#2c3e50" stroke="none" points="222,-1170 222,-1200 416,-1200 416,-1170 222,-1170"/>
 <polygon fill="none" stroke="black" points="222,-1170 222,-1200 416,-1200 416,-1170 222,-1170"/>
 <text text-anchor="start" x="250.5" y="-1181.6" font-family="monospace" font-weight="bold" font-size="18.00" fill="#ffffff">pg_conversion</text>
@@ -67,163 +68,12 @@
 <polygon fill="#ffffff" stroke="none" points="348,-970 348,-995 416,-995 416,-970 348,-970"/>
 <polygon fill="none" stroke="#2c3e50" points="348,-970 348,-995 416,-995 416,-970 348,-970"/>
 <text text-anchor="start" x="353" y="-979.8" font-family="monospace" font-style="italic" font-size="14.00" fill="#95a5a6">boolean</text>
+</a>
 </g>
-<!-- pg_namespace -->
-<g id="node2" class="node"><title>pg_namespace</title>
-<polygon fill="#2c3e50" stroke="none" points="896,-1268 896,-1298 1058,-1298 1058,-1268 896,-1268"/>
-<polygon fill="none" stroke="black" points="896,-1268 896,-1298 1058,-1298 1058,-1268 896,-1268"/>
-<text text-anchor="start" x="913.5" y="-1279.6" font-family="monospace" font-weight="bold" font-size="18.00" fill="#ffffff">pg_namespace</text>
-<polygon fill="#18bc9c" stroke="none" points="896,-1243 896,-1268 973,-1268 973,-1243 896,-1243"/>
-<polygon fill="none" stroke="#2c3e50" points="896,-1243 896,-1268 973,-1268 973,-1243 896,-1243"/>
-<text text-anchor="start" x="901" y="-1251.8" font-family="monospace" font-size="14.00" fill="#ffffff">oid</text>
-<polygon fill="#ffffff" stroke="none" points="973,-1243 973,-1268 1058,-1268 1058,-1243 973,-1243"/>
-<polygon fill="none" stroke="#2c3e50" points="973,-1243 973,-1268 1058,-1268 1058,-1243 973,-1243"/>
-<text text-anchor="start" x="978" y="-1252.8" font-family="monospace" font-style="italic" font-size="14.00" fill="#95a5a6">oid</text>
-<polygon fill="#ffffff" stroke="none" points="896,-1218 896,-1243 973,-1243 973,-1218 896,-1218"/>
-<polygon fill="none" stroke="#2c3e50" points="896,-1218 896,-1243 973,-1243 973,-1218 896,-1218"/>
-<text text-anchor="start" x="901" y="-1226.8" font-family="monospace" font-size="14.00" fill="#000000">nspname</text>
-<polygon fill="#ffffff" stroke="none" points="973,-1218 973,-1243 1058,-1243 1058,-1218 973,-1218"/>
-<polygon fill="none" stroke="#2c3e50" points="973,-1218 973,-1243 1058,-1243 1058,-1218 973,-1218"/>
-<text text-anchor="start" x="978" y="-1227.8" font-family="monospace" font-style="italic" font-size="14.00" fill="#95a5a6">name</text>
-<polygon fill="#ffffff" stroke="none" points="896,-1193 896,-1218 973,-1218 973,-1193 896,-1193"/>
-<polygon fill="none" stroke="#2c3e50" points="896,-1193 896,-1218 973,-1218 973,-1193 896,-1193"/>
-<text text-anchor="start" x="901" y="-1201.8" font-family="monospace" font-size="14.00" fill="#000000">nspowner</text>
-<polygon fill="#ffffff" stroke="none" points="973,-1193 973,-1218 1058,-1218 1058,-1193 973,-1193"/>
-<polygon fill="none" stroke="#2c3e50" points="973,-1193 973,-1218 1058,-1218 1058,-1193 973,-1193"/>
-<text text-anchor="start" x="978" y="-1202.8" font-family="monospace" font-style="italic" font-size="14.00" fill="#95a5a6">oid</text>
-<polygon fill="#ffffff" stroke="none" points="896,-1168 896,-1193 973,-1193 973,-1168 896,-1168"/>
-<polygon fill="none" stroke="#2c3e50" points="896,-1168 896,-1193 973,-1193 973,-1168 896,-1168"/>
-<text text-anchor="start" x="901" y="-1176.8" font-family="monospace" font-size="14.00" fill="#000000">nspacl</text>
-<polygon fill="#ffffff" stroke="none" points="973,-1168 973,-1193 1058,-1193 1058,-1168 973,-1168"/>
-<polygon fill="none" stroke="#2c3e50" points="973,-1168 973,-1193 1058,-1193 1058,-1168 973,-1168"/>
-<text text-anchor="start" x="978" y="-1177.8" font-family="monospace" font-style="italic" font-size="14.00" fill="#95a5a6">aclitem[]</text>
-</g>
-<!-- pg_conversion&#45;&gt;pg_namespace -->
-<g id="edge1" class="edge"><title>pg_conversion:connamespace_out&#45;&gt;pg_namespace:oid_in</title>
-<path fill="none" stroke="#2c3e50" d="M417,-1108C635.92,-1108 671.521,-1251.41 884.712,-1255.89"/>
-<polygon fill="#2c3e50" stroke="#2c3e50" points="884.964,-1259.4 895,-1256 885.037,-1252.4 884.964,-1259.4"/>
-</g>
-<!-- pg_authid -->
-<g id="node3" class="node"><title>pg_authid</title>
-<polygon fill="#2c3e50" stroke="none" points="797,-1094 797,-1124 1157,-1124 1157,-1094 797,-1094"/>
-<polygon fill="none" stroke="black" points="797,-1094 797,-1124 1157,-1124 1157,-1094 797,-1094"/>
-<text text-anchor="start" x="929.5" y="-1105.6" font-family="monospace" font-weight="bold" font-size="18.00" fill="#ffffff">pg_authid</text>
-<polygon fill="#18bc9c" stroke="none" points="797,-1069 797,-1094 948,-1094 948,-1069 797,-1069"/>
-<polygon fill="none" stroke="#2c3e50" points="797,-1069 797,-1094 948,-1094 948,-1069 797,-1069"/>
-<text text-anchor="start" x="802" y="-1077.8" font-family="monospace" font-size="14.00" fill="#ffffff">oid</text>
-<polygon fill="#ffffff" stroke="none" points="948,-1069 948,-1094 1157,-1094 1157,-1069 948,-1069"/>
-<polygon fill="none" stroke="#2c3e50" points="948,-1069 948,-1094 1157,-1094 1157,-1069 948,-1069"/>
-<text text-anchor="start" x="953" y="-1078.8" font-family="monospace" font-style="italic" font-size="14.00" fill="#95a5a6">oid</text>
-<polygon fill="#ffffff" stroke="none" points="797,-1044 797,-1069 948,-1069 948,-1044 797,-1044"/>
-<polygon fill="none" stroke="#2c3e50" points="797,-1044 797,-1069 948,-1069 948,-1044 797,-1044"/>
-<text text-anchor="start" x="802" y="-1052.8" font-family="monospace" font-size="14.00" fill="#000000">rolname</text>
-<polygon fill="#ffffff" stroke="none" points="948,-1044 948,-1069 1157,-1069 1157,-1044 948,-1044"/>
-<polygon fill="none" stroke="#2c3e50" points="948,-1044 948,-1069 1157,-1069 1157,-1044 948,-1044"/>
-<text text-anchor="start" x="953" y="-1053.8" font-family="monospace" font-style="italic" font-size="14.00" fill="#95a5a6">name</text>
-<polygon fill="#ffffff" stroke="none" points="797,-1019 797,-1044 948,-1044 948,-1019 797,-1019"/>
-<polygon fill="none" stroke="#2c3e50" points="797,-1019 797,-1044 948,-1044 948,-1019 797,-1019"/>
-<text text-anchor="start" x="802" y="-1027.8" font-family="monospace" font-size="14.00" fill="#000000">rolsuper</text>
-<polygon fill="#ffffff" stroke="none" points="948,-1019 948,-1044 1157,-1044 1157,-1019 948,-1019"/>
-<polygon fill="none" stroke="#2c3e50" points="948,-1019 948,-1044 1157,-1044 1157,-1019 948,-1019"/>
-<text text-anchor="start" x="953" y="-1028.8" font-family="monospace" font-style="italic" font-size="14.00" fill="#95a5a6">boolean</text>
-<polygon fill="#ffffff" stroke="none" points="797,-994 797,-1019 948,-1019 948,-994 797,-994"/>
-<polygon fill="none" stroke="#2c3e50" points="797,-994 797,-1019 948,-1019 948,-994 797,-994"/>
-<text text-anchor="start" x="802" y="-1002.8" font-family="monospace" font-size="14.00" fill="#000000">rolinherit</text>
-<polygon fill="#ffffff" stroke="none" points="948,-994 948,-1019 1157,-1019 1157,-994 948,-994"/>
-<polygon fill="none" stroke="#2c3e50" points="948,-994 948,-1019 1157,-1019 1157,-994 948,-994"/>
-<text text-anchor="start" x="953" y="-1003.8" font-family="monospace" font-style="italic" font-size="14.00" fill="#95a5a6">boolean</text>
-<polygon fill="#ffffff" stroke="none" points="797,-969 797,-994 948,-994 948,-969 797,-969"/>
-<polygon fill="none" stroke="#2c3e50" points="797,-969 797,-994 948,-994 948,-969 797,-969"/>
-<text text-anchor="start" x="802" y="-977.8" font-family="monospace" font-size="14.00" fill="#000000">rolcreaterole</text>
-<polygon fill="#ffffff" stroke="none" points="948,-969 948,-994 1157,-994 1157,-969 948,-969"/>
-<polygon fill="none" stroke="#2c3e50" points="948,-969 948,-994 1157,-994 1157,-969 948,-969"/>
-<text text-anchor="start" x="953" y="-978.8" font-family="monospace" font-style="italic" font-size="14.00" fill="#95a5a6">boolean</text>
-<polygon fill="#ffffff" stroke="none" points="797,-944 797,-969 948,-969 948,-944 797,-944"/>
-<polygon fill="none" stroke="#2c3e50" points="797,-944 797,-969 948,-969 948,-944 797,-944"/>
-<text text-anchor="start" x="802" y="-952.8" font-family="monospace" font-size="14.00" fill="#000000">rolcreatedb</text>
-<polygon fill="#ffffff" stroke="none" points="948,-944 948,-969 1157,-969 1157,-944 948,-944"/>
-<polygon fill="none" stroke="#2c3e50" points="948,-944 948,-969 1157,-969 1157,-944 948,-944"/>
-<text text-anchor="start" x="953" y="-953.8" font-family="monospace" font-style="italic" font-size="14.00" fill="#95a5a6">boolean</text>
-<polygon fill="#ffffff" stroke="none" points="797,-919 797,-944 948,-944 948,-919 797,-919"/>
-<polygon fill="none" stroke="#2c3e50" points="797,-919 797,-944 948,-944 948,-919 797,-919"/>
-<text text-anchor="start" x="802" y="-927.8" font-family="monospace" font-size="14.00" fill="#000000">rolcatupdate</text>
-<polygon fill="#ffffff" stroke="none" points="948,-919 948,-944 1157,-944 1157,-919 948,-919"/>
-<polygon fill="none" stroke="#2c3e50" points="948,-919 948,-944 1157,-944 1157,-919 948,-919"/>
-<text text-anchor="start" x="953" y="-928.8" font-family="monospace" font-style="italic" font-size="14.00" fill="#95a5a6">boolean</text>
-<polygon fill="#ffffff" stroke="none" points="797,-894 797,-919 948,-919 948,-894 797,-894"/>
-<polygon fill="none" stroke="#2c3e50" points="797,-894 797,-919 948,-919 948,-894 797,-894"/>
-<text text-anchor="start" x="802" y="-902.8" font-family="monospace" font-size="14.00" fill="#000000">rolcanlogin</text>
-<polygon fill="#ffffff" stroke="none" points="948,-894 948,-919 1157,-919 1157,-894 948,-894"/>
-<polygon fill="none" stroke="#2c3e50" points="948,-894 948,-919 1157,-919 1157,-894 948,-894"/>
-<text text-anchor="start" x="953" y="-903.8" font-family="monospace" font-style="italic" font-size="14.00" fill="#95a5a6">boolean</text>
-<polygon fill="#ffffff" stroke="none" points="797,-869 797,-894 948,-894 948,-869 797,-869"/>
-<polygon fill="none" stroke="#2c3e50" points="797,-869 797,-894 948,-894 948,-869 797,-869"/>
-<text text-anchor="start" x="802" y="-877.8" font-family="monospace" font-size="14.00" fill="#000000">rolconnlimit</text>
-<polygon fill="#ffffff" stroke="none" points="948,-869 948,-894 1157,-894 1157,-869 948,-869"/>
-<polygon fill="none" stroke="#2c3e50" points="948,-869 948,-894 1157,-894 1157,-869 948,-869"/>
-<text text-anchor="start" x="953" y="-878.8" font-family="monospace" font-style="italic" font-size="14.00" fill="#95a5a6">integer</text>
-<polygon fill="#ffffff" stroke="none" points="797,-844 797,-869 948,-869 948,-844 797,-844"/>
-<polygon fill="none" stroke="#2c3e50" points="797,-844 797,-869 948,-869 948,-844 797,-844"/>
-<text text-anchor="start" x="802" y="-852.8" font-family="monospace" font-size="14.00" fill="#000000">rolpassword</text>
-<polygon fill="#ffffff" stroke="none" points="948,-844 948,-869 1157,-869 1157,-844 948,-844"/>
-<polygon fill="none" stroke="#2c3e50" points="948,-844 948,-869 1157,-869 1157,-844 948,-844"/>
-<text text-anchor="start" x="953" y="-853.8" font-family="monospace" font-style="italic" font-size="14.00" fill="#95a5a6">text</text>
-<polygon fill="#ffffff" stroke="none" points="797,-819 797,-844 948,-844 948,-819 797,-819"/>
-<polygon fill="none" stroke="#2c3e50" points="797,-819 797,-844 948,-844 948,-819 797,-819"/>
-<text text-anchor="start" x="802" y="-827.8" font-family="monospace" font-size="14.00" fill="#000000">rolvaliduntil</text>
-<polygon fill="#ffffff" stroke="none" points="948,-819 948,-844 1157,-844 1157,-819 948,-819"/>
-<polygon fill="none" stroke="#2c3e50" points="948,-819 948,-844 1157,-844 1157,-819 948,-819"/>
-<text text-anchor="start" x="953" y="-828.8" font-family="monospace" font-style="italic" font-size="14.00" fill="#95a5a6">timestamp_with_time_zone</text>
-<polygon fill="#ffffff" stroke="none" points="797,-794 797,-819 948,-819 948,-794 797,-794"/>
-<polygon fill="none" stroke="#2c3e50" points="797,-794 797,-819 948,-819 948,-794 797,-794"/>
-<text text-anchor="start" x="802" y="-802.8" font-family="monospace" font-size="14.00" fill="#000000">rolconfig</text>
-<polygon fill="#ffffff" stroke="none" points="948,-794 948,-819 1157,-819 1157,-794 948,-794"/>
-<polygon fill="none" stroke="#2c3e50" points="948,-794 948,-819 1157,-819 1157,-794 948,-794"/>
-<text text-anchor="start" x="953" y="-803.8" font-family="monospace" font-style="italic" font-size="14.00" fill="#95a5a6">text[]</text>
-<polygon fill="#ffffff" stroke="none" points="797,-769 797,-794 948,-794 948,-769 797,-769"/>
-<polygon fill="none" stroke="#2c3e50" points="797,-769 797,-794 948,-794 948,-769 797,-769"/>
-<text text-anchor="start" x="802" y="-777.8" font-family="monospace" font-size="14.00" fill="#000000">rolresqueue</text>
-<polygon fill="#ffffff" stroke="none" points="948,-769 948,-794 1157,-794 1157,-769 948,-769"/>
-<polygon fill="none" stroke="#2c3e50" points="948,-769 948,-794 1157,-794 1157,-769 948,-769"/>
-<text text-anchor="start" x="953" y="-778.8" font-family="monospace" font-style="italic" font-size="14.00" fill="#95a5a6">oid</text>
-<polygon fill="#ffffff" stroke="none" points="797,-744 797,-769 948,-769 948,-744 797,-744"/>
-<polygon fill="none" stroke="#2c3e50" points="797,-744 797,-769 948,-769 948,-744 797,-744"/>
-<text text-anchor="start" x="802" y="-752.8" font-family="monospace" font-size="14.00" fill="#000000">rolcreaterextgpfd</text>
-<polygon fill="#ffffff" stroke="none" points="948,-744 948,-769 1157,-769 1157,-744 948,-744"/>
-<polygon fill="none" stroke="#2c3e50" points="948,-744 948,-769 1157,-769 1157,-744 948,-744"/>
-<text text-anchor="start" x="953" y="-753.8" font-family="monospace" font-style="italic" font-size="14.00" fill="#95a5a6">boolean</text>
-<polygon fill="#ffffff" stroke="none" points="797,-719 797,-744 948,-744 948,-719 797,-719"/>
-<polygon fill="none" stroke="#2c3e50" points="797,-719 797,-744 948,-744 948,-719 797,-719"/>
-<text text-anchor="start" x="802" y="-727.8" font-family="monospace" font-size="14.00" fill="#000000">rolcreaterexthttp</text>
-<polygon fill="#ffffff" stroke="none" points="948,-719 948,-744 1157,-744 1157,-719 948,-719"/>
-<polygon fill="none" stroke="#2c3e50" points="948,-719 948,-744 1157,-744 1157,-719 948,-719"/>
-<text text-anchor="start" x="953" y="-728.8" font-family="monospace" font-style="italic" font-size="14.00" fill="#95a5a6">boolean</text>
-<polygon fill="#ffffff" stroke="none" points="797,-694 797,-719 948,-719 948,-694 797,-694"/>
-<polygon fill="none" stroke="#2c3e50" points="797,-694 797,-719 948,-719 948,-694 797,-694"/>
-<text text-anchor="start" x="802" y="-702.8" font-family="monospace" font-size="14.00" fill="#000000">rolcreatewextgpfd</text>
-<polygon fill="#ffffff" stroke="none" points="948,-694 948,-719 1157,-719 1157,-694 948,-694"/>
-<polygon fill="none" stroke="#2c3e50" points="948,-694 948,-719 1157,-719 1157,-694 948,-694"/>
-<text text-anchor="start" x="953" y="-703.8" font-family="monospace" font-style="italic" font-size="14.00" fill="#95a5a6">boolean</text>
-<polygon fill="#ffffff" stroke="none" points="797,-669 797,-694 948,-694 948,-669 797,-669"/>
-<polygon fill="none" stroke="#2c3e50" points="797,-669 797,-694 948,-694 948,-669 797,-669"/>
-<text text-anchor="start" x="802" y="-677.8" font-family="monospace" font-size="14.00" fill="#000000">rolcreaterexthdfs</text>
-<polygon fill="#ffffff" stroke="none" points="948,-669 948,-694 1157,-694 1157,-669 948,-669"/>
-<polygon fill="none" stroke="#2c3e50" points="948,-669 948,-694 1157,-694 1157,-669 948,-669"/>
-<text text-anchor="start" x="953" y="-678.8" font-family="monospace" font-style="italic" font-size="14.00" fill="#95a5a6">boolean</text>
-<polygon fill="#ffffff" stroke="none" points="797,-644 797,-669 948,-669 948,-644 797,-644"/>
-<polygon fill="none" stroke="#2c3e50" points="797,-644 797,-669 948,-669 948,-644 797,-644"/>
-<text text-anchor="start" x="802" y="-652.8" font-family="monospace" font-size="14.00" fill="#000000">rolcreatewexthdfs</text>
-<polygon fill="#ffffff" stroke="none" points="948,-644 948,-669 1157,-669 1157,-644 948,-644"/>
-<polygon fill="none" stroke="#2c3e50" points="948,-644 948,-669 1157,-669 1157,-644 948,-644"/>
-<text text-anchor="start" x="953" y="-653.8" font-family="monospace" font-style="italic" font-size="14.00" fill="#95a5a6">boolean</text>
-</g>
-<!-- pg_conversion&#45;&gt;pg_authid -->
-<g id="edge2" class="edge"><title>pg_conversion:conowner_out&#45;&gt;pg_authid:oid_in</title>
-<path fill="none" stroke="#2c3e50" d="M417,-1082C581.99,-1082 625.775,-1082 785.794,-1082"/>
-<polygon fill="#2c3e50" stroke="#2c3e50" points="786,-1085.5 796,-1082 786,-1078.5 786,-1085.5"/>
 </g>
 <!-- pg_proc -->
-<g id="node4" class="node"><title>pg_proc</title>
+<g id="node2" class="node"><title>pg_proc</title>
+<g id="a_node2"><a xlink:href="pg_proc.svg" xlink:title="&lt;TABLE&gt;">
 <polygon fill="#2c3e50" stroke="none" points="855,-570 855,-600 1099,-600 1099,-570 855,-570"/>
 <polygon fill="none" stroke="black" points="855,-570 855,-600 1099,-600 1099,-570 855,-570"/>
 <text text-anchor="start" x="940" y="-581.6" font-family="monospace" font-weight="bold" font-size="18.00" fill="#ffffff">pg_proc</text>
@@ -359,11 +209,173 @@
 <polygon fill="#ffffff" stroke="none" points="981,-20 981,-45 1099,-45 1099,-20 981,-20"/>
 <polygon fill="none" stroke="#2c3e50" points="981,-20 981,-45 1099,-45 1099,-20 981,-20"/>
 <text text-anchor="start" x="986" y="-29.8" font-family="monospace" font-style="italic" font-size="14.00" fill="#95a5a6">oid</text>
+</a>
+</g>
 </g>
 <!-- pg_conversion&#45;&gt;pg_proc -->
 <g id="edge3" class="edge"><title>pg_conversion:conproc_out&#45;&gt;pg_proc:oid_in</title>
 <path fill="none" stroke="#2c3e50" d="M417,-1007C618.871,-1007 498.965,-746.337 658,-622 727.443,-567.708 759.854,-558.647 843.783,-558.035"/>
 <polygon fill="#2c3e50" stroke="#2c3e50" points="844.012,-561.535 854,-558 843.988,-554.535 844.012,-561.535"/>
+</g>
+<!-- pg_namespace -->
+<g id="node3" class="node"><title>pg_namespace</title>
+<g id="a_node3"><a xlink:href="pg_namespace.svg" xlink:title="&lt;TABLE&gt;">
+<polygon fill="#2c3e50" stroke="none" points="896,-1268 896,-1298 1058,-1298 1058,-1268 896,-1268"/>
+<polygon fill="none" stroke="black" points="896,-1268 896,-1298 1058,-1298 1058,-1268 896,-1268"/>
+<text text-anchor="start" x="913.5" y="-1279.6" font-family="monospace" font-weight="bold" font-size="18.00" fill="#ffffff">pg_namespace</text>
+<polygon fill="#18bc9c" stroke="none" points="896,-1243 896,-1268 973,-1268 973,-1243 896,-1243"/>
+<polygon fill="none" stroke="#2c3e50" points="896,-1243 896,-1268 973,-1268 973,-1243 896,-1243"/>
+<text text-anchor="start" x="901" y="-1251.8" font-family="monospace" font-size="14.00" fill="#ffffff">oid</text>
+<polygon fill="#ffffff" stroke="none" points="973,-1243 973,-1268 1058,-1268 1058,-1243 973,-1243"/>
+<polygon fill="none" stroke="#2c3e50" points="973,-1243 973,-1268 1058,-1268 1058,-1243 973,-1243"/>
+<text text-anchor="start" x="978" y="-1252.8" font-family="monospace" font-style="italic" font-size="14.00" fill="#95a5a6">oid</text>
+<polygon fill="#ffffff" stroke="none" points="896,-1218 896,-1243 973,-1243 973,-1218 896,-1218"/>
+<polygon fill="none" stroke="#2c3e50" points="896,-1218 896,-1243 973,-1243 973,-1218 896,-1218"/>
+<text text-anchor="start" x="901" y="-1226.8" font-family="monospace" font-size="14.00" fill="#000000">nspname</text>
+<polygon fill="#ffffff" stroke="none" points="973,-1218 973,-1243 1058,-1243 1058,-1218 973,-1218"/>
+<polygon fill="none" stroke="#2c3e50" points="973,-1218 973,-1243 1058,-1243 1058,-1218 973,-1218"/>
+<text text-anchor="start" x="978" y="-1227.8" font-family="monospace" font-style="italic" font-size="14.00" fill="#95a5a6">name</text>
+<polygon fill="#ffffff" stroke="none" points="896,-1193 896,-1218 973,-1218 973,-1193 896,-1193"/>
+<polygon fill="none" stroke="#2c3e50" points="896,-1193 896,-1218 973,-1218 973,-1193 896,-1193"/>
+<text text-anchor="start" x="901" y="-1201.8" font-family="monospace" font-size="14.00" fill="#000000">nspowner</text>
+<polygon fill="#ffffff" stroke="none" points="973,-1193 973,-1218 1058,-1218 1058,-1193 973,-1193"/>
+<polygon fill="none" stroke="#2c3e50" points="973,-1193 973,-1218 1058,-1218 1058,-1193 973,-1193"/>
+<text text-anchor="start" x="978" y="-1202.8" font-family="monospace" font-style="italic" font-size="14.00" fill="#95a5a6">oid</text>
+<polygon fill="#ffffff" stroke="none" points="896,-1168 896,-1193 973,-1193 973,-1168 896,-1168"/>
+<polygon fill="none" stroke="#2c3e50" points="896,-1168 896,-1193 973,-1193 973,-1168 896,-1168"/>
+<text text-anchor="start" x="901" y="-1176.8" font-family="monospace" font-size="14.00" fill="#000000">nspacl</text>
+<polygon fill="#ffffff" stroke="none" points="973,-1168 973,-1193 1058,-1193 1058,-1168 973,-1168"/>
+<polygon fill="none" stroke="#2c3e50" points="973,-1168 973,-1193 1058,-1193 1058,-1168 973,-1168"/>
+<text text-anchor="start" x="978" y="-1177.8" font-family="monospace" font-style="italic" font-size="14.00" fill="#95a5a6">aclitem[]</text>
+</a>
+</g>
+</g>
+<!-- pg_conversion&#45;&gt;pg_namespace -->
+<g id="edge1" class="edge"><title>pg_conversion:connamespace_out&#45;&gt;pg_namespace:oid_in</title>
+<path fill="none" stroke="#2c3e50" d="M417,-1108C635.92,-1108 671.521,-1251.41 884.712,-1255.89"/>
+<polygon fill="#2c3e50" stroke="#2c3e50" points="884.964,-1259.4 895,-1256 885.037,-1252.4 884.964,-1259.4"/>
+</g>
+<!-- pg_authid -->
+<g id="node4" class="node"><title>pg_authid</title>
+<g id="a_node4"><a xlink:href="pg_authid.svg" xlink:title="&lt;TABLE&gt;">
+<polygon fill="#2c3e50" stroke="none" points="797,-1094 797,-1124 1157,-1124 1157,-1094 797,-1094"/>
+<polygon fill="none" stroke="black" points="797,-1094 797,-1124 1157,-1124 1157,-1094 797,-1094"/>
+<text text-anchor="start" x="929.5" y="-1105.6" font-family="monospace" font-weight="bold" font-size="18.00" fill="#ffffff">pg_authid</text>
+<polygon fill="#18bc9c" stroke="none" points="797,-1069 797,-1094 948,-1094 948,-1069 797,-1069"/>
+<polygon fill="none" stroke="#2c3e50" points="797,-1069 797,-1094 948,-1094 948,-1069 797,-1069"/>
+<text text-anchor="start" x="802" y="-1077.8" font-family="monospace" font-size="14.00" fill="#ffffff">oid</text>
+<polygon fill="#ffffff" stroke="none" points="948,-1069 948,-1094 1157,-1094 1157,-1069 948,-1069"/>
+<polygon fill="none" stroke="#2c3e50" points="948,-1069 948,-1094 1157,-1094 1157,-1069 948,-1069"/>
+<text text-anchor="start" x="953" y="-1078.8" font-family="monospace" font-style="italic" font-size="14.00" fill="#95a5a6">oid</text>
+<polygon fill="#ffffff" stroke="none" points="797,-1044 797,-1069 948,-1069 948,-1044 797,-1044"/>
+<polygon fill="none" stroke="#2c3e50" points="797,-1044 797,-1069 948,-1069 948,-1044 797,-1044"/>
+<text text-anchor="start" x="802" y="-1052.8" font-family="monospace" font-size="14.00" fill="#000000">rolname</text>
+<polygon fill="#ffffff" stroke="none" points="948,-1044 948,-1069 1157,-1069 1157,-1044 948,-1044"/>
+<polygon fill="none" stroke="#2c3e50" points="948,-1044 948,-1069 1157,-1069 1157,-1044 948,-1044"/>
+<text text-anchor="start" x="953" y="-1053.8" font-family="monospace" font-style="italic" font-size="14.00" fill="#95a5a6">name</text>
+<polygon fill="#ffffff" stroke="none" points="797,-1019 797,-1044 948,-1044 948,-1019 797,-1019"/>
+<polygon fill="none" stroke="#2c3e50" points="797,-1019 797,-1044 948,-1044 948,-1019 797,-1019"/>
+<text text-anchor="start" x="802" y="-1027.8" font-family="monospace" font-size="14.00" fill="#000000">rolsuper</text>
+<polygon fill="#ffffff" stroke="none" points="948,-1019 948,-1044 1157,-1044 1157,-1019 948,-1019"/>
+<polygon fill="none" stroke="#2c3e50" points="948,-1019 948,-1044 1157,-1044 1157,-1019 948,-1019"/>
+<text text-anchor="start" x="953" y="-1028.8" font-family="monospace" font-style="italic" font-size="14.00" fill="#95a5a6">boolean</text>
+<polygon fill="#ffffff" stroke="none" points="797,-994 797,-1019 948,-1019 948,-994 797,-994"/>
+<polygon fill="none" stroke="#2c3e50" points="797,-994 797,-1019 948,-1019 948,-994 797,-994"/>
+<text text-anchor="start" x="802" y="-1002.8" font-family="monospace" font-size="14.00" fill="#000000">rolinherit</text>
+<polygon fill="#ffffff" stroke="none" points="948,-994 948,-1019 1157,-1019 1157,-994 948,-994"/>
+<polygon fill="none" stroke="#2c3e50" points="948,-994 948,-1019 1157,-1019 1157,-994 948,-994"/>
+<text text-anchor="start" x="953" y="-1003.8" font-family="monospace" font-style="italic" font-size="14.00" fill="#95a5a6">boolean</text>
+<polygon fill="#ffffff" stroke="none" points="797,-969 797,-994 948,-994 948,-969 797,-969"/>
+<polygon fill="none" stroke="#2c3e50" points="797,-969 797,-994 948,-994 948,-969 797,-969"/>
+<text text-anchor="start" x="802" y="-977.8" font-family="monospace" font-size="14.00" fill="#000000">rolcreaterole</text>
+<polygon fill="#ffffff" stroke="none" points="948,-969 948,-994 1157,-994 1157,-969 948,-969"/>
+<polygon fill="none" stroke="#2c3e50" points="948,-969 948,-994 1157,-994 1157,-969 948,-969"/>
+<text text-anchor="start" x="953" y="-978.8" font-family="monospace" font-style="italic" font-size="14.00" fill="#95a5a6">boolean</text>
+<polygon fill="#ffffff" stroke="none" points="797,-944 797,-969 948,-969 948,-944 797,-944"/>
+<polygon fill="none" stroke="#2c3e50" points="797,-944 797,-969 948,-969 948,-944 797,-944"/>
+<text text-anchor="start" x="802" y="-952.8" font-family="monospace" font-size="14.00" fill="#000000">rolcreatedb</text>
+<polygon fill="#ffffff" stroke="none" points="948,-944 948,-969 1157,-969 1157,-944 948,-944"/>
+<polygon fill="none" stroke="#2c3e50" points="948,-944 948,-969 1157,-969 1157,-944 948,-944"/>
+<text text-anchor="start" x="953" y="-953.8" font-family="monospace" font-style="italic" font-size="14.00" fill="#95a5a6">boolean</text>
+<polygon fill="#ffffff" stroke="none" points="797,-919 797,-944 948,-944 948,-919 797,-919"/>
+<polygon fill="none" stroke="#2c3e50" points="797,-919 797,-944 948,-944 948,-919 797,-919"/>
+<text text-anchor="start" x="802" y="-927.8" font-family="monospace" font-size="14.00" fill="#000000">rolcatupdate</text>
+<polygon fill="#ffffff" stroke="none" points="948,-919 948,-944 1157,-944 1157,-919 948,-919"/>
+<polygon fill="none" stroke="#2c3e50" points="948,-919 948,-944 1157,-944 1157,-919 948,-919"/>
+<text text-anchor="start" x="953" y="-928.8" font-family="monospace" font-style="italic" font-size="14.00" fill="#95a5a6">boolean</text>
+<polygon fill="#ffffff" stroke="none" points="797,-894 797,-919 948,-919 948,-894 797,-894"/>
+<polygon fill="none" stroke="#2c3e50" points="797,-894 797,-919 948,-919 948,-894 797,-894"/>
+<text text-anchor="start" x="802" y="-902.8" font-family="monospace" font-size="14.00" fill="#000000">rolcanlogin</text>
+<polygon fill="#ffffff" stroke="none" points="948,-894 948,-919 1157,-919 1157,-894 948,-894"/>
+<polygon fill="none" stroke="#2c3e50" points="948,-894 948,-919 1157,-919 1157,-894 948,-894"/>
+<text text-anchor="start" x="953" y="-903.8" font-family="monospace" font-style="italic" font-size="14.00" fill="#95a5a6">boolean</text>
+<polygon fill="#ffffff" stroke="none" points="797,-869 797,-894 948,-894 948,-869 797,-869"/>
+<polygon fill="none" stroke="#2c3e50" points="797,-869 797,-894 948,-894 948,-869 797,-869"/>
+<text text-anchor="start" x="802" y="-877.8" font-family="monospace" font-size="14.00" fill="#000000">rolconnlimit</text>
+<polygon fill="#ffffff" stroke="none" points="948,-869 948,-894 1157,-894 1157,-869 948,-869"/>
+<polygon fill="none" stroke="#2c3e50" points="948,-869 948,-894 1157,-894 1157,-869 948,-869"/>
+<text text-anchor="start" x="953" y="-878.8" font-family="monospace" font-style="italic" font-size="14.00" fill="#95a5a6">integer</text>
+<polygon fill="#ffffff" stroke="none" points="797,-844 797,-869 948,-869 948,-844 797,-844"/>
+<polygon fill="none" stroke="#2c3e50" points="797,-844 797,-869 948,-869 948,-844 797,-844"/>
+<text text-anchor="start" x="802" y="-852.8" font-family="monospace" font-size="14.00" fill="#000000">rolpassword</text>
+<polygon fill="#ffffff" stroke="none" points="948,-844 948,-869 1157,-869 1157,-844 948,-844"/>
+<polygon fill="none" stroke="#2c3e50" points="948,-844 948,-869 1157,-869 1157,-844 948,-844"/>
+<text text-anchor="start" x="953" y="-853.8" font-family="monospace" font-style="italic" font-size="14.00" fill="#95a5a6">text</text>
+<polygon fill="#ffffff" stroke="none" points="797,-819 797,-844 948,-844 948,-819 797,-819"/>
+<polygon fill="none" stroke="#2c3e50" points="797,-819 797,-844 948,-844 948,-819 797,-819"/>
+<text text-anchor="start" x="802" y="-827.8" font-family="monospace" font-size="14.00" fill="#000000">rolvaliduntil</text>
+<polygon fill="#ffffff" stroke="none" points="948,-819 948,-844 1157,-844 1157,-819 948,-819"/>
+<polygon fill="none" stroke="#2c3e50" points="948,-819 948,-844 1157,-844 1157,-819 948,-819"/>
+<text text-anchor="start" x="953" y="-828.8" font-family="monospace" font-style="italic" font-size="14.00" fill="#95a5a6">timestamp_with_time_zone</text>
+<polygon fill="#ffffff" stroke="none" points="797,-794 797,-819 948,-819 948,-794 797,-794"/>
+<polygon fill="none" stroke="#2c3e50" points="797,-794 797,-819 948,-819 948,-794 797,-794"/>
+<text text-anchor="start" x="802" y="-802.8" font-family="monospace" font-size="14.00" fill="#000000">rolconfig</text>
+<polygon fill="#ffffff" stroke="none" points="948,-794 948,-819 1157,-819 1157,-794 948,-794"/>
+<polygon fill="none" stroke="#2c3e50" points="948,-794 948,-819 1157,-819 1157,-794 948,-794"/>
+<text text-anchor="start" x="953" y="-803.8" font-family="monospace" font-style="italic" font-size="14.00" fill="#95a5a6">text[]</text>
+<polygon fill="#ffffff" stroke="none" points="797,-769 797,-794 948,-794 948,-769 797,-769"/>
+<polygon fill="none" stroke="#2c3e50" points="797,-769 797,-794 948,-794 948,-769 797,-769"/>
+<text text-anchor="start" x="802" y="-777.8" font-family="monospace" font-size="14.00" fill="#000000">rolresqueue</text>
+<polygon fill="#ffffff" stroke="none" points="948,-769 948,-794 1157,-794 1157,-769 948,-769"/>
+<polygon fill="none" stroke="#2c3e50" points="948,-769 948,-794 1157,-794 1157,-769 948,-769"/>
+<text text-anchor="start" x="953" y="-778.8" font-family="monospace" font-style="italic" font-size="14.00" fill="#95a5a6">oid</text>
+<polygon fill="#ffffff" stroke="none" points="797,-744 797,-769 948,-769 948,-744 797,-744"/>
+<polygon fill="none" stroke="#2c3e50" points="797,-744 797,-769 948,-769 948,-744 797,-744"/>
+<text text-anchor="start" x="802" y="-752.8" font-family="monospace" font-size="14.00" fill="#000000">rolcreaterextgpfd</text>
+<polygon fill="#ffffff" stroke="none" points="948,-744 948,-769 1157,-769 1157,-744 948,-744"/>
+<polygon fill="none" stroke="#2c3e50" points="948,-744 948,-769 1157,-769 1157,-744 948,-744"/>
+<text text-anchor="start" x="953" y="-753.8" font-family="monospace" font-style="italic" font-size="14.00" fill="#95a5a6">boolean</text>
+<polygon fill="#ffffff" stroke="none" points="797,-719 797,-744 948,-744 948,-719 797,-719"/>
+<polygon fill="none" stroke="#2c3e50" points="797,-719 797,-744 948,-744 948,-719 797,-719"/>
+<text text-anchor="start" x="802" y="-727.8" font-family="monospace" font-size="14.00" fill="#000000">rolcreaterexthttp</text>
+<polygon fill="#ffffff" stroke="none" points="948,-719 948,-744 1157,-744 1157,-719 948,-719"/>
+<polygon fill="none" stroke="#2c3e50" points="948,-719 948,-744 1157,-744 1157,-719 948,-719"/>
+<text text-anchor="start" x="953" y="-728.8" font-family="monospace" font-style="italic" font-size="14.00" fill="#95a5a6">boolean</text>
+<polygon fill="#ffffff" stroke="none" points="797,-694 797,-719 948,-719 948,-694 797,-694"/>
+<polygon fill="none" stroke="#2c3e50" points="797,-694 797,-719 948,-719 948,-694 797,-694"/>
+<text text-anchor="start" x="802" y="-702.8" font-family="monospace" font-size="14.00" fill="#000000">rolcreatewextgpfd</text>
+<polygon fill="#ffffff" stroke="none" points="948,-694 948,-719 1157,-719 1157,-694 948,-694"/>
+<polygon fill="none" stroke="#2c3e50" points="948,-694 948,-719 1157,-719 1157,-694 948,-694"/>
+<text text-anchor="start" x="953" y="-703.8" font-family="monospace" font-style="italic" font-size="14.00" fill="#95a5a6">boolean</text>
+<polygon fill="#ffffff" stroke="none" points="797,-669 797,-694 948,-694 948,-669 797,-669"/>
+<polygon fill="none" stroke="#2c3e50" points="797,-669 797,-694 948,-694 948,-669 797,-669"/>
+<text text-anchor="start" x="802" y="-677.8" font-family="monospace" font-size="14.00" fill="#000000">rolcreaterexthdfs</text>
+<polygon fill="#ffffff" stroke="none" points="948,-669 948,-694 1157,-694 1157,-669 948,-669"/>
+<polygon fill="none" stroke="#2c3e50" points="948,-669 948,-694 1157,-694 1157,-669 948,-669"/>
+<text text-anchor="start" x="953" y="-678.8" font-family="monospace" font-style="italic" font-size="14.00" fill="#95a5a6">boolean</text>
+<polygon fill="#ffffff" stroke="none" points="797,-644 797,-669 948,-669 948,-644 797,-644"/>
+<polygon fill="none" stroke="#2c3e50" points="797,-644 797,-669 948,-669 948,-644 797,-644"/>
+<text text-anchor="start" x="802" y="-652.8" font-family="monospace" font-size="14.00" fill="#000000">rolcreatewexthdfs</text>
+<polygon fill="#ffffff" stroke="none" points="948,-644 948,-669 1157,-669 1157,-644 948,-644"/>
+<polygon fill="none" stroke="#2c3e50" points="948,-644 948,-669 1157,-669 1157,-644 948,-644"/>
+<text text-anchor="start" x="953" y="-653.8" font-family="monospace" font-style="italic" font-size="14.00" fill="#95a5a6">boolean</text>
+</a>
+</g>
+</g>
+<!-- pg_conversion&#45;&gt;pg_authid -->
+<g id="edge2" class="edge"><title>pg_conversion:conowner_out&#45;&gt;pg_authid:oid_in</title>
+<path fill="none" stroke="#2c3e50" d="M417,-1082C581.99,-1082 625.775,-1082 785.794,-1082"/>
+<polygon fill="#2c3e50" stroke="#2c3e50" points="786,-1085.5 796,-1082 786,-1078.5 786,-1085.5"/>
 </g>
 </g>
 </svg>

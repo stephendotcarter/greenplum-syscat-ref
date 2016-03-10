@@ -14,6 +14,7 @@
 </g>
 <!-- gp_verification_history -->
 <g id="node1" class="node"><title>gp_verification_history</title>
+<g id="a_node1"><a xlink:href="gp_verification_history.svg" xlink:title="&lt;TABLE&gt;">
 <polygon fill="#2c3e50" stroke="none" points="214.5,-220 214.5,-250 533.5,-250 533.5,-220 214.5,-220"/>
 <polygon fill="none" stroke="black" points="214.5,-220 214.5,-250 533.5,-250 533.5,-220 214.5,-220"/>
 <text text-anchor="start" x="253" y="-231.6" font-family="monospace" font-weight="bold" font-size="18.00" fill="#ffffff">gp_verification_history</text>
@@ -65,6 +66,8 @@
 <polygon fill="#ffffff" stroke="none" points="324.5,-20 324.5,-45 533.5,-45 533.5,-20 324.5,-20"/>
 <polygon fill="none" stroke="#2c3e50" points="324.5,-20 324.5,-45 533.5,-45 533.5,-20 324.5,-20"/>
 <text text-anchor="start" x="329.5" y="-29.8" font-family="monospace" font-style="italic" font-size="14.00" fill="#95a5a6">boolean</text>
+</a>
+</g>
 </g>
 </g>
 </svg>

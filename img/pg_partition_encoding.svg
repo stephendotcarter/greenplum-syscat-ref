@@ -16,6 +16,7 @@
 </g>
 <!-- pg_partition_encoding -->
 <g id="node1" class="node"><title>pg_partition_encoding</title>
+<g id="a_node1"><a xlink:href="pg_partition_encoding.svg" xlink:title="&lt;TABLE&gt;">
 <polygon fill="#2c3e50" stroke="none" points="257.5,-220 257.5,-250 488.5,-250 488.5,-220 257.5,-220"/>
 <polygon fill="none" stroke="black" points="257.5,-220 257.5,-250 488.5,-250 488.5,-220 257.5,-220"/>
 <text text-anchor="start" x="262.5" y="-231.6" font-family="monospace" font-weight="bold" font-size="18.00" fill="#ffffff">pg_partition_encoding</text>
@@ -37,9 +38,12 @@
 <polygon fill="#ffffff" stroke="none" points="405.5,-145 405.5,-170 488.5,-170 488.5,-145 405.5,-145"/>
 <polygon fill="none" stroke="#2c3e50" points="405.5,-145 405.5,-170 488.5,-170 488.5,-145 405.5,-145"/>
 <text text-anchor="start" x="410.5" y="-154.8" font-family="monospace" font-style="italic" font-size="14.00" fill="#95a5a6">text[]</text>
+</a>
+</g>
 </g>
 <!-- pg_partition -->
 <g id="node2" class="node"><title>pg_partition</title>
+<g id="a_node2"><a xlink:href="pg_partition.svg" xlink:title="&lt;TABLE&gt;">
 <polygon fill="#2c3e50" stroke="none" points="1029.5,-220 1029.5,-250 1248.5,-250 1248.5,-220 1029.5,-220"/>
 <polygon fill="none" stroke="black" points="1029.5,-220 1029.5,-250 1248.5,-250 1248.5,-220 1029.5,-220"/>
 <text text-anchor="start" x="1075.5" y="-231.6" font-family="monospace" font-weight="bold" font-size="18.00" fill="#ffffff">pg_partition</text>
@@ -91,6 +95,8 @@
 <polygon fill="#ffffff" stroke="none" points="1147.5,-20 1147.5,-45 1248.5,-45 1248.5,-20 1147.5,-20"/>
 <polygon fill="none" stroke="#2c3e50" points="1147.5,-20 1147.5,-45 1248.5,-45 1248.5,-20 1147.5,-20"/>
 <text text-anchor="start" x="1152.5" y="-29.8" font-family="monospace" font-style="italic" font-size="14.00" fill="#95a5a6">oidvector</text>
+</a>
+</g>
 </g>
 <!-- pg_partition_encoding&#45;&gt;pg_partition -->
 <g id="edge1" class="edge"><title>pg_partition_encoding:parencoid_out&#45;&gt;pg_partition:oid_in</title>

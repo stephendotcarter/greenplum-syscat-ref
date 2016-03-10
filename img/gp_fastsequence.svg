@@ -16,6 +16,7 @@
 </g>
 <!-- gp_fastsequence -->
 <g id="node1" class="node"><title>gp_fastsequence</title>
+<g id="a_node1"><a xlink:href="gp_fastsequence.svg" xlink:title="&lt;TABLE&gt;">
 <polygon fill="#2c3e50" stroke="none" points="248,-795 248,-825 426,-825 426,-795 248,-795"/>
 <polygon fill="none" stroke="black" points="248,-795 248,-825 426,-825 426,-795 248,-795"/>
 <text text-anchor="start" x="258" y="-806.6" font-family="monospace" font-weight="bold" font-size="18.00" fill="#ffffff">gp_fastsequence</text>
@@ -37,9 +38,12 @@
 <polygon fill="#ffffff" stroke="none" points="366,-720 366,-745 426,-745 426,-720 366,-720"/>
 <polygon fill="none" stroke="#2c3e50" points="366,-720 366,-745 426,-745 426,-720 366,-720"/>
 <text text-anchor="start" x="371" y="-729.8" font-family="monospace" font-style="italic" font-size="14.00" fill="#95a5a6">bigint</text>
+</a>
+</g>
 </g>
 <!-- pg_class -->
 <g id="node2" class="node"><title>pg_class</title>
+<g id="a_node2"><a xlink:href="pg_class.svg" xlink:title="&lt;TABLE&gt;">
 <polygon fill="#2c3e50" stroke="none" points="917.5,-795 917.5,-825 1144.5,-825 1144.5,-795 917.5,-795"/>
 <polygon fill="none" stroke="black" points="917.5,-795 917.5,-825 1144.5,-825 1144.5,-795 917.5,-795"/>
 <text text-anchor="start" x="988.5" y="-806.6" font-family="monospace" font-weight="bold" font-size="18.00" fill="#ffffff">pg_class</text>
@@ -229,6 +233,8 @@
 <polygon fill="#ffffff" stroke="none" points="1043.5,-20 1043.5,-45 1144.5,-45 1144.5,-20 1043.5,-20"/>
 <polygon fill="none" stroke="#2c3e50" points="1043.5,-20 1043.5,-45 1144.5,-45 1144.5,-20 1043.5,-20"/>
 <text text-anchor="start" x="1048.5" y="-29.8" font-family="monospace" font-style="italic" font-size="14.00" fill="#95a5a6">text[]</text>
+</a>
+</g>
 </g>
 <!-- gp_fastsequence&#45;&gt;pg_class -->
 <g id="edge1" class="edge"><title>gp_fastsequence:objid_out&#45;&gt;pg_class:oid_in</title>

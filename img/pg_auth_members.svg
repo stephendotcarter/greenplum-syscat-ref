@@ -16,6 +16,7 @@
 </g>
 <!-- pg_auth_members -->
 <g id="node1" class="node"><title>pg_auth_members</title>
+<g id="a_node1"><a xlink:href="pg_auth_members.svg" xlink:title="&lt;TABLE&gt;">
 <polygon fill="#2c3e50" stroke="none" points="260,-483 260,-513 438,-513 438,-483 260,-483"/>
 <polygon fill="none" stroke="black" points="260,-483 260,-513 438,-513 438,-483 260,-483"/>
 <text text-anchor="start" x="270" y="-494.6" font-family="monospace" font-weight="bold" font-size="18.00" fill="#ffffff">pg_auth_members</text>
@@ -43,9 +44,12 @@
 <polygon fill="#ffffff" stroke="none" points="370,-383 370,-408 438,-408 438,-383 370,-383"/>
 <polygon fill="none" stroke="#2c3e50" points="370,-383 370,-408 438,-408 438,-383 370,-383"/>
 <text text-anchor="start" x="375" y="-392.8" font-family="monospace" font-style="italic" font-size="14.00" fill="#95a5a6">boolean</text>
+</a>
+</g>
 </g>
 <!-- pg_authid -->
 <g id="node2" class="node"><title>pg_authid</title>
+<g id="a_node2"><a xlink:href="pg_authid.svg" xlink:title="&lt;TABLE&gt;">
 <polygon fill="#2c3e50" stroke="none" points="887,-470 887,-500 1247,-500 1247,-470 887,-470"/>
 <polygon fill="none" stroke="black" points="887,-470 887,-500 1247,-500 1247,-470 887,-470"/>
 <text text-anchor="start" x="1019.5" y="-481.6" font-family="monospace" font-weight="bold" font-size="18.00" fill="#ffffff">pg_authid</text>
@@ -157,6 +161,8 @@
 <polygon fill="#ffffff" stroke="none" points="1038,-20 1038,-45 1247,-45 1247,-20 1038,-20"/>
 <polygon fill="none" stroke="#2c3e50" points="1038,-20 1038,-45 1247,-45 1247,-20 1038,-20"/>
 <text text-anchor="start" x="1043" y="-29.8" font-family="monospace" font-style="italic" font-size="14.00" fill="#95a5a6">boolean</text>
+</a>
+</g>
 </g>
 <!-- pg_auth_members&#45;&gt;pg_authid -->
 <g id="edge1" class="edge"><title>pg_auth_members:roleid_out&#45;&gt;pg_authid:oid_in</title>

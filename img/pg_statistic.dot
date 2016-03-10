@@ -133,7 +133,7 @@ digraph GPDB {
 <TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="stavalues4_out"><FONT COLOR="#95a5a6"><I>text</I></FONT></TD>
 </TR>
 
-</TABLE></FONT>> name = "pg_statistic"];
+</TABLE></FONT>> name = "pg_statistic" URL = "pg_statistic.svg"];
         
     }
     
@@ -235,7 +235,7 @@ digraph GPDB {
 <TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="attinhcount_out"><FONT COLOR="#95a5a6"><I>integer</I></FONT></TD>
 </TR>
 
-</TABLE></FONT>> name = "pg_attribute"];
+</TABLE></FONT>> name = "pg_attribute" URL = "pg_attribute.svg"];
         
             pg_operator [label = <<FONT FACE="monospace"><TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4">
 <TR><TD BGCOLOR="#2c3e50" ALIGN="CENTER" COLSPAN="2"><FONT COLOR="#FFFFFF" POINT-SIZE="18"><B>pg_operator</B></FONT></TD></TR>
@@ -330,7 +330,7 @@ digraph GPDB {
 <TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="oprjoin_out"><FONT COLOR="#95a5a6"><I>regproc</I></FONT></TD>
 </TR>
 
-</TABLE></FONT>> name = "pg_operator"];
+</TABLE></FONT>> name = "pg_operator" URL = "pg_operator.svg"];
         
     }
     

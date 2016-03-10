@@ -16,6 +16,7 @@
 </g>
 <!-- pg_auth_time_constraint -->
 <g id="node1" class="node"><title>pg_auth_time_constraint</title>
+<g id="a_node1"><a xlink:href="pg_auth_time_constraint.svg" xlink:title="&lt;TABLE&gt;">
 <polygon fill="#2c3e50" stroke="none" points="265,-470 265,-500 517,-500 517,-470 265,-470"/>
 <polygon fill="none" stroke="black" points="265,-470 265,-500 517,-500 517,-470 265,-470"/>
 <text text-anchor="start" x="270" y="-481.6" font-family="monospace" font-weight="bold" font-size="18.00" fill="#ffffff">pg_auth_time_constraint</text>
@@ -49,9 +50,12 @@
 <polygon fill="#ffffff" stroke="none" points="399,-345 399,-370 517,-370 517,-345 399,-345"/>
 <polygon fill="none" stroke="#2c3e50" points="399,-345 399,-370 517,-370 517,-345 399,-345"/>
 <text text-anchor="start" x="404" y="-354.8" font-family="monospace" font-style="italic" font-size="14.00" fill="#95a5a6">time</text>
+</a>
+</g>
 </g>
 <!-- pg_authid -->
 <g id="node2" class="node"><title>pg_authid</title>
+<g id="a_node2"><a xlink:href="pg_authid.svg" xlink:title="&lt;TABLE&gt;">
 <polygon fill="#2c3e50" stroke="none" points="1013,-470 1013,-500 1373,-500 1373,-470 1013,-470"/>
 <polygon fill="none" stroke="black" points="1013,-470 1013,-500 1373,-500 1373,-470 1013,-470"/>
 <text text-anchor="start" x="1145.5" y="-481.6" font-family="monospace" font-weight="bold" font-size="18.00" fill="#ffffff">pg_authid</text>
@@ -163,6 +167,8 @@
 <polygon fill="#ffffff" stroke="none" points="1164,-20 1164,-45 1373,-45 1373,-20 1164,-20"/>
 <polygon fill="none" stroke="#2c3e50" points="1164,-20 1164,-45 1373,-45 1373,-20 1164,-20"/>
 <text text-anchor="start" x="1169" y="-29.8" font-family="monospace" font-style="italic" font-size="14.00" fill="#95a5a6">boolean</text>
+</a>
+</g>
 </g>
 <!-- pg_auth_time_constraint&#45;&gt;pg_authid -->
 <g id="edge1" class="edge"><title>pg_auth_time_constraint:authid_out&#45;&gt;pg_authid:oid_in</title>

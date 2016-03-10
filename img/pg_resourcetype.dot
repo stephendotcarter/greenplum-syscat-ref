@@ -41,7 +41,7 @@ digraph GPDB {
 <TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="ressetting_out"><FONT COLOR="#95a5a6"><I>text</I></FONT></TD>
 </TR>
 
-</TABLE></FONT>> name = "pg_resqueuecapability"];
+</TABLE></FONT>> name = "pg_resqueuecapability" URL = "pg_resqueuecapability.svg"];
         
     }
     
@@ -93,7 +93,7 @@ digraph GPDB {
 <TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="resdisabledsetting_out"><FONT COLOR="#95a5a6"><I>text</I></FONT></TD>
 </TR>
 
-</TABLE></FONT>> name = "pg_resourcetype"];
+</TABLE></FONT>> name = "pg_resourcetype" URL = "pg_resourcetype.svg"];
         
     }
     

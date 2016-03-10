@@ -131,7 +131,7 @@ digraph GPDB {
 <TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="provariadic_out"><FONT COLOR="#95a5a6"><I>oid</I></FONT></TD>
 </TR>
 
-</TABLE></FONT>> name = "pg_proc"];
+</TABLE></FONT>> name = "pg_proc" URL = "pg_proc.svg"];
         
     }
     
@@ -178,7 +178,7 @@ digraph GPDB {
 <TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="lanacl_out"><FONT COLOR="#95a5a6"><I>aclitem[]</I></FONT></TD>
 </TR>
 
-</TABLE></FONT>> name = "pg_language"];
+</TABLE></FONT>> name = "pg_language" URL = "pg_language.svg"];
         
     }
     
@@ -300,7 +300,7 @@ digraph GPDB {
 <TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="provariadic_out"><FONT COLOR="#95a5a6"><I>oid</I></FONT></TD>
 </TR>
 
-</TABLE></FONT>> name = "pg_proc"];
+</TABLE></FONT>> name = "pg_proc" URL = "pg_proc.svg"];
         
     }
     

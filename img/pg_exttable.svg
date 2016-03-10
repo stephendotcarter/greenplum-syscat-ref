@@ -16,6 +16,7 @@
 </g>
 <!-- pg_exttable -->
 <g id="node1" class="node"><title>pg_exttable</title>
+<g id="a_node1"><a xlink:href="pg_exttable.svg" xlink:title="&lt;TABLE&gt;">
 <polygon fill="#2c3e50" stroke="none" points="180.5,-795 180.5,-825 415.5,-825 415.5,-795 180.5,-795"/>
 <polygon fill="none" stroke="black" points="180.5,-795 180.5,-825 415.5,-825 415.5,-795 180.5,-795"/>
 <text text-anchor="start" x="240" y="-806.6" font-family="monospace" font-weight="bold" font-size="18.00" fill="#ffffff">pg_exttable</text>
@@ -79,9 +80,12 @@
 <polygon fill="#ffffff" stroke="none" points="314.5,-545 314.5,-570 415.5,-570 415.5,-545 314.5,-545"/>
 <polygon fill="none" stroke="#2c3e50" points="314.5,-545 314.5,-570 415.5,-570 415.5,-545 314.5,-545"/>
 <text text-anchor="start" x="319.5" y="-554.8" font-family="monospace" font-style="italic" font-size="14.00" fill="#95a5a6">boolean</text>
+</a>
+</g>
 </g>
 <!-- pg_class -->
 <g id="node2" class="node"><title>pg_class</title>
+<g id="a_node2"><a xlink:href="pg_class.svg" xlink:title="&lt;TABLE&gt;">
 <polygon fill="#2c3e50" stroke="none" points="800.5,-795 800.5,-825 1027.5,-825 1027.5,-795 800.5,-795"/>
 <polygon fill="none" stroke="black" points="800.5,-795 800.5,-825 1027.5,-825 1027.5,-795 800.5,-795"/>
 <text text-anchor="start" x="871.5" y="-806.6" font-family="monospace" font-weight="bold" font-size="18.00" fill="#ffffff">pg_class</text>
@@ -271,6 +275,8 @@
 <polygon fill="#ffffff" stroke="none" points="926.5,-20 926.5,-45 1027.5,-45 1027.5,-20 926.5,-20"/>
 <polygon fill="none" stroke="#2c3e50" points="926.5,-20 926.5,-45 1027.5,-45 1027.5,-20 926.5,-20"/>
 <text text-anchor="start" x="931.5" y="-29.8" font-family="monospace" font-style="italic" font-size="14.00" fill="#95a5a6">text[]</text>
+</a>
+</g>
 </g>
 <!-- pg_exttable&#45;&gt;pg_class -->
 <g id="edge1" class="edge"><title>pg_exttable:reloid_out&#45;&gt;pg_class:oid_in</title>

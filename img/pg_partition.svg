@@ -18,6 +18,7 @@
 </g>
 <!-- pg_partition_rule -->
 <g id="node1" class="node"><title>pg_partition_rule</title>
+<g id="a_node1"><a xlink:href="pg_partition_rule.svg" xlink:title="&lt;TABLE&gt;">
 <polygon fill="#2c3e50" stroke="none" points="184.5,-1057 184.5,-1087 412.5,-1087 412.5,-1057 184.5,-1057"/>
 <polygon fill="none" stroke="black" points="184.5,-1057 184.5,-1087 412.5,-1087 412.5,-1057 184.5,-1057"/>
 <text text-anchor="start" x="209" y="-1068.6" font-family="monospace" font-weight="bold" font-size="18.00" fill="#ffffff">pg_partition_rule</text>
@@ -111,9 +112,12 @@
 <polygon fill="#ffffff" stroke="none" points="335.5,-682 335.5,-707 412.5,-707 412.5,-682 335.5,-682"/>
 <polygon fill="none" stroke="#2c3e50" points="335.5,-682 335.5,-707 412.5,-707 412.5,-682 335.5,-682"/>
 <text text-anchor="start" x="340.5" y="-691.8" font-family="monospace" font-style="italic" font-size="14.00" fill="#95a5a6">oid</text>
+</a>
+</g>
 </g>
 <!-- pg_partition -->
 <g id="node3" class="node"><title>pg_partition</title>
+<g id="a_node3"><a xlink:href="pg_partition.svg" xlink:title="&lt;TABLE&gt;">
 <polygon fill="#2c3e50" stroke="none" points="806.5,-820 806.5,-850 1025.5,-850 1025.5,-820 806.5,-820"/>
 <polygon fill="none" stroke="black" points="806.5,-820 806.5,-850 1025.5,-850 1025.5,-820 806.5,-820"/>
 <text text-anchor="start" x="852.5" y="-831.6" font-family="monospace" font-weight="bold" font-size="18.00" fill="#ffffff">pg_partition</text>
@@ -165,6 +169,8 @@
 <polygon fill="#ffffff" stroke="none" points="924.5,-620 924.5,-645 1025.5,-645 1025.5,-620 924.5,-620"/>
 <polygon fill="none" stroke="#2c3e50" points="924.5,-620 924.5,-645 1025.5,-645 1025.5,-620 924.5,-620"/>
 <text text-anchor="start" x="929.5" y="-629.8" font-family="monospace" font-style="italic" font-size="14.00" fill="#95a5a6">oidvector</text>
+</a>
+</g>
 </g>
 <!-- pg_partition_rule&#45;&gt;pg_partition -->
 <g id="edge3" class="edge"><title>pg_partition_rule:paroid_out&#45;&gt;pg_partition:oid_in</title>
@@ -173,6 +179,7 @@
 </g>
 <!-- pg_partition_encoding -->
 <g id="node2" class="node"><title>pg_partition_encoding</title>
+<g id="a_node2"><a xlink:href="pg_partition_encoding.svg" xlink:title="&lt;TABLE&gt;">
 <polygon fill="#2c3e50" stroke="none" points="183.5,-608 183.5,-638 414.5,-638 414.5,-608 183.5,-608"/>
 <polygon fill="none" stroke="black" points="183.5,-608 183.5,-638 414.5,-638 414.5,-608 183.5,-608"/>
 <text text-anchor="start" x="188.5" y="-619.6" font-family="monospace" font-weight="bold" font-size="18.00" fill="#ffffff">pg_partition_encoding</text>
@@ -194,6 +201,8 @@
 <polygon fill="#ffffff" stroke="none" points="331.5,-533 331.5,-558 414.5,-558 414.5,-533 331.5,-533"/>
 <polygon fill="none" stroke="#2c3e50" points="331.5,-533 331.5,-558 414.5,-558 414.5,-533 331.5,-533"/>
 <text text-anchor="start" x="336.5" y="-542.8" font-family="monospace" font-style="italic" font-size="14.00" fill="#95a5a6">text[]</text>
+</a>
+</g>
 </g>
 <!-- pg_partition_encoding&#45;&gt;pg_partition -->
 <g id="edge2" class="edge"><title>pg_partition_encoding:parencoid_out&#45;&gt;pg_partition:oid_in</title>
@@ -202,6 +211,7 @@
 </g>
 <!-- pg_class -->
 <g id="node4" class="node"><title>pg_class</title>
+<g id="a_node4"><a xlink:href="pg_class.svg" xlink:title="&lt;TABLE&gt;">
 <polygon fill="#2c3e50" stroke="none" points="1419.5,-795 1419.5,-825 1646.5,-825 1646.5,-795 1419.5,-795"/>
 <polygon fill="none" stroke="black" points="1419.5,-795 1419.5,-825 1646.5,-825 1646.5,-795 1419.5,-795"/>
 <text text-anchor="start" x="1490.5" y="-806.6" font-family="monospace" font-weight="bold" font-size="18.00" fill="#ffffff">pg_class</text>
@@ -391,6 +401,8 @@
 <polygon fill="#ffffff" stroke="none" points="1545.5,-20 1545.5,-45 1646.5,-45 1646.5,-20 1545.5,-20"/>
 <polygon fill="none" stroke="#2c3e50" points="1545.5,-20 1545.5,-45 1646.5,-45 1646.5,-20 1545.5,-20"/>
 <text text-anchor="start" x="1550.5" y="-29.8" font-family="monospace" font-style="italic" font-size="14.00" fill="#95a5a6">text[]</text>
+</a>
+</g>
 </g>
 <!-- pg_partition&#45;&gt;pg_class -->
 <g id="edge1" class="edge"><title>pg_partition:parrelid_out&#45;&gt;pg_class:oid_in</title>

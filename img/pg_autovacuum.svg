@@ -14,6 +14,7 @@
 </g>
 <!-- pg_autovacuum -->
 <g id="node1" class="node"><title>pg_autovacuum</title>
+<g id="a_node1"><a xlink:href="pg_autovacuum.svg" xlink:title="&lt;TABLE&gt;">
 <polygon fill="#2c3e50" stroke="none" points="224.5,-270 224.5,-300 435.5,-300 435.5,-270 224.5,-270"/>
 <polygon fill="none" stroke="black" points="224.5,-270 224.5,-300 435.5,-300 435.5,-270 224.5,-270"/>
 <text text-anchor="start" x="261.5" y="-281.6" font-family="monospace" font-weight="bold" font-size="18.00" fill="#ffffff">pg_autovacuum</text>
@@ -77,6 +78,8 @@
 <polygon fill="#ffffff" stroke="none" points="367.5,-20 367.5,-45 435.5,-45 435.5,-20 367.5,-20"/>
 <polygon fill="none" stroke="#2c3e50" points="367.5,-20 367.5,-45 435.5,-45 435.5,-20 367.5,-20"/>
 <text text-anchor="start" x="372.5" y="-29.8" font-family="monospace" font-style="italic" font-size="14.00" fill="#95a5a6">integer</text>
+</a>
+</g>
 </g>
 </g>
 </svg>

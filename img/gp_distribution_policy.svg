@@ -16,6 +16,7 @@
 </g>
 <!-- gp_distribution_policy -->
 <g id="node1" class="node"><title>gp_distribution_policy</title>
+<g id="a_node1"><a xlink:href="gp_distribution_policy.svg" xlink:title="&lt;TABLE&gt;">
 <polygon fill="#2c3e50" stroke="none" points="247,-796 247,-826 489,-826 489,-796 247,-796"/>
 <polygon fill="none" stroke="black" points="247,-796 247,-826 489,-826 489,-796 247,-796"/>
 <text text-anchor="start" x="252" y="-807.6" font-family="monospace" font-weight="bold" font-size="18.00" fill="#ffffff">gp_distribution_policy</text>
@@ -31,9 +32,12 @@
 <polygon fill="#ffffff" stroke="none" points="360,-746 360,-771 489,-771 489,-746 360,-746"/>
 <polygon fill="none" stroke="#2c3e50" points="360,-746 360,-771 489,-771 489,-746 360,-746"/>
 <text text-anchor="start" x="365" y="-755.8" font-family="monospace" font-style="italic" font-size="14.00" fill="#95a5a6">smallint[]</text>
+</a>
+</g>
 </g>
 <!-- pg_class -->
 <g id="node2" class="node"><title>pg_class</title>
+<g id="a_node2"><a xlink:href="pg_class.svg" xlink:title="&lt;TABLE&gt;">
 <polygon fill="#2c3e50" stroke="none" points="1012.5,-795 1012.5,-825 1239.5,-825 1239.5,-795 1012.5,-795"/>
 <polygon fill="none" stroke="black" points="1012.5,-795 1012.5,-825 1239.5,-825 1239.5,-795 1012.5,-795"/>
 <text text-anchor="start" x="1083.5" y="-806.6" font-family="monospace" font-weight="bold" font-size="18.00" fill="#ffffff">pg_class</text>
@@ -223,6 +227,8 @@
 <polygon fill="#ffffff" stroke="none" points="1138.5,-20 1138.5,-45 1239.5,-45 1239.5,-20 1138.5,-20"/>
 <polygon fill="none" stroke="#2c3e50" points="1138.5,-20 1138.5,-45 1239.5,-45 1239.5,-20 1138.5,-20"/>
 <text text-anchor="start" x="1143.5" y="-29.8" font-family="monospace" font-style="italic" font-size="14.00" fill="#95a5a6">text[]</text>
+</a>
+</g>
 </g>
 <!-- gp_distribution_policy&#45;&gt;pg_class -->
 <g id="edge1" class="edge"><title>gp_distribution_policy:localoid_out&#45;&gt;pg_class:oid_in</title>

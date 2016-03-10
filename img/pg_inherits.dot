@@ -43,7 +43,7 @@ digraph GPDB {
 <TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="inhseqno_out"><FONT COLOR="#95a5a6"><I>integer</I></FONT></TD>
 </TR>
 
-</TABLE></FONT>> name = "pg_inherits"];
+</TABLE></FONT>> name = "pg_inherits" URL = "pg_inherits.svg"];
         
     }
     
@@ -210,7 +210,7 @@ digraph GPDB {
 <TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="reloptions_out"><FONT COLOR="#95a5a6"><I>text[]</I></FONT></TD>
 </TR>
 
-</TABLE></FONT>> name = "pg_class"];
+</TABLE></FONT>> name = "pg_class" URL = "pg_class.svg"];
         
     }
     

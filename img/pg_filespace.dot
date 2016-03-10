@@ -61,7 +61,7 @@ digraph GPDB {
 <TD COLOR="#2c3e50" BGCOLOR="#18bc9c" ALIGN="LEFT" PORT="spcfsoid_out"><FONT COLOR="#FFFFFF"><I>oid</I></FONT></TD>
 </TR>
 
-</TABLE></FONT>> name = "pg_tablespace"];
+</TABLE></FONT>> name = "pg_tablespace" URL = "pg_tablespace.svg"];
         
             pg_filespace_entry [label = <<FONT FACE="monospace"><TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4">
 <TR><TD BGCOLOR="#2c3e50" ALIGN="CENTER" COLSPAN="2"><FONT COLOR="#FFFFFF" POINT-SIZE="18"><B>pg_filespace_entry</B></FONT></TD></TR>
@@ -81,7 +81,7 @@ digraph GPDB {
 <TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="fselocation_out"><FONT COLOR="#95a5a6"><I>text</I></FONT></TD>
 </TR>
 
-</TABLE></FONT>> name = "pg_filespace_entry"];
+</TABLE></FONT>> name = "pg_filespace_entry" URL = "pg_filespace_entry.svg"];
         
     }
     
@@ -108,7 +108,7 @@ digraph GPDB {
 <TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="fsowner_out"><FONT COLOR="#95a5a6"><I>oid</I></FONT></TD>
 </TR>
 
-</TABLE></FONT>> name = "pg_filespace"];
+</TABLE></FONT>> name = "pg_filespace" URL = "pg_filespace.svg"];
         
     }
     

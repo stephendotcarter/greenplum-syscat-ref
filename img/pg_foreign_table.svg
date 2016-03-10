@@ -16,6 +16,7 @@
 </g>
 <!-- pg_foreign_table -->
 <g id="node1" class="node"><title>pg_foreign_table</title>
+<g id="a_node1"><a xlink:href="pg_foreign_table.svg" xlink:title="&lt;TABLE&gt;">
 <polygon fill="#2c3e50" stroke="none" points="245.5,-657 245.5,-687 424.5,-687 424.5,-657 245.5,-657"/>
 <polygon fill="none" stroke="black" points="245.5,-657 245.5,-687 424.5,-687 424.5,-657 245.5,-657"/>
 <text text-anchor="start" x="250.5" y="-668.6" font-family="monospace" font-weight="bold" font-size="18.00" fill="#ffffff">pg_foreign_table</text>
@@ -37,9 +38,74 @@
 <polygon fill="#ffffff" stroke="none" points="351.5,-582 351.5,-607 424.5,-607 424.5,-582 351.5,-582"/>
 <polygon fill="none" stroke="#2c3e50" points="351.5,-582 351.5,-607 424.5,-607 424.5,-582 351.5,-582"/>
 <text text-anchor="start" x="356.5" y="-591.8" font-family="monospace" font-style="italic" font-size="14.00" fill="#95a5a6">text[]</text>
+</a>
+</g>
+</g>
+<!-- pg_foreign_server -->
+<g id="node2" class="node"><title>pg_foreign_server</title>
+<g id="a_node2"><a xlink:href="pg_foreign_server.svg" xlink:title="&lt;TABLE&gt;">
+<polygon fill="#2c3e50" stroke="none" points="929.5,-220 929.5,-250 1118.5,-250 1118.5,-220 929.5,-220"/>
+<polygon fill="none" stroke="black" points="929.5,-220 929.5,-250 1118.5,-250 1118.5,-220 929.5,-220"/>
+<text text-anchor="start" x="934.5" y="-231.6" font-family="monospace" font-weight="bold" font-size="18.00" fill="#ffffff">pg_foreign_server</text>
+<polygon fill="#18bc9c" stroke="none" points="929.5,-195 929.5,-220 1027.5,-220 1027.5,-195 929.5,-195"/>
+<polygon fill="none" stroke="#2c3e50" points="929.5,-195 929.5,-220 1027.5,-220 1027.5,-195 929.5,-195"/>
+<text text-anchor="start" x="934.5" y="-203.8" font-family="monospace" font-size="14.00" fill="#ffffff">oid</text>
+<polygon fill="#ffffff" stroke="none" points="1027.5,-195 1027.5,-220 1118.5,-220 1118.5,-195 1027.5,-195"/>
+<polygon fill="none" stroke="#2c3e50" points="1027.5,-195 1027.5,-220 1118.5,-220 1118.5,-195 1027.5,-195"/>
+<text text-anchor="start" x="1032.5" y="-204.8" font-family="monospace" font-style="italic" font-size="14.00" fill="#95a5a6">oid</text>
+<polygon fill="#ffffff" stroke="none" points="929.5,-170 929.5,-195 1027.5,-195 1027.5,-170 929.5,-170"/>
+<polygon fill="none" stroke="#2c3e50" points="929.5,-170 929.5,-195 1027.5,-195 1027.5,-170 929.5,-170"/>
+<text text-anchor="start" x="934.5" y="-178.8" font-family="monospace" font-size="14.00" fill="#000000">srvname</text>
+<polygon fill="#ffffff" stroke="none" points="1027.5,-170 1027.5,-195 1118.5,-195 1118.5,-170 1027.5,-170"/>
+<polygon fill="none" stroke="#2c3e50" points="1027.5,-170 1027.5,-195 1118.5,-195 1118.5,-170 1027.5,-170"/>
+<text text-anchor="start" x="1032.5" y="-179.8" font-family="monospace" font-style="italic" font-size="14.00" fill="#95a5a6">name</text>
+<polygon fill="#ffffff" stroke="none" points="929.5,-145 929.5,-170 1027.5,-170 1027.5,-145 929.5,-145"/>
+<polygon fill="none" stroke="#2c3e50" points="929.5,-145 929.5,-170 1027.5,-170 1027.5,-145 929.5,-145"/>
+<text text-anchor="start" x="934.5" y="-153.8" font-family="monospace" font-size="14.00" fill="#000000">srvowner</text>
+<polygon fill="#ffffff" stroke="none" points="1027.5,-145 1027.5,-170 1118.5,-170 1118.5,-145 1027.5,-145"/>
+<polygon fill="none" stroke="#2c3e50" points="1027.5,-145 1027.5,-170 1118.5,-170 1118.5,-145 1027.5,-145"/>
+<text text-anchor="start" x="1032.5" y="-154.8" font-family="monospace" font-style="italic" font-size="14.00" fill="#95a5a6">oid</text>
+<polygon fill="#ffffff" stroke="none" points="929.5,-120 929.5,-145 1027.5,-145 1027.5,-120 929.5,-120"/>
+<polygon fill="none" stroke="#2c3e50" points="929.5,-120 929.5,-145 1027.5,-145 1027.5,-120 929.5,-120"/>
+<text text-anchor="start" x="934.5" y="-128.8" font-family="monospace" font-size="14.00" fill="#000000">srvfdw</text>
+<polygon fill="#ffffff" stroke="none" points="1027.5,-120 1027.5,-145 1118.5,-145 1118.5,-120 1027.5,-120"/>
+<polygon fill="none" stroke="#2c3e50" points="1027.5,-120 1027.5,-145 1118.5,-145 1118.5,-120 1027.5,-120"/>
+<text text-anchor="start" x="1032.5" y="-129.8" font-family="monospace" font-style="italic" font-size="14.00" fill="#95a5a6">oid</text>
+<polygon fill="#ffffff" stroke="none" points="929.5,-95 929.5,-120 1027.5,-120 1027.5,-95 929.5,-95"/>
+<polygon fill="none" stroke="#2c3e50" points="929.5,-95 929.5,-120 1027.5,-120 1027.5,-95 929.5,-95"/>
+<text text-anchor="start" x="934.5" y="-103.8" font-family="monospace" font-size="14.00" fill="#000000">srvtype</text>
+<polygon fill="#ffffff" stroke="none" points="1027.5,-95 1027.5,-120 1118.5,-120 1118.5,-95 1027.5,-95"/>
+<polygon fill="none" stroke="#2c3e50" points="1027.5,-95 1027.5,-120 1118.5,-120 1118.5,-95 1027.5,-95"/>
+<text text-anchor="start" x="1032.5" y="-104.8" font-family="monospace" font-style="italic" font-size="14.00" fill="#95a5a6">text</text>
+<polygon fill="#ffffff" stroke="none" points="929.5,-70 929.5,-95 1027.5,-95 1027.5,-70 929.5,-70"/>
+<polygon fill="none" stroke="#2c3e50" points="929.5,-70 929.5,-95 1027.5,-95 1027.5,-70 929.5,-70"/>
+<text text-anchor="start" x="934.5" y="-78.8" font-family="monospace" font-size="14.00" fill="#000000">srvversion</text>
+<polygon fill="#ffffff" stroke="none" points="1027.5,-70 1027.5,-95 1118.5,-95 1118.5,-70 1027.5,-70"/>
+<polygon fill="none" stroke="#2c3e50" points="1027.5,-70 1027.5,-95 1118.5,-95 1118.5,-70 1027.5,-70"/>
+<text text-anchor="start" x="1032.5" y="-79.8" font-family="monospace" font-style="italic" font-size="14.00" fill="#95a5a6">text</text>
+<polygon fill="#ffffff" stroke="none" points="929.5,-45 929.5,-70 1027.5,-70 1027.5,-45 929.5,-45"/>
+<polygon fill="none" stroke="#2c3e50" points="929.5,-45 929.5,-70 1027.5,-70 1027.5,-45 929.5,-45"/>
+<text text-anchor="start" x="934.5" y="-53.8" font-family="monospace" font-size="14.00" fill="#000000">srvacl</text>
+<polygon fill="#ffffff" stroke="none" points="1027.5,-45 1027.5,-70 1118.5,-70 1118.5,-45 1027.5,-45"/>
+<polygon fill="none" stroke="#2c3e50" points="1027.5,-45 1027.5,-70 1118.5,-70 1118.5,-45 1027.5,-45"/>
+<text text-anchor="start" x="1032.5" y="-54.8" font-family="monospace" font-style="italic" font-size="14.00" fill="#95a5a6">aclitem[]</text>
+<polygon fill="#ffffff" stroke="none" points="929.5,-20 929.5,-45 1027.5,-45 1027.5,-20 929.5,-20"/>
+<polygon fill="none" stroke="#2c3e50" points="929.5,-20 929.5,-45 1027.5,-45 1027.5,-20 929.5,-20"/>
+<text text-anchor="start" x="934.5" y="-28.8" font-family="monospace" font-size="14.00" fill="#000000">srvoptions</text>
+<polygon fill="#ffffff" stroke="none" points="1027.5,-20 1027.5,-45 1118.5,-45 1118.5,-20 1027.5,-20"/>
+<polygon fill="none" stroke="#2c3e50" points="1027.5,-20 1027.5,-45 1118.5,-45 1118.5,-20 1027.5,-20"/>
+<text text-anchor="start" x="1032.5" y="-29.8" font-family="monospace" font-style="italic" font-size="14.00" fill="#95a5a6">text[]</text>
+</a>
+</g>
+</g>
+<!-- pg_foreign_table&#45;&gt;pg_foreign_server -->
+<g id="edge2" class="edge"><title>pg_foreign_table:server_out&#45;&gt;pg_foreign_server:oid_in</title>
+<path fill="none" stroke="#2c3e50" d="M425.5,-619C618.794,-619 528.651,-380.939 689,-273 777.637,-213.334 815.796,-208.27 918.369,-208.012"/>
+<polygon fill="#2c3e50" stroke="#2c3e50" points="918.504,-211.512 928.5,-208 918.496,-204.512 918.504,-211.512"/>
 </g>
 <!-- pg_class -->
-<g id="node2" class="node"><title>pg_class</title>
+<g id="node3" class="node"><title>pg_class</title>
+<g id="a_node3"><a xlink:href="pg_class.svg" xlink:title="&lt;TABLE&gt;">
 <polygon fill="#2c3e50" stroke="none" points="910.5,-1069 910.5,-1099 1137.5,-1099 1137.5,-1069 910.5,-1069"/>
 <polygon fill="none" stroke="black" points="910.5,-1069 910.5,-1099 1137.5,-1099 1137.5,-1069 910.5,-1069"/>
 <text text-anchor="start" x="981.5" y="-1080.6" font-family="monospace" font-weight="bold" font-size="18.00" fill="#ffffff">pg_class</text>
@@ -229,70 +295,13 @@
 <polygon fill="#ffffff" stroke="none" points="1036.5,-294 1036.5,-319 1137.5,-319 1137.5,-294 1036.5,-294"/>
 <polygon fill="none" stroke="#2c3e50" points="1036.5,-294 1036.5,-319 1137.5,-319 1137.5,-294 1036.5,-294"/>
 <text text-anchor="start" x="1041.5" y="-303.8" font-family="monospace" font-style="italic" font-size="14.00" fill="#95a5a6">text[]</text>
+</a>
+</g>
 </g>
 <!-- pg_foreign_table&#45;&gt;pg_class -->
 <g id="edge1" class="edge"><title>pg_foreign_table:reloid_out&#45;&gt;pg_class:oid_in</title>
 <path fill="none" stroke="#2c3e50" d="M425.5,-645C704.545,-645 628.93,-1047 899.316,-1056.82"/>
 <polygon fill="#2c3e50" stroke="#2c3e50" points="899.439,-1060.32 909.5,-1057 899.564,-1053.32 899.439,-1060.32"/>
-</g>
-<!-- pg_foreign_server -->
-<g id="node3" class="node"><title>pg_foreign_server</title>
-<polygon fill="#2c3e50" stroke="none" points="929.5,-220 929.5,-250 1118.5,-250 1118.5,-220 929.5,-220"/>
-<polygon fill="none" stroke="black" points="929.5,-220 929.5,-250 1118.5,-250 1118.5,-220 929.5,-220"/>
-<text text-anchor="start" x="934.5" y="-231.6" font-family="monospace" font-weight="bold" font-size="18.00" fill="#ffffff">pg_foreign_server</text>
-<polygon fill="#18bc9c" stroke="none" points="929.5,-195 929.5,-220 1027.5,-220 1027.5,-195 929.5,-195"/>
-<polygon fill="none" stroke="#2c3e50" points="929.5,-195 929.5,-220 1027.5,-220 1027.5,-195 929.5,-195"/>
-<text text-anchor="start" x="934.5" y="-203.8" font-family="monospace" font-size="14.00" fill="#ffffff">oid</text>
-<polygon fill="#ffffff" stroke="none" points="1027.5,-195 1027.5,-220 1118.5,-220 1118.5,-195 1027.5,-195"/>
-<polygon fill="none" stroke="#2c3e50" points="1027.5,-195 1027.5,-220 1118.5,-220 1118.5,-195 1027.5,-195"/>
-<text text-anchor="start" x="1032.5" y="-204.8" font-family="monospace" font-style="italic" font-size="14.00" fill="#95a5a6">oid</text>
-<polygon fill="#ffffff" stroke="none" points="929.5,-170 929.5,-195 1027.5,-195 1027.5,-170 929.5,-170"/>
-<polygon fill="none" stroke="#2c3e50" points="929.5,-170 929.5,-195 1027.5,-195 1027.5,-170 929.5,-170"/>
-<text text-anchor="start" x="934.5" y="-178.8" font-family="monospace" font-size="14.00" fill="#000000">srvname</text>
-<polygon fill="#ffffff" stroke="none" points="1027.5,-170 1027.5,-195 1118.5,-195 1118.5,-170 1027.5,-170"/>
-<polygon fill="none" stroke="#2c3e50" points="1027.5,-170 1027.5,-195 1118.5,-195 1118.5,-170 1027.5,-170"/>
-<text text-anchor="start" x="1032.5" y="-179.8" font-family="monospace" font-style="italic" font-size="14.00" fill="#95a5a6">name</text>
-<polygon fill="#ffffff" stroke="none" points="929.5,-145 929.5,-170 1027.5,-170 1027.5,-145 929.5,-145"/>
-<polygon fill="none" stroke="#2c3e50" points="929.5,-145 929.5,-170 1027.5,-170 1027.5,-145 929.5,-145"/>
-<text text-anchor="start" x="934.5" y="-153.8" font-family="monospace" font-size="14.00" fill="#000000">srvowner</text>
-<polygon fill="#ffffff" stroke="none" points="1027.5,-145 1027.5,-170 1118.5,-170 1118.5,-145 1027.5,-145"/>
-<polygon fill="none" stroke="#2c3e50" points="1027.5,-145 1027.5,-170 1118.5,-170 1118.5,-145 1027.5,-145"/>
-<text text-anchor="start" x="1032.5" y="-154.8" font-family="monospace" font-style="italic" font-size="14.00" fill="#95a5a6">oid</text>
-<polygon fill="#ffffff" stroke="none" points="929.5,-120 929.5,-145 1027.5,-145 1027.5,-120 929.5,-120"/>
-<polygon fill="none" stroke="#2c3e50" points="929.5,-120 929.5,-145 1027.5,-145 1027.5,-120 929.5,-120"/>
-<text text-anchor="start" x="934.5" y="-128.8" font-family="monospace" font-size="14.00" fill="#000000">srvfdw</text>
-<polygon fill="#ffffff" stroke="none" points="1027.5,-120 1027.5,-145 1118.5,-145 1118.5,-120 1027.5,-120"/>
-<polygon fill="none" stroke="#2c3e50" points="1027.5,-120 1027.5,-145 1118.5,-145 1118.5,-120 1027.5,-120"/>
-<text text-anchor="start" x="1032.5" y="-129.8" font-family="monospace" font-style="italic" font-size="14.00" fill="#95a5a6">oid</text>
-<polygon fill="#ffffff" stroke="none" points="929.5,-95 929.5,-120 1027.5,-120 1027.5,-95 929.5,-95"/>
-<polygon fill="none" stroke="#2c3e50" points="929.5,-95 929.5,-120 1027.5,-120 1027.5,-95 929.5,-95"/>
-<text text-anchor="start" x="934.5" y="-103.8" font-family="monospace" font-size="14.00" fill="#000000">srvtype</text>
-<polygon fill="#ffffff" stroke="none" points="1027.5,-95 1027.5,-120 1118.5,-120 1118.5,-95 1027.5,-95"/>
-<polygon fill="none" stroke="#2c3e50" points="1027.5,-95 1027.5,-120 1118.5,-120 1118.5,-95 1027.5,-95"/>
-<text text-anchor="start" x="1032.5" y="-104.8" font-family="monospace" font-style="italic" font-size="14.00" fill="#95a5a6">text</text>
-<polygon fill="#ffffff" stroke="none" points="929.5,-70 929.5,-95 1027.5,-95 1027.5,-70 929.5,-70"/>
-<polygon fill="none" stroke="#2c3e50" points="929.5,-70 929.5,-95 1027.5,-95 1027.5,-70 929.5,-70"/>
-<text text-anchor="start" x="934.5" y="-78.8" font-family="monospace" font-size="14.00" fill="#000000">srvversion</text>
-<polygon fill="#ffffff" stroke="none" points="1027.5,-70 1027.5,-95 1118.5,-95 1118.5,-70 1027.5,-70"/>
-<polygon fill="none" stroke="#2c3e50" points="1027.5,-70 1027.5,-95 1118.5,-95 1118.5,-70 1027.5,-70"/>
-<text text-anchor="start" x="1032.5" y="-79.8" font-family="monospace" font-style="italic" font-size="14.00" fill="#95a5a6">text</text>
-<polygon fill="#ffffff" stroke="none" points="929.5,-45 929.5,-70 1027.5,-70 1027.5,-45 929.5,-45"/>
-<polygon fill="none" stroke="#2c3e50" points="929.5,-45 929.5,-70 1027.5,-70 1027.5,-45 929.5,-45"/>
-<text text-anchor="start" x="934.5" y="-53.8" font-family="monospace" font-size="14.00" fill="#000000">srvacl</text>
-<polygon fill="#ffffff" stroke="none" points="1027.5,-45 1027.5,-70 1118.5,-70 1118.5,-45 1027.5,-45"/>
-<polygon fill="none" stroke="#2c3e50" points="1027.5,-45 1027.5,-70 1118.5,-70 1118.5,-45 1027.5,-45"/>
-<text text-anchor="start" x="1032.5" y="-54.8" font-family="monospace" font-style="italic" font-size="14.00" fill="#95a5a6">aclitem[]</text>
-<polygon fill="#ffffff" stroke="none" points="929.5,-20 929.5,-45 1027.5,-45 1027.5,-20 929.5,-20"/>
-<polygon fill="none" stroke="#2c3e50" points="929.5,-20 929.5,-45 1027.5,-45 1027.5,-20 929.5,-20"/>
-<text text-anchor="start" x="934.5" y="-28.8" font-family="monospace" font-size="14.00" fill="#000000">srvoptions</text>
-<polygon fill="#ffffff" stroke="none" points="1027.5,-20 1027.5,-45 1118.5,-45 1118.5,-20 1027.5,-20"/>
-<polygon fill="none" stroke="#2c3e50" points="1027.5,-20 1027.5,-45 1118.5,-45 1118.5,-20 1027.5,-20"/>
-<text text-anchor="start" x="1032.5" y="-29.8" font-family="monospace" font-style="italic" font-size="14.00" fill="#95a5a6">text[]</text>
-</g>
-<!-- pg_foreign_table&#45;&gt;pg_foreign_server -->
-<g id="edge2" class="edge"><title>pg_foreign_table:server_out&#45;&gt;pg_foreign_server:oid_in</title>
-<path fill="none" stroke="#2c3e50" d="M425.5,-619C618.794,-619 528.651,-380.939 689,-273 777.637,-213.334 815.796,-208.27 918.369,-208.012"/>
-<polygon fill="#2c3e50" stroke="#2c3e50" points="918.504,-211.512 928.5,-208 918.496,-204.512 918.504,-211.512"/>
 </g>
 </g>
 </svg>

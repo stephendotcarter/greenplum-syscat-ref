@@ -18,6 +18,7 @@
 </g>
 <!-- pg_class -->
 <g id="node1" class="node"><title>pg_class</title>
+<g id="a_node1"><a xlink:href="pg_class.svg" xlink:title="&lt;TABLE&gt;">
 <polygon fill="#2c3e50" stroke="none" points="150.5,-1146 150.5,-1176 377.5,-1176 377.5,-1146 150.5,-1146"/>
 <polygon fill="none" stroke="black" points="150.5,-1146 150.5,-1176 377.5,-1176 377.5,-1146 150.5,-1146"/>
 <text text-anchor="start" x="221.5" y="-1157.6" font-family="monospace" font-weight="bold" font-size="18.00" fill="#ffffff">pg_class</text>
@@ -207,9 +208,12 @@
 <polygon fill="#ffffff" stroke="none" points="276.5,-371 276.5,-396 377.5,-396 377.5,-371 276.5,-371"/>
 <polygon fill="none" stroke="#2c3e50" points="276.5,-371 276.5,-396 377.5,-396 377.5,-371 276.5,-371"/>
 <text text-anchor="start" x="281.5" y="-380.8" font-family="monospace" font-style="italic" font-size="14.00" fill="#95a5a6">text[]</text>
+</a>
+</g>
 </g>
 <!-- pg_am -->
 <g id="node2" class="node"><title>pg_am</title>
+<g id="a_node2"><a xlink:href="pg_am.svg" xlink:title="&lt;TABLE&gt;">
 <polygon fill="#2c3e50" stroke="none" points="706.5,-1021 706.5,-1051 917.5,-1051 917.5,-1021 706.5,-1021"/>
 <polygon fill="none" stroke="black" points="706.5,-1021 706.5,-1051 917.5,-1051 917.5,-1021 706.5,-1021"/>
 <text text-anchor="start" x="785.5" y="-1032.6" font-family="monospace" font-weight="bold" font-size="18.00" fill="#ffffff">pg_am</text>
@@ -363,6 +367,8 @@
 <polygon fill="#18bc9c" stroke="none" points="840.5,-396 840.5,-421 917.5,-421 917.5,-396 840.5,-396"/>
 <polygon fill="none" stroke="#2c3e50" points="840.5,-396 840.5,-421 917.5,-421 917.5,-396 840.5,-396"/>
 <text text-anchor="start" x="845.5" y="-405.8" font-family="monospace" font-style="italic" font-size="14.00" fill="#ffffff">regproc</text>
+</a>
+</g>
 </g>
 <!-- pg_class&#45;&gt;pg_am -->
 <g id="edge14" class="edge"><title>pg_class:relam_out&#45;&gt;pg_am:oid_in</title>
@@ -371,6 +377,7 @@
 </g>
 <!-- pg_proc -->
 <g id="node3" class="node"><title>pg_proc</title>
+<g id="a_node3"><a xlink:href="pg_proc.svg" xlink:title="&lt;TABLE&gt;">
 <polygon fill="#2c3e50" stroke="none" points="1238,-570 1238,-600 1482,-600 1482,-570 1238,-570"/>
 <polygon fill="none" stroke="black" points="1238,-570 1238,-600 1482,-600 1482,-570 1238,-570"/>
 <text text-anchor="start" x="1323" y="-581.6" font-family="monospace" font-weight="bold" font-size="18.00" fill="#ffffff">pg_proc</text>
@@ -506,6 +513,8 @@
 <polygon fill="#ffffff" stroke="none" points="1364,-20 1364,-45 1482,-45 1482,-20 1364,-20"/>
 <polygon fill="none" stroke="#2c3e50" points="1364,-20 1364,-45 1482,-45 1482,-20 1364,-20"/>
 <text text-anchor="start" x="1369" y="-29.8" font-family="monospace" font-style="italic" font-size="14.00" fill="#95a5a6">oid</text>
+</a>
+</g>
 </g>
 <!-- pg_am&#45;&gt;pg_proc -->
 <g id="edge1" class="edge"><title>pg_am:aminsert_out&#45;&gt;pg_proc:oid_in</title>

@@ -14,6 +14,7 @@
 </g>
 <!-- pg_listener -->
 <g id="node1" class="node"><title>pg_listener</title>
+<g id="a_node1"><a xlink:href="pg_listener.svg" xlink:title="&lt;TABLE&gt;">
 <polygon fill="#2c3e50" stroke="none" points="204,-95 204,-125 382,-125 382,-95 204,-95"/>
 <polygon fill="none" stroke="black" points="204,-95 204,-125 382,-125 382,-95 204,-95"/>
 <text text-anchor="start" x="235" y="-106.6" font-family="monospace" font-weight="bold" font-size="18.00" fill="#ffffff">pg_listener</text>
@@ -35,6 +36,8 @@
 <polygon fill="#ffffff" stroke="none" points="314,-20 314,-45 382,-45 382,-20 314,-20"/>
 <polygon fill="none" stroke="#2c3e50" points="314,-20 314,-45 382,-45 382,-20 314,-20"/>
 <text text-anchor="start" x="319" y="-29.8" font-family="monospace" font-style="italic" font-size="14.00" fill="#95a5a6">integer</text>
+</a>
+</g>
 </g>
 </g>
 </svg>

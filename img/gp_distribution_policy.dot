@@ -38,7 +38,7 @@ digraph GPDB {
 <TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="attrnums_out"><FONT COLOR="#95a5a6"><I>smallint[]</I></FONT></TD>
 </TR>
 
-</TABLE></FONT>> name = "gp_distribution_policy"];
+</TABLE></FONT>> name = "gp_distribution_policy" URL = "gp_distribution_policy.svg"];
         
     }
     
@@ -205,7 +205,7 @@ digraph GPDB {
 <TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="reloptions_out"><FONT COLOR="#95a5a6"><I>text[]</I></FONT></TD>
 </TR>
 
-</TABLE></FONT>> name = "pg_class"];
+</TABLE></FONT>> name = "pg_class" URL = "pg_class.svg"];
         
     }
     

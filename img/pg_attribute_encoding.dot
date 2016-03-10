@@ -43,7 +43,7 @@ digraph GPDB {
 <TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="attoptions_out"><FONT COLOR="#95a5a6"><I>text[]</I></FONT></TD>
 </TR>
 
-</TABLE></FONT>> name = "pg_attribute_encoding"];
+</TABLE></FONT>> name = "pg_attribute_encoding" URL = "pg_attribute_encoding.svg"];
         
     }
     
@@ -145,7 +145,7 @@ digraph GPDB {
 <TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="attinhcount_out"><FONT COLOR="#95a5a6"><I>integer</I></FONT></TD>
 </TR>
 
-</TABLE></FONT>> name = "pg_attribute"];
+</TABLE></FONT>> name = "pg_attribute" URL = "pg_attribute.svg"];
         
     }
     

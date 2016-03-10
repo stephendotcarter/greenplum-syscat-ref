@@ -14,6 +14,7 @@
 </g>
 <!-- gp_persistent_filespace_node -->
 <g id="node1" class="node"><title>gp_persistent_filespace_node</title>
+<g id="a_node1"><a xlink:href="gp_persistent_filespace_node.svg" xlink:title="&lt;TABLE&gt;">
 <polygon fill="#2c3e50" stroke="none" points="202.5,-320 202.5,-350 653.5,-350 653.5,-320 202.5,-320"/>
 <polygon fill="none" stroke="black" points="202.5,-320 202.5,-350 653.5,-350 653.5,-320 202.5,-320"/>
 <text text-anchor="start" x="280.5" y="-331.6" font-family="monospace" font-weight="bold" font-size="18.00" fill="#ffffff">gp_persistent_filespace_node</text>
@@ -89,6 +90,8 @@
 <polygon fill="#ffffff" stroke="none" points="576.5,-20 576.5,-45 653.5,-45 653.5,-20 576.5,-20"/>
 <polygon fill="none" stroke="#2c3e50" points="576.5,-20 576.5,-45 653.5,-45 653.5,-20 576.5,-20"/>
 <text text-anchor="start" x="581.5" y="-29.8" font-family="monospace" font-style="italic" font-size="14.00" fill="#95a5a6">tid</text>
+</a>
+</g>
 </g>
 </g>
 </svg>

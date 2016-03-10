@@ -16,6 +16,7 @@
 </g>
 <!-- pg_proc -->
 <g id="node1" class="node"><title>pg_proc</title>
+<g id="a_node1"><a xlink:href="pg_proc.svg" xlink:title="&lt;TABLE&gt;">
 <polygon fill="#2c3e50" stroke="none" points="822,-570 822,-600 1066,-600 1066,-570 822,-570"/>
 <polygon fill="none" stroke="black" points="822,-570 822,-600 1066,-600 1066,-570 822,-570"/>
 <text text-anchor="start" x="907" y="-581.6" font-family="monospace" font-weight="bold" font-size="18.00" fill="#ffffff">pg_proc</text>
@@ -151,9 +152,12 @@
 <polygon fill="#ffffff" stroke="none" points="948,-20 948,-45 1066,-45 1066,-20 948,-20"/>
 <polygon fill="none" stroke="#2c3e50" points="948,-20 948,-45 1066,-45 1066,-20 948,-20"/>
 <text text-anchor="start" x="953" y="-29.8" font-family="monospace" font-style="italic" font-size="14.00" fill="#95a5a6">oid</text>
+</a>
+</g>
 </g>
 <!-- pg_language -->
 <g id="node2" class="node"><title>pg_language</title>
+<g id="a_node2"><a xlink:href="pg_language.svg" xlink:title="&lt;TABLE&gt;">
 <polygon fill="#2c3e50" stroke="none" points="206.5,-671 206.5,-701 409.5,-701 409.5,-671 206.5,-671"/>
 <polygon fill="none" stroke="black" points="206.5,-671 206.5,-701 409.5,-701 409.5,-671 206.5,-671"/>
 <text text-anchor="start" x="250" y="-682.6" font-family="monospace" font-weight="bold" font-size="18.00" fill="#ffffff">pg_language</text>
@@ -199,6 +203,8 @@
 <polygon fill="#ffffff" stroke="none" points="324.5,-496 324.5,-521 409.5,-521 409.5,-496 324.5,-496"/>
 <polygon fill="none" stroke="#2c3e50" points="324.5,-496 324.5,-521 409.5,-521 409.5,-496 324.5,-496"/>
 <text text-anchor="start" x="329.5" y="-505.8" font-family="monospace" font-style="italic" font-size="14.00" fill="#95a5a6">aclitem[]</text>
+</a>
+</g>
 </g>
 <!-- pg_proc&#45;&gt;pg_language -->
 <g id="edge3" class="edge"><title>pg_proc:prolang_out&#45;&gt;pg_language:oid_in</title>

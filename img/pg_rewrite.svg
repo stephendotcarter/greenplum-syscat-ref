@@ -16,6 +16,7 @@
 </g>
 <!-- pg_rewrite -->
 <g id="node1" class="node"><title>pg_rewrite</title>
+<g id="a_node1"><a xlink:href="pg_rewrite.svg" xlink:title="&lt;TABLE&gt;">
 <polygon fill="#2c3e50" stroke="none" points="192,-495 192,-525 386,-525 386,-495 192,-495"/>
 <polygon fill="none" stroke="black" points="192,-495 192,-525 386,-525 386,-495 192,-495"/>
 <text text-anchor="start" x="236" y="-506.6" font-family="monospace" font-weight="bold" font-size="18.00" fill="#ffffff">pg_rewrite</text>
@@ -67,9 +68,12 @@
 <polygon fill="#ffffff" stroke="none" points="285,-295 285,-320 386,-320 386,-295 285,-295"/>
 <polygon fill="none" stroke="#2c3e50" points="285,-295 285,-320 386,-320 386,-295 285,-295"/>
 <text text-anchor="start" x="290" y="-304.8" font-family="monospace" font-style="italic" font-size="14.00" fill="#95a5a6">text</text>
+</a>
+</g>
 </g>
 <!-- pg_attribute -->
 <g id="node2" class="node"><title>pg_attribute</title>
+<g id="a_node2"><a xlink:href="pg_attribute.svg" xlink:title="&lt;TABLE&gt;">
 <polygon fill="#2c3e50" stroke="none" points="779.5,-470 779.5,-500 998.5,-500 998.5,-470 779.5,-470"/>
 <polygon fill="none" stroke="black" points="779.5,-470 779.5,-500 998.5,-500 998.5,-470 779.5,-470"/>
 <text text-anchor="start" x="825.5" y="-481.6" font-family="monospace" font-weight="bold" font-size="18.00" fill="#ffffff">pg_attribute</text>
@@ -181,6 +185,8 @@
 <polygon fill="#ffffff" stroke="none" points="897.5,-20 897.5,-45 998.5,-45 998.5,-20 897.5,-20"/>
 <polygon fill="none" stroke="#2c3e50" points="897.5,-20 897.5,-45 998.5,-45 998.5,-20 897.5,-20"/>
 <text text-anchor="start" x="902.5" y="-29.8" font-family="monospace" font-style="italic" font-size="14.00" fill="#95a5a6">integer</text>
+</a>
+</g>
 </g>
 <!-- pg_rewrite&#45;&gt;pg_attribute -->
 <g id="edge1" class="edge"><title>pg_rewrite:ev_class_out&#45;&gt;pg_attribute:attrelid_in</title>

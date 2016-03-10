@@ -14,6 +14,7 @@
 </g>
 <!-- gp_id -->
 <g id="node1" class="node"><title>gp_id</title>
+<g id="a_node1"><a xlink:href="gp_id.svg" xlink:title="&lt;TABLE&gt;">
 <polygon fill="#2c3e50" stroke="none" points="165,-120 165,-150 343,-150 343,-120 165,-120"/>
 <polygon fill="none" stroke="black" points="165,-120 165,-150 343,-150 343,-120 165,-120"/>
 <text text-anchor="start" x="227.5" y="-131.6" font-family="monospace" font-weight="bold" font-size="18.00" fill="#ffffff">gp_id</text>
@@ -41,6 +42,8 @@
 <polygon fill="#ffffff" stroke="none" points="266,-20 266,-45 343,-45 343,-20 266,-20"/>
 <polygon fill="none" stroke="#2c3e50" points="266,-20 266,-45 343,-45 343,-20 266,-20"/>
 <text text-anchor="start" x="271" y="-29.8" font-family="monospace" font-style="italic" font-size="14.00" fill="#95a5a6">smallint</text>
+</a>
+</g>
 </g>
 </g>
 </svg>

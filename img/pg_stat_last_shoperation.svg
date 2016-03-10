@@ -16,6 +16,7 @@
 </g>
 <!-- pg_stat_last_shoperation -->
 <g id="node1" class="node"><title>pg_stat_last_shoperation</title>
+<g id="a_node1"><a xlink:href="pg_stat_last_shoperation.svg" xlink:title="&lt;TABLE&gt;">
 <polygon fill="#2c3e50" stroke="none" points="230.5,-932 230.5,-962 557.5,-962 557.5,-932 230.5,-932"/>
 <polygon fill="none" stroke="black" points="230.5,-932 230.5,-962 557.5,-962 557.5,-932 230.5,-932"/>
 <text text-anchor="start" x="267.5" y="-943.6" font-family="monospace" font-weight="bold" font-size="18.00" fill="#ffffff">pg_stat_last_shoperation</text>
@@ -61,9 +62,12 @@
 <polygon fill="#ffffff" stroke="none" points="348.5,-757 348.5,-782 557.5,-782 557.5,-757 348.5,-757"/>
 <polygon fill="none" stroke="#2c3e50" points="348.5,-757 348.5,-782 557.5,-782 557.5,-757 348.5,-757"/>
 <text text-anchor="start" x="353.5" y="-766.8" font-family="monospace" font-style="italic" font-size="14.00" fill="#95a5a6">timestamp_with_time_zone</text>
+</a>
+</g>
 </g>
 <!-- pg_class -->
 <g id="node2" class="node"><title>pg_class</title>
+<g id="a_node2"><a xlink:href="pg_class.svg" xlink:title="&lt;TABLE&gt;">
 <polygon fill="#2c3e50" stroke="none" points="1089,-1319 1089,-1349 1316,-1349 1316,-1319 1089,-1319"/>
 <polygon fill="none" stroke="black" points="1089,-1319 1089,-1349 1316,-1349 1316,-1319 1089,-1319"/>
 <text text-anchor="start" x="1160" y="-1330.6" font-family="monospace" font-weight="bold" font-size="18.00" fill="#ffffff">pg_class</text>
@@ -253,6 +257,8 @@
 <polygon fill="#ffffff" stroke="none" points="1215,-544 1215,-569 1316,-569 1316,-544 1215,-544"/>
 <polygon fill="none" stroke="#2c3e50" points="1215,-544 1215,-569 1316,-569 1316,-544 1215,-544"/>
 <text text-anchor="start" x="1220" y="-553.8" font-family="monospace" font-style="italic" font-size="14.00" fill="#95a5a6">text[]</text>
+</a>
+</g>
 </g>
 <!-- pg_stat_last_shoperation&#45;&gt;pg_class -->
 <g id="edge1" class="edge"><title>pg_stat_last_shoperation:classid_out&#45;&gt;pg_class:oid_in</title>
@@ -261,6 +267,7 @@
 </g>
 <!-- pg_authid -->
 <g id="node3" class="node"><title>pg_authid</title>
+<g id="a_node3"><a xlink:href="pg_authid.svg" xlink:title="&lt;TABLE&gt;">
 <polygon fill="#2c3e50" stroke="none" points="1022,-470 1022,-500 1382,-500 1382,-470 1022,-470"/>
 <polygon fill="none" stroke="black" points="1022,-470 1022,-500 1382,-500 1382,-470 1022,-470"/>
 <text text-anchor="start" x="1154.5" y="-481.6" font-family="monospace" font-weight="bold" font-size="18.00" fill="#ffffff">pg_authid</text>
@@ -372,6 +379,8 @@
 <polygon fill="#ffffff" stroke="none" points="1173,-20 1173,-45 1382,-45 1382,-20 1173,-20"/>
 <polygon fill="none" stroke="#2c3e50" points="1173,-20 1173,-45 1382,-45 1382,-20 1173,-20"/>
 <text text-anchor="start" x="1178" y="-29.8" font-family="monospace" font-style="italic" font-size="14.00" fill="#95a5a6">boolean</text>
+</a>
+</g>
 </g>
 <!-- pg_stat_last_shoperation&#45;&gt;pg_authid -->
 <g id="edge2" class="edge"><title>pg_stat_last_shoperation:stasysid_out&#45;&gt;pg_authid:oid_in</title>

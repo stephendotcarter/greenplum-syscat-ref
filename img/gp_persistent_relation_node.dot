@@ -123,7 +123,7 @@ digraph GPDB {
 <TD COLOR="#2c3e50" BGCOLOR="#FFFFFF" ALIGN="LEFT" PORT="previous_free_tid_out"><FONT COLOR="#95a5a6"><I>tid</I></FONT></TD>
 </TR>
 
-</TABLE></FONT>> name = "gp_persistent_relation_node"];
+</TABLE></FONT>> name = "gp_persistent_relation_node" URL = "gp_persistent_relation_node.svg"];
         
     }
     

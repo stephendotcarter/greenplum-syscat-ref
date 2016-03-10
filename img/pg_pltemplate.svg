@@ -14,6 +14,7 @@
 </g>
 <!-- pg_pltemplate -->
 <g id="node1" class="node"><title>pg_pltemplate</title>
+<g id="a_node1"><a xlink:href="pg_pltemplate.svg" xlink:title="&lt;TABLE&gt;">
 <polygon fill="#2c3e50" stroke="none" points="214.5,-170 214.5,-200 417.5,-200 417.5,-170 214.5,-170"/>
 <polygon fill="none" stroke="black" points="214.5,-170 214.5,-200 417.5,-200 417.5,-170 214.5,-170"/>
 <text text-anchor="start" x="247.5" y="-181.6" font-family="monospace" font-weight="bold" font-size="18.00" fill="#ffffff">pg_pltemplate</text>
@@ -53,6 +54,8 @@
 <polygon fill="#ffffff" stroke="none" points="332.5,-20 332.5,-45 417.5,-45 417.5,-20 332.5,-20"/>
 <polygon fill="none" stroke="#2c3e50" points="332.5,-20 332.5,-45 417.5,-45 417.5,-20 332.5,-20"/>
 <text text-anchor="start" x="337.5" y="-29.8" font-family="monospace" font-style="italic" font-size="14.00" fill="#95a5a6">aclitem[]</text>
+</a>
+</g>
 </g>
 </g>
 </svg>

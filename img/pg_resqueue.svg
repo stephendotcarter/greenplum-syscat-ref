@@ -16,6 +16,7 @@
 </g>
 <!-- pg_resqueuecapability -->
 <g id="node1" class="node"><title>pg_resqueuecapability</title>
+<g id="a_node1"><a xlink:href="pg_resqueuecapability.svg" xlink:title="&lt;TABLE&gt;">
 <polygon fill="#2c3e50" stroke="none" points="193,-644 193,-674 424,-674 424,-644 193,-644"/>
 <polygon fill="none" stroke="black" points="193,-644 193,-674 424,-674 424,-644 193,-644"/>
 <text text-anchor="start" x="198" y="-655.6" font-family="monospace" font-weight="bold" font-size="18.00" fill="#ffffff">pg_resqueuecapability</text>
@@ -43,9 +44,12 @@
 <polygon fill="#ffffff" stroke="none" points="316,-544 316,-569 424,-569 424,-544 316,-544"/>
 <polygon fill="none" stroke="#2c3e50" points="316,-544 316,-569 424,-569 424,-544 316,-544"/>
 <text text-anchor="start" x="321" y="-553.8" font-family="monospace" font-style="italic" font-size="14.00" fill="#95a5a6">text</text>
+</a>
+</g>
 </g>
 <!-- pg_resqueue -->
 <g id="node3" class="node"><title>pg_resqueue</title>
+<g id="a_node3"><a xlink:href="pg_resqueue.svg" xlink:title="&lt;TABLE&gt;">
 <polygon fill="#2c3e50" stroke="none" points="832.5,-394 832.5,-424 1059.5,-424 1059.5,-394 832.5,-394"/>
 <polygon fill="none" stroke="black" points="832.5,-394 832.5,-424 1059.5,-424 1059.5,-394 832.5,-394"/>
 <text text-anchor="start" x="888" y="-405.6" font-family="monospace" font-weight="bold" font-size="18.00" fill="#ffffff">pg_resqueue</text>
@@ -85,6 +89,8 @@
 <polygon fill="#ffffff" stroke="none" points="991.5,-244 991.5,-269 1059.5,-269 1059.5,-244 991.5,-244"/>
 <polygon fill="none" stroke="#2c3e50" points="991.5,-244 991.5,-269 1059.5,-269 1059.5,-244 991.5,-244"/>
 <text text-anchor="start" x="996.5" y="-253.8" font-family="monospace" font-style="italic" font-size="14.00" fill="#95a5a6">real</text>
+</a>
+</g>
 </g>
 <!-- pg_resqueuecapability&#45;&gt;pg_resqueue -->
 <g id="edge2" class="edge"><title>pg_resqueuecapability:resqueueid_out&#45;&gt;pg_resqueue:oid_in</title>
@@ -93,6 +99,7 @@
 </g>
 <!-- pg_authid -->
 <g id="node2" class="node"><title>pg_authid</title>
+<g id="a_node2"><a xlink:href="pg_authid.svg" xlink:title="&lt;TABLE&gt;">
 <polygon fill="#2c3e50" stroke="none" points="128,-470 128,-500 488,-500 488,-470 128,-470"/>
 <polygon fill="none" stroke="black" points="128,-470 128,-500 488,-500 488,-470 128,-470"/>
 <text text-anchor="start" x="260.5" y="-481.6" font-family="monospace" font-weight="bold" font-size="18.00" fill="#ffffff">pg_authid</text>
@@ -204,6 +211,8 @@
 <polygon fill="#ffffff" stroke="none" points="279,-20 279,-45 488,-45 488,-20 279,-20"/>
 <polygon fill="none" stroke="#2c3e50" points="279,-20 279,-45 488,-45 488,-20 279,-20"/>
 <text text-anchor="start" x="284" y="-29.8" font-family="monospace" font-style="italic" font-size="14.00" fill="#95a5a6">boolean</text>
+</a>
+</g>
 </g>
 <!-- pg_authid&#45;&gt;pg_resqueue -->
 <g id="edge1" class="edge"><title>pg_authid:rolresqueue_out&#45;&gt;pg_resqueue:oid_in</title>

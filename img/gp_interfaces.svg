@@ -14,6 +14,7 @@
 </g>
 <!-- gp_interfaces -->
 <g id="node1" class="node"><title>gp_interfaces</title>
+<g id="a_node1"><a xlink:href="gp_interfaces.svg" xlink:title="&lt;TABLE&gt;">
 <polygon fill="#2c3e50" stroke="none" points="222,-95 222,-125 400,-125 400,-95 222,-95"/>
 <polygon fill="none" stroke="black" points="222,-95 222,-125 400,-125 400,-95 222,-95"/>
 <text text-anchor="start" x="242.5" y="-106.6" font-family="monospace" font-weight="bold" font-size="18.00" fill="#ffffff">gp_interfaces</text>
@@ -35,6 +36,8 @@
 <polygon fill="#ffffff" stroke="none" points="323,-20 323,-45 400,-45 400,-20 323,-20"/>
 <polygon fill="none" stroke="#2c3e50" points="323,-20 323,-45 400,-45 400,-20 323,-20"/>
 <text text-anchor="start" x="328" y="-29.8" font-family="monospace" font-style="italic" font-size="14.00" fill="#95a5a6">smallint</text>
+</a>
+</g>
 </g>
 </g>
 </svg>

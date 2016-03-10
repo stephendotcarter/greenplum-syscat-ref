@@ -14,6 +14,7 @@
 </g>
 <!-- gp_san_configuration -->
 <g id="node1" class="node"><title>gp_san_configuration</title>
+<g id="a_node1"><a xlink:href="gp_san_configuration.svg" xlink:title="&lt;TABLE&gt;">
 <polygon fill="#2c3e50" stroke="none" points="238,-245 238,-275 498,-275 498,-245 238,-245"/>
 <polygon fill="none" stroke="black" points="238,-245 238,-275 498,-275 498,-245 238,-245"/>
 <text text-anchor="start" x="262.5" y="-256.6" font-family="monospace" font-weight="bold" font-size="18.00" fill="#ffffff">gp_san_configuration</text>
@@ -71,6 +72,8 @@
 <polygon fill="#ffffff" stroke="none" points="397,-20 397,-45 498,-45 498,-20 397,-20"/>
 <polygon fill="none" stroke="#2c3e50" points="397,-20 397,-45 498,-45 498,-20 397,-20"/>
 <text text-anchor="start" x="402" y="-29.8" font-family="monospace" font-style="italic" font-size="14.00" fill="#95a5a6">text</text>
+</a>
+</g>
 </g>
 </g>
 </svg>

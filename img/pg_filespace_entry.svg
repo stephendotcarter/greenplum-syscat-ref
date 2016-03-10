@@ -16,6 +16,7 @@
 </g>
 <!-- pg_filespace_entry -->
 <g id="node1" class="node"><title>pg_filespace_entry</title>
+<g id="a_node1"><a xlink:href="pg_filespace_entry.svg" xlink:title="&lt;TABLE&gt;">
 <polygon fill="#2c3e50" stroke="none" points="249,-95 249,-125 449,-125 449,-95 249,-95"/>
 <polygon fill="none" stroke="black" points="249,-95 249,-125 449,-125 449,-95 249,-95"/>
 <text text-anchor="start" x="254" y="-106.6" font-family="monospace" font-weight="bold" font-size="18.00" fill="#ffffff">pg_filespace_entry</text>
@@ -37,9 +38,12 @@
 <polygon fill="#ffffff" stroke="none" points="361,-20 361,-45 449,-45 449,-20 361,-20"/>
 <polygon fill="none" stroke="#2c3e50" points="361,-20 361,-45 449,-45 449,-20 361,-20"/>
 <text text-anchor="start" x="366" y="-29.8" font-family="monospace" font-style="italic" font-size="14.00" fill="#95a5a6">text</text>
+</a>
+</g>
 </g>
 <!-- pg_filespace -->
 <g id="node2" class="node"><title>pg_filespace</title>
+<g id="a_node2"><a xlink:href="pg_filespace.svg" xlink:title="&lt;TABLE&gt;">
 <polygon fill="#2c3e50" stroke="none" points="998.5,-95 998.5,-125 1135.5,-125 1135.5,-95 998.5,-95"/>
 <polygon fill="none" stroke="black" points="998.5,-95 998.5,-125 1135.5,-125 1135.5,-95 998.5,-95"/>
 <text text-anchor="start" x="1003.5" y="-106.6" font-family="monospace" font-weight="bold" font-size="18.00" fill="#ffffff">pg_filespace</text>
@@ -61,6 +65,8 @@
 <polygon fill="#ffffff" stroke="none" points="1078.5,-20 1078.5,-45 1135.5,-45 1135.5,-20 1078.5,-20"/>
 <polygon fill="none" stroke="#2c3e50" points="1078.5,-20 1078.5,-45 1135.5,-45 1135.5,-20 1078.5,-20"/>
 <text text-anchor="start" x="1083.5" y="-29.8" font-family="monospace" font-style="italic" font-size="14.00" fill="#95a5a6">oid</text>
+</a>
+</g>
 </g>
 <!-- pg_filespace_entry&#45;&gt;pg_filespace -->
 <g id="edge1" class="edge"><title>pg_filespace_entry:fsefsoid_out&#45;&gt;pg_filespace:oid_in</title>
